@@ -1,0 +1,286 @@
+\hypertarget{class_game_1_1_u_i_1_1_u_i_object}{}\doxysection{Game.\+U\+I.\+U\+I\+Object Class Reference}
+\label{class_game_1_1_u_i_1_1_u_i_object}\index{Game.UI.UIObject@{Game.UI.UIObject}}
+
+
+Este o clasa abstracta in care se vor afla caracteristicile de baza, dar si modul in care sa comporta un obiect grafic, cum ar fi un buton(coordonatele pozitiei pe ecran, latimea si inaltimea, aria de interactiune cu cursourl mouse-\/ului etc)  
+
+
+Inheritance diagram for Game.\+U\+I.\+U\+I\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_u_i_1_1_u_i_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a24543c43d02b8de4b8217f57801d247a}{U\+I\+Object}} (float \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a2a92eb8bb91edea734832075a1981239}{x}}, float \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a1b466e539a3901fafa1cc11e40ba659b}{y}}, int \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a4715003ec8df2122664738000bce7b0d}{width}}, int \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a36f450a84528839b1ddb7a3ecd552868}{height}})
+\begin{DoxyCompactList}\small\item\em Constructorul care seteaza dimensiunile obiectului. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a86f47d1e646c94afa9796052ae0aac03}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda abstract ce are rolul de a actualiza starea obiectului. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a708989cf5cd5a02c25460a330e0188c2}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Metoda abstract ce are rolul de a randa obiectul cu ajutorul contextului grafic g. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a2b0da774472f204b6f06956bfad58d7d}{on\+Click}} ()
+\begin{DoxyCompactList}\small\item\em Metoda abstract ce are rolul de a realiza task-\/uri atunci cand se da click cu mouse-\/ul pe obiect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a4abf41db7d1f583183c958ce3beb01fb}{on\+Mouse\+Move}} (Mouse\+Event mouse\+Event)
+\begin{DoxyCompactList}\small\item\em Are rolul de a seta flagul hovering daca cursorul mouse-\/ului se afla in aria de interactiune a obiectului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_aedcdd3e82e85a61ea0d5058ea17e9f99}{on\+Mouse\+Release}} (Mouse\+Event mouse\+Event)
+\begin{DoxyCompactList}\small\item\em In momentul in care s-\/a realizat click-\/ul asupra obiectului grafic, se vor realiza task-\/urile indicate in metoda \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a2b0da774472f204b6f06956bfad58d7d}{on\+Click()}};. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_af24630f3fcc45efc319b33b04e30cf9b}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza coordonata x a pozitiei obiectului in fereastra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a03e882289b6c90de1e92676624e07d70}{setX}} (float \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a2a92eb8bb91edea734832075a1981239}{x}})
+\begin{DoxyCompactList}\small\item\em Seteaza coordonata x a pozitiei obiectului cu cea data ca si argument. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a2a52864004e7fe6a665f5a45bc04d5f9}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza coordonata y a pozitiei obiectului in fereastra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a441b08c0c8c62a03d63f96ad400e60d7}{setY}} (float \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a1b466e539a3901fafa1cc11e40ba659b}{y}})
+\begin{DoxyCompactList}\small\item\em Seteaza coordonata y a pozitiei obiectului cu cea data ca si argument. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a4108af2452af7f15584d4ff1af7ff9fd}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza latimea obiectului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_aec6c5bed8eeb2fb24ffaec2a0b9f3c1b}{set\+Width}} (int \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a4715003ec8df2122664738000bce7b0d}{width}})
+\begin{DoxyCompactList}\small\item\em Seteaza latimea obiectului conform argumentului. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a284763583138fff803c5c93c228c6d21}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza inaltimea obiectului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a9ab2d02adbe8df5e1ce8311cdd69962e}{set\+Height}} (int \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a36f450a84528839b1ddb7a3ecd552868}{height}})
+\begin{DoxyCompactList}\small\item\em Seteaza inaltimea obiectului conform argumentului. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a80a61639a044029b83798affb133b33d}{is\+Hovering}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza starea flag-\/ului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a644be2ab6a870c3bb88baa5b425d5be0}{set\+Hovering}} (boolean \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a10e9b72faf6dc28df4582a917d672d3b}{hovering}})
+\begin{DoxyCompactList}\small\item\em Seteaza flag-\/ul conform starii date de argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a2a92eb8bb91edea734832075a1981239}{x}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a1b466e539a3901fafa1cc11e40ba659b}{y}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a4715003ec8df2122664738000bce7b0d}{width}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a36f450a84528839b1ddb7a3ecd552868}{height}}
+\item 
+Rectangle \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_ab92c963a4e34bd7dc27ebdc9947775f2}{bounds}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a10e9b72faf6dc28df4582a917d672d3b}{hovering}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Este o clasa abstracta in care se vor afla caracteristicile de baza, dar si modul in care sa comporta un obiect grafic, cum ar fi un buton(coordonatele pozitiei pe ecran, latimea si inaltimea, aria de interactiune cu cursourl mouse-\/ului etc) 
+
+\textbackslash{}abstract class \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object}{U\+I\+Object}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a24543c43d02b8de4b8217f57801d247a}\label{class_game_1_1_u_i_1_1_u_i_object_a24543c43d02b8de4b8217f57801d247a}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!UIObject@{UIObject}}
+\index{UIObject@{UIObject}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{UIObject()}{UIObject()}}
+{\footnotesize\ttfamily public Game.\+U\+I.\+U\+I\+Object.\+U\+I\+Object (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul care seteaza dimensiunile obiectului. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a284763583138fff803c5c93c228c6d21}\label{class_game_1_1_u_i_1_1_u_i_object_a284763583138fff803c5c93c228c6d21}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily public int Game.\+U\+I.\+U\+I\+Object.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza inaltimea obiectului. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a4108af2452af7f15584d4ff1af7ff9fd}\label{class_game_1_1_u_i_1_1_u_i_object_a4108af2452af7f15584d4ff1af7ff9fd}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily public int Game.\+U\+I.\+U\+I\+Object.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza latimea obiectului. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_af24630f3fcc45efc319b33b04e30cf9b}\label{class_game_1_1_u_i_1_1_u_i_object_af24630f3fcc45efc319b33b04e30cf9b}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!getX@{getX}}
+\index{getX@{getX}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily public float Game.\+U\+I.\+U\+I\+Object.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza coordonata x a pozitiei obiectului in fereastra. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a2a52864004e7fe6a665f5a45bc04d5f9}\label{class_game_1_1_u_i_1_1_u_i_object_a2a52864004e7fe6a665f5a45bc04d5f9}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!getY@{getY}}
+\index{getY@{getY}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily public float Game.\+U\+I.\+U\+I\+Object.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza coordonata y a pozitiei obiectului in fereastra. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a80a61639a044029b83798affb133b33d}\label{class_game_1_1_u_i_1_1_u_i_object_a80a61639a044029b83798affb133b33d}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!isHovering@{isHovering}}
+\index{isHovering@{isHovering}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{isHovering()}{isHovering()}}
+{\footnotesize\ttfamily public boolean Game.\+U\+I.\+U\+I\+Object.\+is\+Hovering (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza starea flag-\/ului. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a2b0da774472f204b6f06956bfad58d7d}\label{class_game_1_1_u_i_1_1_u_i_object_a2b0da774472f204b6f06956bfad58d7d}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!onClick@{onClick}}
+\index{onClick@{onClick}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{onClick()}{onClick()}}
+{\footnotesize\ttfamily public abstract void Game.\+U\+I.\+U\+I\+Object.\+on\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Metoda abstract ce are rolul de a realiza task-\/uri atunci cand se da click cu mouse-\/ul pe obiect. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_image_button_adf7473b1539e15ece6bcf2b4879cdcfd}{Game.\+U\+I.\+U\+I\+Image\+Button}}.
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a4abf41db7d1f583183c958ce3beb01fb}\label{class_game_1_1_u_i_1_1_u_i_object_a4abf41db7d1f583183c958ce3beb01fb}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!onMouseMove@{onMouseMove}}
+\index{onMouseMove@{onMouseMove}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{onMouseMove()}{onMouseMove()}}
+{\footnotesize\ttfamily public void Game.\+U\+I.\+U\+I\+Object.\+on\+Mouse\+Move (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Are rolul de a seta flagul hovering daca cursorul mouse-\/ului se afla in aria de interactiune a obiectului. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_aedcdd3e82e85a61ea0d5058ea17e9f99}\label{class_game_1_1_u_i_1_1_u_i_object_aedcdd3e82e85a61ea0d5058ea17e9f99}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!onMouseRelease@{onMouseRelease}}
+\index{onMouseRelease@{onMouseRelease}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{onMouseRelease()}{onMouseRelease()}}
+{\footnotesize\ttfamily public void Game.\+U\+I.\+U\+I\+Object.\+on\+Mouse\+Release (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+In momentul in care s-\/a realizat click-\/ul asupra obiectului grafic, se vor realiza task-\/urile indicate in metoda \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object_a2b0da774472f204b6f06956bfad58d7d}{on\+Click()}};. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a708989cf5cd5a02c25460a330e0188c2}\label{class_game_1_1_u_i_1_1_u_i_object_a708989cf5cd5a02c25460a330e0188c2}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!render@{render}}
+\index{render@{render}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public abstract void Game.\+U\+I.\+U\+I\+Object.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Metoda abstract ce are rolul de a randa obiectul cu ajutorul contextului grafic g. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_image_button_a7034bd66a7d7012701fa6df7834b5591}{Game.\+U\+I.\+U\+I\+Image\+Button}}.
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a9ab2d02adbe8df5e1ce8311cdd69962e}\label{class_game_1_1_u_i_1_1_u_i_object_a9ab2d02adbe8df5e1ce8311cdd69962e}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily public int Game.\+U\+I.\+U\+I\+Object.\+set\+Height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza inaltimea obiectului conform argumentului. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a644be2ab6a870c3bb88baa5b425d5be0}\label{class_game_1_1_u_i_1_1_u_i_object_a644be2ab6a870c3bb88baa5b425d5be0}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!setHovering@{setHovering}}
+\index{setHovering@{setHovering}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{setHovering()}{setHovering()}}
+{\footnotesize\ttfamily public boolean Game.\+U\+I.\+U\+I\+Object.\+set\+Hovering (\begin{DoxyParamCaption}\item[{boolean}]{hovering }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza flag-\/ul conform starii date de argument. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_aec6c5bed8eeb2fb24ffaec2a0b9f3c1b}\label{class_game_1_1_u_i_1_1_u_i_object_aec6c5bed8eeb2fb24ffaec2a0b9f3c1b}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily public int Game.\+U\+I.\+U\+I\+Object.\+set\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza latimea obiectului conform argumentului. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a03e882289b6c90de1e92676624e07d70}\label{class_game_1_1_u_i_1_1_u_i_object_a03e882289b6c90de1e92676624e07d70}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!setX@{setX}}
+\index{setX@{setX}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily public float Game.\+U\+I.\+U\+I\+Object.\+setX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza coordonata x a pozitiei obiectului cu cea data ca si argument. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a441b08c0c8c62a03d63f96ad400e60d7}\label{class_game_1_1_u_i_1_1_u_i_object_a441b08c0c8c62a03d63f96ad400e60d7}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!setY@{setY}}
+\index{setY@{setY}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily public float Game.\+U\+I.\+U\+I\+Object.\+setY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza coordonata y a pozitiei obiectului cu cea data ca si argument. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a86f47d1e646c94afa9796052ae0aac03}\label{class_game_1_1_u_i_1_1_u_i_object_a86f47d1e646c94afa9796052ae0aac03}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!update@{update}}
+\index{update@{update}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public abstract void Game.\+U\+I.\+U\+I\+Object.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Metoda abstract ce are rolul de a actualiza starea obiectului. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_image_button_a1de526085f7dca4dc9d4b2ebbfc34428}{Game.\+U\+I.\+U\+I\+Image\+Button}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_ab92c963a4e34bd7dc27ebdc9947775f2}\label{class_game_1_1_u_i_1_1_u_i_object_ab92c963a4e34bd7dc27ebdc9947775f2}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!bounds@{bounds}}
+\index{bounds@{bounds}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily Rectangle Game.\+U\+I.\+U\+I\+Object.\+bounds\hspace{0.3cm}{\ttfamily [protected]}}
+
+Aria de interactiune reprezentata de un obiect de tip Rectangle \mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a36f450a84528839b1ddb7a3ecd552868}\label{class_game_1_1_u_i_1_1_u_i_object_a36f450a84528839b1ddb7a3ecd552868}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!height@{height}}
+\index{height@{height}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Game.\+U\+I.\+U\+I\+Object.\+height\hspace{0.3cm}{\ttfamily [protected]}}
+
+Inaltimea obiectului grafic \mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a10e9b72faf6dc28df4582a917d672d3b}\label{class_game_1_1_u_i_1_1_u_i_object_a10e9b72faf6dc28df4582a917d672d3b}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!hovering@{hovering}}
+\index{hovering@{hovering}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{hovering}{hovering}}
+{\footnotesize\ttfamily boolean Game.\+U\+I.\+U\+I\+Object.\+hovering = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Flag ce indica daca cursorul se afla, sau nu in aria de interactiune a obiectului grafic \mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a4715003ec8df2122664738000bce7b0d}\label{class_game_1_1_u_i_1_1_u_i_object_a4715003ec8df2122664738000bce7b0d}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!width@{width}}
+\index{width@{width}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Game.\+U\+I.\+U\+I\+Object.\+width\hspace{0.3cm}{\ttfamily [protected]}}
+
+Latimea obiectului grafic \mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a2a92eb8bb91edea734832075a1981239}\label{class_game_1_1_u_i_1_1_u_i_object_a2a92eb8bb91edea734832075a1981239}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!x@{x}}
+\index{x@{x}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Game.\+U\+I.\+U\+I\+Object.\+x\hspace{0.3cm}{\ttfamily [protected]}}
+
+Coordonate x a pozitiei obiectului grafic \mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_object_a1b466e539a3901fafa1cc11e40ba659b}\label{class_game_1_1_u_i_1_1_u_i_object_a1b466e539a3901fafa1cc11e40ba659b}} 
+\index{Game.UI.UIObject@{Game.UI.UIObject}!y@{y}}
+\index{y@{y}!Game.UI.UIObject@{Game.UI.UIObject}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Game.\+U\+I.\+U\+I\+Object.\+y\hspace{0.3cm}{\ttfamily [protected]}}
+
+Coordonate y a pozitiei obiectului grafic 

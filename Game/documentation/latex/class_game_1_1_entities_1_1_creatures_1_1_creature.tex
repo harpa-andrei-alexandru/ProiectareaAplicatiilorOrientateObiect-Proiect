@@ -1,0 +1,364 @@
+\hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature}{}\doxysection{Game.\+Entities.\+Creatures.\+Creature Class Reference}
+\label{class_game_1_1_entities_1_1_creatures_1_1_creature}\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+
+
+Clasa mosteneste \mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} si are rolul de a implementa creaturi.  
+
+
+Inheritance diagram for Game.\+Entities.\+Creatures.\+Creature\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_1_1_entities_1_1_creatures_1_1_creature}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a7f64da25ce34ddb98c741a16122fd4ca}{Creature}} (float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}{x}}, float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}{y}}, int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a4e786aff1fccccedca808727b21f91b1}{width}}, int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_af6d8e91a7ee4340bc5e8e5a48dcf3f74}{height}})
+\begin{DoxyCompactList}\small\item\em Constructorul are rolul de a seta dimensiunea creaturii, viteza, viata si aria de coliziune. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_ac0513c9d78087bc29c2ace2bfc448806}{move}} ()
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a actualiza pozitia creaturii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_adc45fa3ec930ce347d84a90f22fa5f98}{moveX}} ()
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a actualiza coordonata x a creaturii, verificand si daca acesta se afla in coliziune. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a9f1c21486431c7c727fc66163e036302}{moveY}} ()
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a actualiza coordonata y a proiectilului, verificand si daca acesta se afla in coliziune cu tile-\/uri de land. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_ab7f2db34559436a48cb615d0d3c94083}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em Metoda returneaza viata creaturii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a6a7dd03d32df38cf0c914f56690d20b9}{set\+Health}} (int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_af0300a4b548ef77aef300df8206b71a3}{health}})
+\begin{DoxyCompactList}\small\item\em Metoda seteaza viata creaturii conform argumentului primit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a0bde7a892dfeb4b5a4b18f4e44cf810f}{get\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em Metoda returneaza directia actuala a creaturii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a1aef7e315e6c7478979041aabec02ea7}{set\+Creature\+Level}} (int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a6cce308c4bf58a5854565e3d98064f85}{creature\+Level}})
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a seta nivelul creaturii conform argumentului primit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final float \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_ae165f4109d0aaab300a37d484a089a8c}{S\+P\+E\+ED}} = 2.\+0f
+\item 
+static final int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a112d3c1c082c03be402e28ddb29fb4da}{C\+R\+E\+A\+T\+U\+R\+E\+\_\+\+W\+I\+D\+TH}} = 64
+\item 
+static final int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_ac29e3434e8af268c676a05a9a8fd3c31}{C\+R\+E\+A\+T\+U\+R\+E\+\_\+\+H\+E\+I\+G\+HT}} = 64
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a71faea97b56469d27f0127d2ad4876da}{collision\+With\+Tile}} (int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}{x}}, int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}{y}})
+\begin{DoxyCompactList}\small\item\em Metoda returneaza flag-\/ul solid a tile-\/ului de la pozitia x si y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a0beaaa77de6013e59a24c766f83bdf5b}{speed}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a2284bb09a4edfe6211a51fef32c25f64}{x\+Move}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a053ad090edb3444f8a1ff9ad9fd2ad9e}{y\+Move}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a5a674847b4f256e8ab1521f46ea146d7}{direction}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_adf09ed0b56159c65bf34f4396fbf3719}{idle\+\_\+back}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_abb6711e2792af81910d955e88cfd778a}{idle\+\_\+front}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a30c7aa221466bd7dd7d4f1f48a8c8be5}{idle\+\_\+left}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_aeee0294ce1eccb4778c150ff0780a348}{idle\+\_\+right}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a5bc4bdca16971bcde1df041d4c9be081}{running\+\_\+up}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a0b2e4d5cb187fd4c91ad92afabd0aee5}{running\+\_\+down}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a422df9c018a658832023071390b96b75}{running\+\_\+left}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a9a8bf6ac0da64fb6ebd2e8b5cab434f5}{running\+\_\+right}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a88bbe48c58e1d26fea2f1e17080038a2}{attacking\+\_\+up}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a0788b9192b00ac101362efc8c94264ff}{attacking\+\_\+down}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_aaf1cf8796cdbf83e4913b202b00349d3}{attacking\+\_\+left}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_ac01361324d7ebf3a53c24f6f1e16197f}{attacking\+\_\+right}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a741d00c7a558eff20dd205efa3629ee7}{dying}}
+\item 
+long \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a964fbdd483ae7749139d12ff021359f2}{last\+Attack\+Timer}}
+\item 
+final long \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a702ad118328da4018edb0c19e8cc4505}{attack\+Cooldown}} = 1000
+\item 
+long \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_aaa11f0a1f54047307d92feba5233b4ba}{attack\+Timer}} = \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a702ad118328da4018edb0c19e8cc4505}{attack\+Cooldown}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a6cce308c4bf58a5854565e3d98064f85}{creature\+Level}} = 1
+\item 
+\mbox{\hyperlink{class_game_1_1_audio_1_1_music_player}{Music\+Player}} \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_aba98957018107f4e23c13c819397c0e9}{music\+Player}} = new \mbox{\hyperlink{class_game_1_1_audio_1_1_music_player}{Music\+Player}}(\char`\"{}/audio/arrow\+Sound.\+wav\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa mosteneste \mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} si are rolul de a implementa creaturi. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a7f64da25ce34ddb98c741a16122fd4ca}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a7f64da25ce34ddb98c741a16122fd4ca}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!Creature@{Creature}}
+\index{Creature@{Creature}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{Creature()}{Creature()}}
+{\footnotesize\ttfamily public Game.\+Entities.\+Creatures.\+Creature.\+Creature (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul are rolul de a seta dimensiunea creaturii, viteza, viata si aria de coliziune. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a71faea97b56469d27f0127d2ad4876da}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a71faea97b56469d27f0127d2ad4876da}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!collisionWithTile@{collisionWithTile}}
+\index{collisionWithTile@{collisionWithTile}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{collisionWithTile()}{collisionWithTile()}}
+{\footnotesize\ttfamily protected boolean Game.\+Entities.\+Creatures.\+Creature.\+collision\+With\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Metoda returneaza flag-\/ul solid a tile-\/ului de la pozitia x si y. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a0bde7a892dfeb4b5a4b18f4e44cf810f}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a0bde7a892dfeb4b5a4b18f4e44cf810f}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily public int Game.\+Entities.\+Creatures.\+Creature.\+get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda returneaza directia actuala a creaturii. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_ab7f2db34559436a48cb615d0d3c94083}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_ab7f2db34559436a48cb615d0d3c94083}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily public int Game.\+Entities.\+Creatures.\+Creature.\+get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda returneaza viata creaturii. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_afbf338e7b3f2f8a472b0066fcdfe7a03}{Game.\+Entities.\+Entity}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_ac0513c9d78087bc29c2ace2bfc448806}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_ac0513c9d78087bc29c2ace2bfc448806}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!move@{move}}
+\index{move@{move}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Creatures.\+Creature.\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a actualiza pozitia creaturii. 
+
+Daca nu exista coliziune la coordonata la care urmeaza sa se miste creatura pe axa x, apelam \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_adc45fa3ec930ce347d84a90f22fa5f98}{move\+X()}}
+
+Daca nu exista coliziune la coordonata la care urmeaza sa se miste creatura pe axa y, apelam \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a9f1c21486431c7c727fc66163e036302}{move\+Y()}}\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_adc45fa3ec930ce347d84a90f22fa5f98}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_adc45fa3ec930ce347d84a90f22fa5f98}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!moveX@{moveX}}
+\index{moveX@{moveX}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{moveX()}{moveX()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Creatures.\+Creature.\+moveX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a actualiza coordonata x a creaturii, verificand si daca acesta se afla in coliziune. 
+
+Daca x\+Move este mai mare decat 0, verificam daca la coordonata la care se va misca creatura exista sau nu coliziune
+
+Calculam coordonata x la care trebuie sa se miste creatura
+
+Daca nu exista colizune, atunci coordonata x a creaturii este incrementata cu x\+Move
+
+Altfel, daca exista coliziune, atunci coordonata x va fi setata astfel incat creatura sa fie cat mai aproape posibil de obiectul cu care face coliziune
+
+Pentru x\+Move negativ se procedeaza la fel\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a9f1c21486431c7c727fc66163e036302}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a9f1c21486431c7c727fc66163e036302}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!moveY@{moveY}}
+\index{moveY@{moveY}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{moveY()}{moveY()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Creatures.\+Creature.\+moveY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a actualiza coordonata y a proiectilului, verificand si daca acesta se afla in coliziune cu tile-\/uri de land. 
+
+Logica si verificarile sunt la fel ca si pentru moveX\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a1aef7e315e6c7478979041aabec02ea7}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a1aef7e315e6c7478979041aabec02ea7}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!setCreatureLevel@{setCreatureLevel}}
+\index{setCreatureLevel@{setCreatureLevel}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{setCreatureLevel()}{setCreatureLevel()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Creatures.\+Creature.\+set\+Creature\+Level (\begin{DoxyParamCaption}\item[{int}]{creature\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a seta nivelul creaturii conform argumentului primit. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a6a7dd03d32df38cf0c914f56690d20b9}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a6a7dd03d32df38cf0c914f56690d20b9}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Creatures.\+Creature.\+set\+Health (\begin{DoxyParamCaption}\item[{int}]{health }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda seteaza viata creaturii conform argumentului primit. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a0034e05034c5eb8945abbfc6cc97a887}{Game.\+Entities.\+Entity}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a702ad118328da4018edb0c19e8cc4505}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a702ad118328da4018edb0c19e8cc4505}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!attackCooldown@{attackCooldown}}
+\index{attackCooldown@{attackCooldown}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{attackCooldown}{attackCooldown}}
+{\footnotesize\ttfamily final long Game.\+Entities.\+Creatures.\+Creature.\+attack\+Cooldown = 1000\hspace{0.3cm}{\ttfamily [protected]}}
+
+Variabila care stocheaza cantitatea de timp pentru care o creatura trebuie sa astepte pentru a ataca din nou \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a0788b9192b00ac101362efc8c94264ff}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a0788b9192b00ac101362efc8c94264ff}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!attacking\_down@{attacking\_down}}
+\index{attacking\_down@{attacking\_down}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{attacking\_down}{attacking\_down}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+attacking\+\_\+down\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_aaf1cf8796cdbf83e4913b202b00349d3}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_aaf1cf8796cdbf83e4913b202b00349d3}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!attacking\_left@{attacking\_left}}
+\index{attacking\_left@{attacking\_left}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{attacking\_left}{attacking\_left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+attacking\+\_\+left\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_ac01361324d7ebf3a53c24f6f1e16197f}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_ac01361324d7ebf3a53c24f6f1e16197f}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!attacking\_right@{attacking\_right}}
+\index{attacking\_right@{attacking\_right}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{attacking\_right}{attacking\_right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+attacking\+\_\+right\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a88bbe48c58e1d26fea2f1e17080038a2}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a88bbe48c58e1d26fea2f1e17080038a2}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!attacking\_up@{attacking\_up}}
+\index{attacking\_up@{attacking\_up}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{attacking\_up}{attacking\_up}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+attacking\+\_\+up\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_aaa11f0a1f54047307d92feba5233b4ba}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_aaa11f0a1f54047307d92feba5233b4ba}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!attackTimer@{attackTimer}}
+\index{attackTimer@{attackTimer}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{attackTimer}{attackTimer}}
+{\footnotesize\ttfamily long Game.\+Entities.\+Creatures.\+Creature.\+attack\+Timer = \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a702ad118328da4018edb0c19e8cc4505}{attack\+Cooldown}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_ac29e3434e8af268c676a05a9a8fd3c31}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_ac29e3434e8af268c676a05a9a8fd3c31}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!CREATURE\_HEIGHT@{CREATURE\_HEIGHT}}
+\index{CREATURE\_HEIGHT@{CREATURE\_HEIGHT}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{CREATURE\_HEIGHT}{CREATURE\_HEIGHT}}
+{\footnotesize\ttfamily final int Game.\+Entities.\+Creatures.\+Creature.\+C\+R\+E\+A\+T\+U\+R\+E\+\_\+\+H\+E\+I\+G\+HT = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+Constanta ce reprezinta inaltimea creaturii \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a112d3c1c082c03be402e28ddb29fb4da}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a112d3c1c082c03be402e28ddb29fb4da}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!CREATURE\_WIDTH@{CREATURE\_WIDTH}}
+\index{CREATURE\_WIDTH@{CREATURE\_WIDTH}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{CREATURE\_WIDTH}{CREATURE\_WIDTH}}
+{\footnotesize\ttfamily final int Game.\+Entities.\+Creatures.\+Creature.\+C\+R\+E\+A\+T\+U\+R\+E\+\_\+\+W\+I\+D\+TH = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+Constanta ce reprezinta latimea creaturii \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a6cce308c4bf58a5854565e3d98064f85}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a6cce308c4bf58a5854565e3d98064f85}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!creatureLevel@{creatureLevel}}
+\index{creatureLevel@{creatureLevel}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{creatureLevel}{creatureLevel}}
+{\footnotesize\ttfamily int Game.\+Entities.\+Creatures.\+Creature.\+creature\+Level = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+Niveulul creaturii \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a5a674847b4f256e8ab1521f46ea146d7}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a5a674847b4f256e8ab1521f46ea146d7}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!direction@{direction}}
+\index{direction@{direction}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily int Game.\+Entities.\+Creatures.\+Creature.\+direction\hspace{0.3cm}{\ttfamily [protected]}}
+
+Directia creaturii \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a741d00c7a558eff20dd205efa3629ee7}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a741d00c7a558eff20dd205efa3629ee7}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!dying@{dying}}
+\index{dying@{dying}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{dying}{dying}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+dying\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_adf09ed0b56159c65bf34f4396fbf3719}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_adf09ed0b56159c65bf34f4396fbf3719}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!idle\_back@{idle\_back}}
+\index{idle\_back@{idle\_back}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{idle\_back}{idle\_back}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+idle\+\_\+back\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_abb6711e2792af81910d955e88cfd778a}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_abb6711e2792af81910d955e88cfd778a}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!idle\_front@{idle\_front}}
+\index{idle\_front@{idle\_front}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{idle\_front}{idle\_front}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+idle\+\_\+front\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a30c7aa221466bd7dd7d4f1f48a8c8be5}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a30c7aa221466bd7dd7d4f1f48a8c8be5}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!idle\_left@{idle\_left}}
+\index{idle\_left@{idle\_left}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{idle\_left}{idle\_left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+idle\+\_\+left\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_aeee0294ce1eccb4778c150ff0780a348}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_aeee0294ce1eccb4778c150ff0780a348}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!idle\_right@{idle\_right}}
+\index{idle\_right@{idle\_right}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{idle\_right}{idle\_right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+idle\+\_\+right\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a964fbdd483ae7749139d12ff021359f2}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a964fbdd483ae7749139d12ff021359f2}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!lastAttackTimer@{lastAttackTimer}}
+\index{lastAttackTimer@{lastAttackTimer}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{lastAttackTimer}{lastAttackTimer}}
+{\footnotesize\ttfamily long Game.\+Entities.\+Creatures.\+Creature.\+last\+Attack\+Timer\hspace{0.3cm}{\ttfamily [protected]}}
+
+Variabila ce stocheaza durata de timp care a trecut de la ultimul moment in care a atacat creatura si pana im momentul actual \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_aba98957018107f4e23c13c819397c0e9}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_aba98957018107f4e23c13c819397c0e9}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!musicPlayer@{musicPlayer}}
+\index{musicPlayer@{musicPlayer}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{musicPlayer}{musicPlayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_audio_1_1_music_player}{Music\+Player}} Game.\+Entities.\+Creatures.\+Creature.\+music\+Player = new \mbox{\hyperlink{class_game_1_1_audio_1_1_music_player}{Music\+Player}}(\char`\"{}/audio/arrow\+Sound.\+wav\char`\"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Referinta catre Music\+Player \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a0b2e4d5cb187fd4c91ad92afabd0aee5}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a0b2e4d5cb187fd4c91ad92afabd0aee5}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!running\_down@{running\_down}}
+\index{running\_down@{running\_down}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{running\_down}{running\_down}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+running\+\_\+down\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a422df9c018a658832023071390b96b75}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a422df9c018a658832023071390b96b75}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!running\_left@{running\_left}}
+\index{running\_left@{running\_left}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{running\_left}{running\_left}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+running\+\_\+left\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a9a8bf6ac0da64fb6ebd2e8b5cab434f5}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a9a8bf6ac0da64fb6ebd2e8b5cab434f5}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!running\_right@{running\_right}}
+\index{running\_right@{running\_right}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{running\_right}{running\_right}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+running\+\_\+right\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a5bc4bdca16971bcde1df041d4c9be081}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a5bc4bdca16971bcde1df041d4c9be081}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!running\_up@{running\_up}}
+\index{running\_up@{running\_up}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{running\_up}{running\_up}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation}{Animation}} Game.\+Entities.\+Creatures.\+Creature.\+running\+\_\+up\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_ae165f4109d0aaab300a37d484a089a8c}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_ae165f4109d0aaab300a37d484a089a8c}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!SPEED@{SPEED}}
+\index{SPEED@{SPEED}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{SPEED}{SPEED}}
+{\footnotesize\ttfamily final float Game.\+Entities.\+Creatures.\+Creature.\+S\+P\+E\+ED = 2.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+Constanta care reprezinta valoare default a vitezei de miscare a creaturii \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a0beaaa77de6013e59a24c766f83bdf5b}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a0beaaa77de6013e59a24c766f83bdf5b}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!speed@{speed}}
+\index{speed@{speed}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Game.\+Entities.\+Creatures.\+Creature.\+speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a2284bb09a4edfe6211a51fef32c25f64}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a2284bb09a4edfe6211a51fef32c25f64}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!xMove@{xMove}}
+\index{xMove@{xMove}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{xMove}{xMove}}
+{\footnotesize\ttfamily float Game.\+Entities.\+Creatures.\+Creature.\+x\+Move\hspace{0.3cm}{\ttfamily [protected]}}
+
+Variabila ce retinen umarul de pixel cu care sa va deplasa creatura pe axa x \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_creature_a053ad090edb3444f8a1ff9ad9fd2ad9e}\label{class_game_1_1_entities_1_1_creatures_1_1_creature_a053ad090edb3444f8a1ff9ad9fd2ad9e}} 
+\index{Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}!yMove@{yMove}}
+\index{yMove@{yMove}!Game.Entities.Creatures.Creature@{Game.Entities.Creatures.Creature}}
+\doxysubsubsection{\texorpdfstring{yMove}{yMove}}
+{\footnotesize\ttfamily float Game.\+Entities.\+Creatures.\+Creature.\+y\+Move\hspace{0.3cm}{\ttfamily [protected]}}
+
+Variabila ce retinen umarul de pixel cu care sa va deplasa creatura pe axa y 

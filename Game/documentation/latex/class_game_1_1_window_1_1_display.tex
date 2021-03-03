@@ -1,0 +1,141 @@
+\hypertarget{class_game_1_1_window_1_1_display}{}\doxysection{Game.\+Window.\+Display Class Reference}
+\label{class_game_1_1_window_1_1_display}\index{Game.Window.Display@{Game.Window.Display}}
+
+
+Creeaza fereastra jocului, creeaza un canvas si il aduga ferestrei pentru a putea randa/desena pe aceasta.  
+
+
+Inheritance diagram for Game.\+Window.\+Display\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_window_1_1_display}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_window_1_1_display_a869c9e6f865298da2ac5f32c2f36969a}{Display}} (String \mbox{\hyperlink{class_game_1_1_window_1_1_display_a29e55224aecc478a5ddf1d71f3031502}{title}}, int \mbox{\hyperlink{class_game_1_1_window_1_1_display_a3b6f9c973cc22fcf0924f9c9e3c5e297}{width}}, int \mbox{\hyperlink{class_game_1_1_window_1_1_display_a16868cadefe73911236f1ba378605aca}{height}})
+\begin{DoxyCompactList}\small\item\em seteaza numele jocului si dimensiunile ferestrei, totodata, apeleaza si metoda \mbox{\hyperlink{class_game_1_1_window_1_1_display_ac17fd8c7e64d0063951e4d689c38590e}{create\+Display()}} pentru a crea fereastra jocului \end{DoxyCompactList}\item 
+Canvas \mbox{\hyperlink{class_game_1_1_window_1_1_display_a14fe17c0c021a79baee1ba3945bdce61}{get\+Canvas}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza canvas-\/ul ferestrei. \end{DoxyCompactList}\item 
+J\+Frame \mbox{\hyperlink{class_game_1_1_window_1_1_display_a14b6220ef3c428c2386ee54353047e55}{get\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza fereastra jocului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_1_1_window_1_1_display_ac17fd8c7e64d0063951e4d689c38590e}{create\+Display}} ()
+\begin{DoxyCompactList}\small\item\em creaza fereastra jocului \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+J\+Frame \mbox{\hyperlink{class_game_1_1_window_1_1_display_a993c58089c954685ada9596b9641327b}{frame}}
+\item 
+Canvas \mbox{\hyperlink{class_game_1_1_window_1_1_display_ab27e509ec1991c3eadaadfb492e85578}{canvas}}
+\item 
+final String \mbox{\hyperlink{class_game_1_1_window_1_1_display_a29e55224aecc478a5ddf1d71f3031502}{title}}
+\item 
+final int \mbox{\hyperlink{class_game_1_1_window_1_1_display_a3b6f9c973cc22fcf0924f9c9e3c5e297}{width}}
+\item 
+final int \mbox{\hyperlink{class_game_1_1_window_1_1_display_a16868cadefe73911236f1ba378605aca}{height}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creeaza fereastra jocului, creeaza un canvas si il aduga ferestrei pentru a putea randa/desena pe aceasta. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_window_1_1_display_a869c9e6f865298da2ac5f32c2f36969a}\label{class_game_1_1_window_1_1_display_a869c9e6f865298da2ac5f32c2f36969a}} 
+\index{Game.Window.Display@{Game.Window.Display}!Display@{Display}}
+\index{Display@{Display}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily public Game.\+Window.\+Display.\+Display (\begin{DoxyParamCaption}\item[{String}]{title,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+seteaza numele jocului si dimensiunile ferestrei, totodata, apeleaza si metoda \mbox{\hyperlink{class_game_1_1_window_1_1_display_ac17fd8c7e64d0063951e4d689c38590e}{create\+Display()}} pentru a crea fereastra jocului 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_window_1_1_display_ac17fd8c7e64d0063951e4d689c38590e}\label{class_game_1_1_window_1_1_display_ac17fd8c7e64d0063951e4d689c38590e}} 
+\index{Game.Window.Display@{Game.Window.Display}!createDisplay@{createDisplay}}
+\index{createDisplay@{createDisplay}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{createDisplay()}{createDisplay()}}
+{\footnotesize\ttfamily private void Game.\+Window.\+Display.\+create\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+creaza fereastra jocului 
+
+Se creaza obiectul ferestrei
+
+Se seteaza dimensiunea ferestrei
+
+Se asigura ca fereastra este inchisa corespunzator
+
+Se seteaza fereastra astfel incat sa nu poata minimizata sau maximizata, ea pastrandu-\/si dimensiunile initiale
+
+Se pozitioneaza in centrul ecranului
+
+Se creeaza obiectul canvas pe care vom randa harta si toate entitatile
+
+Se seteaza dimensiunea dorita
+
+Se seteaza dimensiunea maxima a canvas-\/ului
+
+Se seteaza dimensiunea minima a canvas-\/ului
+
+Se adauga canvas-\/ul ferestrei\mbox{\Hypertarget{class_game_1_1_window_1_1_display_a14fe17c0c021a79baee1ba3945bdce61}\label{class_game_1_1_window_1_1_display_a14fe17c0c021a79baee1ba3945bdce61}} 
+\index{Game.Window.Display@{Game.Window.Display}!getCanvas@{getCanvas}}
+\index{getCanvas@{getCanvas}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{getCanvas()}{getCanvas()}}
+{\footnotesize\ttfamily public Canvas Game.\+Window.\+Display.\+get\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza canvas-\/ul ferestrei. 
+
+\mbox{\Hypertarget{class_game_1_1_window_1_1_display_a14b6220ef3c428c2386ee54353047e55}\label{class_game_1_1_window_1_1_display_a14b6220ef3c428c2386ee54353047e55}} 
+\index{Game.Window.Display@{Game.Window.Display}!getFrame@{getFrame}}
+\index{getFrame@{getFrame}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{getFrame()}{getFrame()}}
+{\footnotesize\ttfamily public J\+Frame Game.\+Window.\+Display.\+get\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza fereastra jocului. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_window_1_1_display_ab27e509ec1991c3eadaadfb492e85578}\label{class_game_1_1_window_1_1_display_ab27e509ec1991c3eadaadfb492e85578}} 
+\index{Game.Window.Display@{Game.Window.Display}!canvas@{canvas}}
+\index{canvas@{canvas}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{canvas}{canvas}}
+{\footnotesize\ttfamily Canvas Game.\+Window.\+Display.\+canvas\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre canvas \mbox{\Hypertarget{class_game_1_1_window_1_1_display_a993c58089c954685ada9596b9641327b}\label{class_game_1_1_window_1_1_display_a993c58089c954685ada9596b9641327b}} 
+\index{Game.Window.Display@{Game.Window.Display}!frame@{frame}}
+\index{frame@{frame}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily J\+Frame Game.\+Window.\+Display.\+frame\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre fereastra \mbox{\Hypertarget{class_game_1_1_window_1_1_display_a16868cadefe73911236f1ba378605aca}\label{class_game_1_1_window_1_1_display_a16868cadefe73911236f1ba378605aca}} 
+\index{Game.Window.Display@{Game.Window.Display}!height@{height}}
+\index{height@{height}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily final int Game.\+Window.\+Display.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+Inaltimea ferestrei in pixeli \mbox{\Hypertarget{class_game_1_1_window_1_1_display_a29e55224aecc478a5ddf1d71f3031502}\label{class_game_1_1_window_1_1_display_a29e55224aecc478a5ddf1d71f3031502}} 
+\index{Game.Window.Display@{Game.Window.Display}!title@{title}}
+\index{title@{title}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily final String Game.\+Window.\+Display.\+title\hspace{0.3cm}{\ttfamily [private]}}
+
+Numele jocului \mbox{\Hypertarget{class_game_1_1_window_1_1_display_a3b6f9c973cc22fcf0924f9c9e3c5e297}\label{class_game_1_1_window_1_1_display_a3b6f9c973cc22fcf0924f9c9e3c5e297}} 
+\index{Game.Window.Display@{Game.Window.Display}!width@{width}}
+\index{width@{width}!Game.Window.Display@{Game.Window.Display}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily final int Game.\+Window.\+Display.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+Latimea ferestrei in pixeli 

@@ -1,0 +1,116 @@
+\hypertarget{class_game_1_1_states_1_1_in_game_menu_state}{}\doxysection{Game.\+States.\+In\+Game\+Menu\+State Class Reference}
+\label{class_game_1_1_states_1_1_in_game_menu_state}\index{Game.States.InGameMenuState@{Game.States.InGameMenuState}}
+
+
+Clasa se comporta similar cu cea de \mbox{\hyperlink{class_game_1_1_states_1_1_menu_state}{Menu\+State}}, doar ca sunt adaugate functionalitati ce ii permite user-\/ului sa isi salveze progresul in baza de date, iar daca doreste, cand redeschide jocul sa poate continua cu datele salvate.  
+
+
+Inheritance diagram for Game.\+States.\+In\+Game\+Menu\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_states_1_1_in_game_menu_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state_a725c4d255fc1fec61d46d397af746fdf}{In\+Game\+Menu\+State}} ()
+\begin{DoxyCompactList}\small\item\em Construcor ce initializeaza un nou manager de obiecte grafice, si adaugat butoane pentru restar, continuare joc, help\&setting, salvare progres si iesire joc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state_a6b3951e82038471e9da4e7a265cbbf0c}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualizare stare daca jocul conform flag-\/ului is\+Active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state_a70afcd76297e68c0f13add73ae9f45b7}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Randeaza starea obiectelor grafice daca flagul is\+Active este setat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state_a8439ac72a1951400a8c0bbb6e08b6d60}{get\+Ui\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul de obiecte grafice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state_aac4ee4e1769d5f1d2e28ee9e65994af6}{ui\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clasa se comporta similar cu cea de \mbox{\hyperlink{class_game_1_1_states_1_1_menu_state}{Menu\+State}}, doar ca sunt adaugate functionalitati ce ii permite user-\/ului sa isi salveze progresul in baza de date, iar daca doreste, cand redeschide jocul sa poate continua cu datele salvate. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_in_game_menu_state_a725c4d255fc1fec61d46d397af746fdf}\label{class_game_1_1_states_1_1_in_game_menu_state_a725c4d255fc1fec61d46d397af746fdf}} 
+\index{Game.States.InGameMenuState@{Game.States.InGameMenuState}!InGameMenuState@{InGameMenuState}}
+\index{InGameMenuState@{InGameMenuState}!Game.States.InGameMenuState@{Game.States.InGameMenuState}}
+\doxysubsubsection{\texorpdfstring{InGameMenuState()}{InGameMenuState()}}
+{\footnotesize\ttfamily public Game.\+States.\+In\+Game\+Menu\+State.\+In\+Game\+Menu\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construcor ce initializeaza un nou manager de obiecte grafice, si adaugat butoane pentru restar, continuare joc, help\&setting, salvare progres si iesire joc. 
+
+Adaugare Buton de continuare, daca numarul de inamici este 0 atunci, jocul va incarca nivelul urmator, altfel va continua de unde a ramas
+
+Adaugare buton de resetare nivel, reseteaza nivelul conform nivelului curent, daca nivelul curent este 2, detaliile caracterului vor fi aceleasi ca si dupa terminarea nivelului recent
+
+Adaugare buton de setari care face tranzitia catre starea de help\&settings
+
+Adaugare buton de salvare lume, se incarca in baza de date detaliile curente legate de caracter, inamici si lume
+
+Adaugare buton de iesire
+
+Adaugare buton de orpire muzica
+
+Adaugare buton de pornire muzica
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_in_game_menu_state_a8439ac72a1951400a8c0bbb6e08b6d60}\label{class_game_1_1_states_1_1_in_game_menu_state_a8439ac72a1951400a8c0bbb6e08b6d60}} 
+\index{Game.States.InGameMenuState@{Game.States.InGameMenuState}!getUiManager@{getUiManager}}
+\index{getUiManager@{getUiManager}!Game.States.InGameMenuState@{Game.States.InGameMenuState}}
+\doxysubsubsection{\texorpdfstring{getUiManager()}{getUiManager()}}
+{\footnotesize\ttfamily protected \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+States.\+In\+Game\+Menu\+State.\+get\+Ui\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returneaza managerul de obiecte grafice. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_abfc8068193a8dcdd75e44810ca9fc3d5}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_in_game_menu_state_a70afcd76297e68c0f13add73ae9f45b7}\label{class_game_1_1_states_1_1_in_game_menu_state_a70afcd76297e68c0f13add73ae9f45b7}} 
+\index{Game.States.InGameMenuState@{Game.States.InGameMenuState}!render@{render}}
+\index{render@{render}!Game.States.InGameMenuState@{Game.States.InGameMenuState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+States.\+In\+Game\+Menu\+State.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Randeaza starea obiectelor grafice daca flagul is\+Active este setat. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a93d159a044a807b185df7536110e2083}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_in_game_menu_state_a6b3951e82038471e9da4e7a265cbbf0c}\label{class_game_1_1_states_1_1_in_game_menu_state_a6b3951e82038471e9da4e7a265cbbf0c}} 
+\index{Game.States.InGameMenuState@{Game.States.InGameMenuState}!update@{update}}
+\index{update@{update}!Game.States.InGameMenuState@{Game.States.InGameMenuState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+States.\+In\+Game\+Menu\+State.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualizare stare daca jocul conform flag-\/ului is\+Active. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a806187e704eb1159230a410d0b31645b}{Game.\+States.\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_in_game_menu_state_aac4ee4e1769d5f1d2e28ee9e65994af6}\label{class_game_1_1_states_1_1_in_game_menu_state_aac4ee4e1769d5f1d2e28ee9e65994af6}} 
+\index{Game.States.InGameMenuState@{Game.States.InGameMenuState}!uiManager@{uiManager}}
+\index{uiManager@{uiManager}!Game.States.InGameMenuState@{Game.States.InGameMenuState}}
+\doxysubsubsection{\texorpdfstring{uiManager}{uiManager}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+States.\+In\+Game\+Menu\+State.\+ui\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta manager de obiecte grafice 

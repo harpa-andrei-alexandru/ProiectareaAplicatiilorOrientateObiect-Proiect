@@ -1,0 +1,212 @@
+\hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy}{}\doxysection{Game.\+Entities.\+Creatures.\+Enemy Class Reference}
+\label{class_game_1_1_entities_1_1_creatures_1_1_enemy}\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+Inheritance diagram for Game.\+Entities.\+Creatures.\+Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_1_1_entities_1_1_creatures_1_1_enemy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_adf8aa980e211c159d4a10056fc00e6af}{Enemy}} (float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}{x}}, float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}{y}})
+\begin{DoxyCompactList}\small\item\em Constructorul initializeaza animatiile inamicului si aria de vizibilitate, si seteaza nivelul si viata. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_a2e24057805e496aa31e0c98366f90ec6}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a da update animatiilor si a pozitiei. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_a0181efc03f21e2e8833faf90f36d15b5}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a desena pe harta inamicul cu ajutorul contextului grafic g. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_afed7d55da0993840f62ea86af192e81f}{die}} ()
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_aedf548a3bcaeb18cc1432361cab3b9a0}{get\+Creature\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza nivelul inamicului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_ac7fa32eb775ae2d177208a63cb20be3c}{get\+Input}} ()
+\begin{DoxyCompactList}\small\item\em Metda are rolul de a actualiza directia si viteza de miscare a inamicului, si de a ataca player-\/ul. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_a3e415671b199917b598ccfc15534cd42}{attack}} (\mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} entity)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a implementa actiunea de atac. \end{DoxyCompactList}\item 
+Buffered\+Image \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_a4a1a985ac2b8e5cb7eeb4ed45812a331}{get\+Current\+Animation\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Metoda returneaza frame-\/ul actual tinand cont de directia de miscare, de atac sau repaus. \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_a98f701f65544a7e6e21fe4af01642270}{get\+Visibility\+Bounds}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza un Rectangle ce reprezinta aria de vizibilitate a inamicului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Rectangle \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_abafb0d70731c82376895f4f8f9f2d635}{visibility}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_afbd464db6daee74100bb89b73826937d}{attacking}} = false
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_aa74265108350284161fe71c5743c0a8e}{enemy\+Health}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_adf8aa980e211c159d4a10056fc00e6af}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_adf8aa980e211c159d4a10056fc00e6af}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily public Game.\+Entities.\+Creatures.\+Enemy.\+Enemy (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul initializeaza animatiile inamicului si aria de vizibilitate, si seteaza nivelul si viata. 
+
+Apelare constructor clasa de baza
+
+Initializare arie de vizibilitate
+
+Initializare animatii de repaus
+
+Initializare animatii pentru miscarea inamicului
+
+Initializare animatii pentru atac
+
+Setare viata si nivelul inamicului
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_a3e415671b199917b598ccfc15534cd42}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_a3e415671b199917b598ccfc15534cd42}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!attack@{attack}}
+\index{attack@{attack}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily private void Game.\+Entities.\+Creatures.\+Enemy.\+attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Metoda are rolul de a implementa actiunea de atac. 
+
+variabila attack\+Timer este incrementata cu cantitatea de timp calculata ca diferenta intre momentul actual si momentul de timp in care a avut loc ultimul atac
+
+last\+Attack\+Timer este setat cu momentul de timp actual
+
+daca cantitatea de timp de cand a atacat inamicul si pana in momentul actula este mai mic decat attack\+Cooldown, inamicul nu va ataca
+
+se da play la sunetul pentru tragerea cu arcul
+
+attack\+Timer este setat pe 0\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_afed7d55da0993840f62ea86af192e81f}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_afed7d55da0993840f62ea86af192e81f}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!die@{die}}
+\index{die@{die}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Creatures.\+Enemy.\+die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}breif Metoda care se ocupa cu actiunea de moarte a entitatii 
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_aef103d2cd8b5bc62625a729acf9809de}{Game.\+Entities.\+Entity}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_aedf548a3bcaeb18cc1432361cab3b9a0}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_aedf548a3bcaeb18cc1432361cab3b9a0}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!getCreatureLevel@{getCreatureLevel}}
+\index{getCreatureLevel@{getCreatureLevel}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{getCreatureLevel()}{getCreatureLevel()}}
+{\footnotesize\ttfamily public int Game.\+Entities.\+Creatures.\+Enemy.\+get\+Creature\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza nivelul inamicului. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_a4a1a985ac2b8e5cb7eeb4ed45812a331}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_a4a1a985ac2b8e5cb7eeb4ed45812a331}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!getCurrentAnimationFrame@{getCurrentAnimationFrame}}
+\index{getCurrentAnimationFrame@{getCurrentAnimationFrame}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{getCurrentAnimationFrame()}{getCurrentAnimationFrame()}}
+{\footnotesize\ttfamily private Buffered\+Image Game.\+Entities.\+Creatures.\+Enemy.\+get\+Current\+Animation\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Metoda returneaza frame-\/ul actual tinand cont de directia de miscare, de atac sau repaus. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_ac7fa32eb775ae2d177208a63cb20be3c}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_ac7fa32eb775ae2d177208a63cb20be3c}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!getInput@{getInput}}
+\index{getInput@{getInput}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily private void Game.\+Entities.\+Creatures.\+Enemy.\+get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Metda are rolul de a actualiza directia si viteza de miscare a inamicului, si de a ataca player-\/ul. 
+
+Iteram prin vectorul de entitati
+
+Daca entitatea este de tip \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}}
+
+Daca exista coliziune intre aria de vizibilitate a inamicului si \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}}, sau inamicul este atacat, inamicul isi actualizeaza pozitia
+
+Daca coordonata x a inamicului este mai mica decat coordonata x a Player-\/ului, atunci se actualizeaza directia inamicului(4) si numarul de pixeli cu care se va de plasa pe axa x
+
+Daca coordonata x a inamicului este mai mare decat coordonata x a Player-\/ului, atunci se actualizeaza directia inamicului(2) si numarul de pixeli cu care se va de plasa pe axa x
+
+Daca coordonata y a inamicului este mai mare decat coordonata y a Player-\/ului, atunci se actualizeaza directia inamicului(1) si numarul de pixeli cu care se va de plasa pe axa y
+
+Daca coordonata y a inamicului este mai mica decat coordonata y a Player-\/ului, atunci se actualizeaza directia inamicului(3) si numarul de pixeli cu care se va de plasa pe axa y
+
+Inamicul ataca jucatorul\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_a98f701f65544a7e6e21fe4af01642270}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_a98f701f65544a7e6e21fe4af01642270}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!getVisibilityBounds@{getVisibilityBounds}}
+\index{getVisibilityBounds@{getVisibilityBounds}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{getVisibilityBounds()}{getVisibilityBounds()}}
+{\footnotesize\ttfamily private Rectangle Game.\+Entities.\+Creatures.\+Enemy.\+get\+Visibility\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Returneaza un Rectangle ce reprezinta aria de vizibilitate a inamicului. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_a0181efc03f21e2e8833faf90f36d15b5}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_a0181efc03f21e2e8833faf90f36d15b5}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!render@{render}}
+\index{render@{render}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Creatures.\+Enemy.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a desena pe harta inamicul cu ajutorul contextului grafic g. 
+
+desenare inamic
+
+setare culoare a contextului grafic
+
+desenare baza de viata a inamicului
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a6e99f512cf2778fe29bbecde574c1d7c}{Game.\+Entities.\+Entity}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_a2e24057805e496aa31e0c98366f90ec6}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_a2e24057805e496aa31e0c98366f90ec6}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!update@{update}}
+\index{update@{update}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Creatures.\+Enemy.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a da update animatiilor si a pozitiei. 
+
+update animatii de repaus
+
+update animatii de miscare
+
+update animatii de atac
+
+preluare inputuri
+
+actualizare pozitie
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a72ba04b1066282586ccaa625396d5cf0}{Game.\+Entities.\+Entity}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_afbd464db6daee74100bb89b73826937d}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_afbd464db6daee74100bb89b73826937d}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!attacking@{attacking}}
+\index{attacking@{attacking}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{attacking}{attacking}}
+{\footnotesize\ttfamily boolean Game.\+Entities.\+Creatures.\+Enemy.\+attacking = false\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag care tine evidenta atacului \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_aa74265108350284161fe71c5743c0a8e}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_aa74265108350284161fe71c5743c0a8e}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!enemyHealth@{enemyHealth}}
+\index{enemyHealth@{enemyHealth}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{enemyHealth}{enemyHealth}}
+{\footnotesize\ttfamily int Game.\+Entities.\+Creatures.\+Enemy.\+enemy\+Health\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila care retine cantitatea de viata a inamicului \mbox{\Hypertarget{class_game_1_1_entities_1_1_creatures_1_1_enemy_abafb0d70731c82376895f4f8f9f2d635}\label{class_game_1_1_entities_1_1_creatures_1_1_enemy_abafb0d70731c82376895f4f8f9f2d635}} 
+\index{Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}!visibility@{visibility}}
+\index{visibility@{visibility}!Game.Entities.Creatures.Enemy@{Game.Entities.Creatures.Enemy}}
+\doxysubsubsection{\texorpdfstring{visibility}{visibility}}
+{\footnotesize\ttfamily final Rectangle Game.\+Entities.\+Creatures.\+Enemy.\+visibility\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre Rectangle, reprezinta aria de vizibilitate a inamicului 

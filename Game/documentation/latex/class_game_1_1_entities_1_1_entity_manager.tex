@@ -1,0 +1,164 @@
+\hypertarget{class_game_1_1_entities_1_1_entity_manager}{}\doxysection{Game.\+Entities.\+Entity\+Manager Class Reference}
+\label{class_game_1_1_entities_1_1_entity_manager}\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+
+
+Clasa se ocupa cu managementul tuturor entitatilor in ceea ce priveste actiune de update si randare.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a2dc7596df0c433fc9e7ab799f6cde96e}{Entity\+Manager}} (\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}} \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_adae1301481f9e45ae64bea5f7b97cfbd}{player}})
+\begin{DoxyCompactList}\small\item\em Constructor care creaza tabloul de entitati, jucatorul si numarul de inamici. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a29d2e3b5210640c10fe69c59c389b54f}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda itereaza prin tabloul de entitati si apeleaza metoda de update a fiecarei entitati. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a2e7ab47edd05a8f76710bd43275ca599}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a itera prin tabloul de entitati si de a apela metoda de randare a fiecarei entitati. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a0eb772218061d784a45d1e84c24b1389}{add\+Entity}} (\mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} e)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a adauga in tabloul de entitati entitatea trimisa ca si argument. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}} \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a0910fbc4d07753d99a77cff4e15c9123}{get\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza referinta catre Player. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a481d5e96dd6f39acc70c5d86c842d25f}{get\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza tabloul cu entitati. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a59b5fe96fd5190a77f8f5534dbc3af40}{get\+Number\+Of\+Enemies}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza numarul de inamici. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}} \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_adae1301481f9e45ae64bea5f7b97cfbd}{player}}
+\item 
+final Array\+List$<$ \mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a6cb628e6b4816277aef041df545959fd}{entities}}
+\item 
+final Comparator$<$ \mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a396fc4a4fb9b08aa218c587d7bac1b45}{render\+Sorter}} = (entity, entity2) -\/$>$ Float.\+compare(entity.\+getY() + entity.\+get\+Height(), entity2.\+getY() + entity2.\+get\+Height())
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager_a27bae62463884df63d3df7e5bc053999}{number\+Of\+Enemies}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa se ocupa cu managementul tuturor entitatilor in ceea ce priveste actiune de update si randare. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a2dc7596df0c433fc9e7ab799f6cde96e}\label{class_game_1_1_entities_1_1_entity_manager_a2dc7596df0c433fc9e7ab799f6cde96e}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!EntityManager@{EntityManager}}
+\index{EntityManager@{EntityManager}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{EntityManager()}{EntityManager()}}
+{\footnotesize\ttfamily public Game.\+Entities.\+Entity\+Manager.\+Entity\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor care creaza tabloul de entitati, jucatorul si numarul de inamici. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a0eb772218061d784a45d1e84c24b1389}\label{class_game_1_1_entities_1_1_entity_manager_a0eb772218061d784a45d1e84c24b1389}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity\+Manager.\+add\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a adauga in tabloul de entitati entitatea trimisa ca si argument. 
+
+Daca entitatea este de tip Enemy, atunci numarul de inamici va fi incrementat cu 1\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a481d5e96dd6f39acc70c5d86c842d25f}\label{class_game_1_1_entities_1_1_entity_manager_a481d5e96dd6f39acc70c5d86c842d25f}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily public Array\+List$<$ \mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} $>$ Game.\+Entities.\+Entity\+Manager.\+get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza tabloul cu entitati. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a59b5fe96fd5190a77f8f5534dbc3af40}\label{class_game_1_1_entities_1_1_entity_manager_a59b5fe96fd5190a77f8f5534dbc3af40}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!getNumberOfEnemies@{getNumberOfEnemies}}
+\index{getNumberOfEnemies@{getNumberOfEnemies}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{getNumberOfEnemies()}{getNumberOfEnemies()}}
+{\footnotesize\ttfamily public int Game.\+Entities.\+Entity\+Manager.\+get\+Number\+Of\+Enemies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza numarul de inamici. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a0910fbc4d07753d99a77cff4e15c9123}\label{class_game_1_1_entities_1_1_entity_manager_a0910fbc4d07753d99a77cff4e15c9123}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{getPlayer()}{getPlayer()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}} Game.\+Entities.\+Entity\+Manager.\+get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza referinta catre Player. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a2e7ab47edd05a8f76710bd43275ca599}\label{class_game_1_1_entities_1_1_entity_manager_a2e7ab47edd05a8f76710bd43275ca599}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!render@{render}}
+\index{render@{render}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity\+Manager.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a itera prin tabloul de entitati si de a apela metoda de randare a fiecarei entitati. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a29d2e3b5210640c10fe69c59c389b54f}\label{class_game_1_1_entities_1_1_entity_manager_a29d2e3b5210640c10fe69c59c389b54f}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!update@{update}}
+\index{update@{update}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity\+Manager.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda itereaza prin tabloul de entitati si apeleaza metoda de update a fiecarei entitati. 
+
+Cream un interator pentru a putea parcurge vectorul cu entitati
+
+temp\+Entity stocheaza entitatea actuala a iterarii prin tablou
+
+apelam metoda de update a entitatii
+
+Verificam daca entitatea nu este activa
+
+Daca entitatea este un inamic
+
+scadem numarul de inamici
+
+jucatorul va primi 20 de experienta
+
+daca viata jucatorului este maxima, atunci va primi un scor de 20 pentru unciderea inamicului
+
+altfel, va primi un scor de 15 puncte
+
+pentru uciderea inamicului, jucatorul primeste 20 de puncte de viata
+
+scoatem entitatea din tabloul de entitati
+
+Apealm metoda de sortare care va hotara ordinea randarii entitatilr
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a6cb628e6b4816277aef041df545959fd}\label{class_game_1_1_entities_1_1_entity_manager_a6cb628e6b4816277aef041df545959fd}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!entities@{entities}}
+\index{entities@{entities}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{entities}{entities}}
+{\footnotesize\ttfamily final Array\+List$<$\mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}}$>$ Game.\+Entities.\+Entity\+Manager.\+entities\hspace{0.3cm}{\ttfamily [private]}}
+
+Vector cu entitati \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a27bae62463884df63d3df7e5bc053999}\label{class_game_1_1_entities_1_1_entity_manager_a27bae62463884df63d3df7e5bc053999}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!numberOfEnemies@{numberOfEnemies}}
+\index{numberOfEnemies@{numberOfEnemies}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{numberOfEnemies}{numberOfEnemies}}
+{\footnotesize\ttfamily int Game.\+Entities.\+Entity\+Manager.\+number\+Of\+Enemies\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila ce tine evidenta numarului de inamici activi \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_adae1301481f9e45ae64bea5f7b97cfbd}\label{class_game_1_1_entities_1_1_entity_manager_adae1301481f9e45ae64bea5f7b97cfbd}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!player@{player}}
+\index{player@{player}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}} Game.\+Entities.\+Entity\+Manager.\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre Player \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_manager_a396fc4a4fb9b08aa218c587d7bac1b45}\label{class_game_1_1_entities_1_1_entity_manager_a396fc4a4fb9b08aa218c587d7bac1b45}} 
+\index{Game.Entities.EntityManager@{Game.Entities.EntityManager}!renderSorter@{renderSorter}}
+\index{renderSorter@{renderSorter}!Game.Entities.EntityManager@{Game.Entities.EntityManager}}
+\doxysubsubsection{\texorpdfstring{renderSorter}{renderSorter}}
+{\footnotesize\ttfamily final Comparator$<$\mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}}$>$ Game.\+Entities.\+Entity\+Manager.\+render\+Sorter = (entity, entity2) -\/$>$ Float.\+compare(entity.\+getY() + entity.\+get\+Height(), entity2.\+getY() + entity2.\+get\+Height())\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre un comparator 

@@ -1,0 +1,236 @@
+\hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile}{}\doxysection{Game.\+Entities.\+Projectiles.\+Projectile Class Reference}
+\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile}\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+
+
+Clasa mosteneste \mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} si are rolul de a implementa proiectilele.  
+
+
+Inheritance diagram for Game.\+Entities.\+Projectiles.\+Projectile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_entities_1_1_projectiles_1_1_projectile}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a65f2bfcd20e17f789397004377db44aa}{Projectile}} (\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature}{Creature}} \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a2bed13149a5ea7550d668192df98b80c}{creature}}, Projectile\+Type \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a08c9f954cf4ceec205a71cb1afb3ba49}{projectile\+Type}}, int creature\+Level)
+\begin{DoxyCompactList}\small\item\em Constructorul are rolul de a crea proiectilul si de a-\/i seta caracteristicile generale(damage, directie, viteza de deplasare) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a12bba2fb4236463dba71d33bd001f8e3}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a da update proiectilului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_afc53a242dcc92ddc0726391430385d75}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a randa proiectilul cu ajutorul contextului grafic g. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_ae1cb688dec5b17bf3098096df1d3cc82}{die}} ()
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a57b90917f6ed5b228e098386a36473c0}{check\+Entity\+Collisions}} (float x\+Offset, float y\+Offset)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a verifica daca proiectilul intra in coliziune cu alte entitati. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a9075d6b312497d107723dc74cc7bd56d}{moveX}} ()
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a actualiza coordonata x a proiectilului, verificand si daca acesta se afla in coliziune cu tile-\/uri de land. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_affe0b18fafd5584a83741a08ab28beb4}{moveY}} ()
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a actualiza coordonata y a proiectilului, verificand si daca acesta se afla in coliziune cu tile-\/uri de land. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a7daa2e69bda3d267165ee99402c65511}{move}} ()
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a actualiza pozitia proiectilului, apeland metodele \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a9075d6b312497d107723dc74cc7bd56d}{move\+X()}} si \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_affe0b18fafd5584a83741a08ab28beb4}{move\+Y()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_aac1216497b04abac76f81285f88043b1}{collision\+With\+Tile}} (int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}{x}}, int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}{y}})
+\begin{DoxyCompactList}\small\item\em Metoda returneaza flag-\/ul solid a tile-\/ului de la pozitia x si y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_ac84b1f18663a289f465e989a578f2629}{direction}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_af3ef8f5dff02a380f7692615c2b5e5c2}{x\+Move}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a385824219c509f0d1c49b55ce8dd7660}{y\+Move}}
+\item 
+final float \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a71696e2f53e3377daa326e7b4500f0fa}{damage}}
+\item 
+final \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature}{Creature}} \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a2bed13149a5ea7550d668192df98b80c}{creature}}
+\item 
+Buffered\+Image \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_acf8878aeaabe03d74ec69482d3c61e57}{current\+Direction}}
+\item 
+final Projectile\+Type \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a08c9f954cf4ceec205a71cb1afb3ba49}{projectile\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clasa mosteneste \mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} si are rolul de a implementa proiectilele. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a65f2bfcd20e17f789397004377db44aa}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a65f2bfcd20e17f789397004377db44aa}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!Projectile@{Projectile}}
+\index{Projectile@{Projectile}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{Projectile()}{Projectile()}}
+{\footnotesize\ttfamily public Game.\+Entities.\+Projectiles.\+Projectile.\+Projectile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature}{Creature}}}]{creature,  }\item[{Projectile\+Type}]{projectile\+Type,  }\item[{int}]{creature\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul are rolul de a crea proiectilul si de a-\/i seta caracteristicile generale(damage, directie, viteza de deplasare) 
+
+Apelare constructor clasa de baza
+
+Setare damage corespunzator nivelului creaturii
+
+Setare viteza de deplasare
+
+Setare x\+Move pe 0 Setare y\+Move pe 0
+
+Setarea directiei proiectilului conform directiei creaturii care a lansat proiectilul
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a57b90917f6ed5b228e098386a36473c0}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a57b90917f6ed5b228e098386a36473c0}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!checkEntityCollisions@{checkEntityCollisions}}
+\index{checkEntityCollisions@{checkEntityCollisions}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{checkEntityCollisions()}{checkEntityCollisions()}}
+{\footnotesize\ttfamily public boolean Game.\+Entities.\+Projectiles.\+Projectile.\+check\+Entity\+Collisions (\begin{DoxyParamCaption}\item[{float}]{x\+Offset,  }\item[{float}]{y\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a verifica daca proiectilul intra in coliziune cu alte entitati. 
+
+Iteram prim tabloul de proiectile
+
+Daca exista coliziune cu un alt proiectil, flagul active este setat pe false
+
+Iteram prim tabloul de entitati
+
+Daca proiectilul intra in colizune cu o entitate, apelam metoda de hurt a entitatii cu cantitatea de daune a proiectilului
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a65173b00e7e46f842ffefbe87de04d1f}{Game.\+Entities.\+Entity}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_aac1216497b04abac76f81285f88043b1}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_aac1216497b04abac76f81285f88043b1}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!collisionWithTile@{collisionWithTile}}
+\index{collisionWithTile@{collisionWithTile}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{collisionWithTile()}{collisionWithTile()}}
+{\footnotesize\ttfamily protected boolean Game.\+Entities.\+Projectiles.\+Projectile.\+collision\+With\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Metoda returneaza flag-\/ul solid a tile-\/ului de la pozitia x si y. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_ae1cb688dec5b17bf3098096df1d3cc82}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_ae1cb688dec5b17bf3098096df1d3cc82}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!die@{die}}
+\index{die@{die}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Projectiles.\+Projectile.\+die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}breif Metoda care se ocupa cu actiunea de moarte a entitatii 
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_aef103d2cd8b5bc62625a729acf9809de}{Game.\+Entities.\+Entity}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a7daa2e69bda3d267165ee99402c65511}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a7daa2e69bda3d267165ee99402c65511}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!move@{move}}
+\index{move@{move}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Projectiles.\+Projectile.\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a actualiza pozitia proiectilului, apeland metodele \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a9075d6b312497d107723dc74cc7bd56d}{move\+X()}} si \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_affe0b18fafd5584a83741a08ab28beb4}{move\+Y()}} 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a9075d6b312497d107723dc74cc7bd56d}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a9075d6b312497d107723dc74cc7bd56d}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!moveX@{moveX}}
+\index{moveX@{moveX}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{moveX()}{moveX()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Projectiles.\+Projectile.\+moveX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a actualiza coordonata x a proiectilului, verificand si daca acesta se afla in coliziune cu tile-\/uri de land. 
+
+Daca x\+Move este mai mare decat 0, verificam daca la coordonata la care se va misca proiectilul exista sau nu coliziune
+
+Calculam coordonata x la care trebuie sa se miste proiectilul
+
+Daca nu exista colizune, atunci coordonata x a proiectilului este incrementata cu x\+Move
+
+Altfel, daca exista coliziune, atunci flagul active este setat pe false
+
+Pentru x\+Move negativ se procedeaza la fel\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_affe0b18fafd5584a83741a08ab28beb4}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_affe0b18fafd5584a83741a08ab28beb4}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!moveY@{moveY}}
+\index{moveY@{moveY}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{moveY()}{moveY()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Projectiles.\+Projectile.\+moveY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a actualiza coordonata y a proiectilului, verificand si daca acesta se afla in coliziune cu tile-\/uri de land. 
+
+Logica si verificarile sunt la fel ca si pentru moveX\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_afc53a242dcc92ddc0726391430385d75}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_afc53a242dcc92ddc0726391430385d75}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!render@{render}}
+\index{render@{render}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Projectiles.\+Projectile.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a randa proiectilul cu ajutorul contextului grafic g. 
+
+Conform directiei, se va hotara si dimensiunile ariei de coliziunea
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a6e99f512cf2778fe29bbecde574c1d7c}{Game.\+Entities.\+Entity}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a12bba2fb4236463dba71d33bd001f8e3}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a12bba2fb4236463dba71d33bd001f8e3}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!update@{update}}
+\index{update@{update}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Projectiles.\+Projectile.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a da update proiectilului. 
+
+Daca este activ, atunci proiectilul se va misca
+
+Daca exista coliziune cu entitati, atunci proiectilul va disparea, flag-\/ul active se seteaza pe false
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a72ba04b1066282586ccaa625396d5cf0}{Game.\+Entities.\+Entity}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a2bed13149a5ea7550d668192df98b80c}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a2bed13149a5ea7550d668192df98b80c}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!creature@{creature}}
+\index{creature@{creature}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{creature}{creature}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature}{Creature}} Game.\+Entities.\+Projectiles.\+Projectile.\+creature\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre Creature, proiectilul va fi detinut de catre o creatura \mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_acf8878aeaabe03d74ec69482d3c61e57}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_acf8878aeaabe03d74ec69482d3c61e57}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!currentDirection@{currentDirection}}
+\index{currentDirection@{currentDirection}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{currentDirection}{currentDirection}}
+{\footnotesize\ttfamily Buffered\+Image Game.\+Entities.\+Projectiles.\+Projectile.\+current\+Direction\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre un Buffered\+Image \mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a71696e2f53e3377daa326e7b4500f0fa}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a71696e2f53e3377daa326e7b4500f0fa}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!damage@{damage}}
+\index{damage@{damage}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily final float Game.\+Entities.\+Projectiles.\+Projectile.\+damage\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila ce retine cantitatea de daune pe care le va realiza proiectilul asupra entitatilor \mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_ac84b1f18663a289f465e989a578f2629}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_ac84b1f18663a289f465e989a578f2629}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!direction@{direction}}
+\index{direction@{direction}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily int Game.\+Entities.\+Projectiles.\+Projectile.\+direction\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila ce retine directia proiectilului \mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a08c9f954cf4ceec205a71cb1afb3ba49}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a08c9f954cf4ceec205a71cb1afb3ba49}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!projectileType@{projectileType}}
+\index{projectileType@{projectileType}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{projectileType}{projectileType}}
+{\footnotesize\ttfamily final Projectile\+Type Game.\+Entities.\+Projectiles.\+Projectile.\+projectile\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+Constanta ce retine tipul proiectilului \mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_af3ef8f5dff02a380f7692615c2b5e5c2}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_af3ef8f5dff02a380f7692615c2b5e5c2}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!xMove@{xMove}}
+\index{xMove@{xMove}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{xMove}{xMove}}
+{\footnotesize\ttfamily float Game.\+Entities.\+Projectiles.\+Projectile.\+x\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila ce retine numarul de pixeli cu care se va misca proiectilul pe axa x \mbox{\Hypertarget{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a385824219c509f0d1c49b55ce8dd7660}\label{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a385824219c509f0d1c49b55ce8dd7660}} 
+\index{Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}!yMove@{yMove}}
+\index{yMove@{yMove}!Game.Entities.Projectiles.Projectile@{Game.Entities.Projectiles.Projectile}}
+\doxysubsubsection{\texorpdfstring{yMove}{yMove}}
+{\footnotesize\ttfamily float Game.\+Entities.\+Projectiles.\+Projectile.\+y\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila ce retine numarul de pixeli cu care se va misca proiectilul pe axa y 

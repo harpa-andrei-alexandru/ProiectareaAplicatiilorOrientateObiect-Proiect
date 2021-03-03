@@ -1,0 +1,33 @@
+\hypertarget{class_game_1_1_graphics_1_1_image_loader}{}\doxysection{Game.\+Graphics.\+Image\+Loader Class Reference}
+\label{class_game_1_1_graphics_1_1_image_loader}\index{Game.Graphics.ImageLoader@{Game.Graphics.ImageLoader}}
+
+
+Clasa are rolul de a incarca un panou cu imagini.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Buffered\+Image \mbox{\hyperlink{class_game_1_1_graphics_1_1_image_loader_a7a01847b7ea5856591dad5e2553796b6}{load\+Image}} (String path)
+\begin{DoxyCompactList}\small\item\em Metoda statica care citeste/ incarca o imagine de la locatia data de catre path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa are rolul de a incarca un panou cu imagini. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_image_loader_a7a01847b7ea5856591dad5e2553796b6}\label{class_game_1_1_graphics_1_1_image_loader_a7a01847b7ea5856591dad5e2553796b6}} 
+\index{Game.Graphics.ImageLoader@{Game.Graphics.ImageLoader}!loadImage@{loadImage}}
+\index{loadImage@{loadImage}!Game.Graphics.ImageLoader@{Game.Graphics.ImageLoader}}
+\doxysubsubsection{\texorpdfstring{loadImage()}{loadImage()}}
+{\footnotesize\ttfamily public static Buffered\+Image Game.\+Graphics.\+Image\+Loader.\+load\+Image (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Metoda statica care citeste/ incarca o imagine de la locatia data de catre path. 
+
+Aceasta operatie este inclusa intr-\/ul block try-\/ cath in cazul in care la locatia data de path nu exista o imagine de incarcat
+
+Returneaza imaginea citita daca nu apare exceptie
+
+Exceptia aruncata este de tipui I\+O\+Exception, iar in catch afisam mesajul exceptiei si apelam System.\+exit() pentru a iesi din program

@@ -1,0 +1,112 @@
+\hypertarget{class_game_1_1_graphics_1_1_animation}{}\doxysection{Game.\+Graphics.\+Animation Class Reference}
+\label{class_game_1_1_graphics_1_1_animation}\index{Game.Graphics.Animation@{Game.Graphics.Animation}}
+
+
+Clasa are rolul de a se ocupa cu animatiile entitatilor.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_ad221c63c7588d9394e337e1c7d1728fa}{Animation}} (int \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_a86cb24eec1c5767cc3fa2a850b382627}{cooldown}}, Buffered\+Image\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_ac963cb6d7027c10dbbf2d4221a639772}{frames}})
+\begin{DoxyCompactList}\small\item\em Constructor ce are rolul de a initializa variabilele cooldown, si frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_aaee9e6e46014d2df00a47a96a7be8305}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda de update care se ocupa cu acualizarea index-\/ului frame-\/ului ce trebuie randat. \end{DoxyCompactList}\item 
+Buffered\+Image \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_ae8838eda4b9ab4b82548e52e37ffb8ea}{get\+Current\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ce returneaza frame-\/ul actual corespunzator index-\/ului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_a86cb24eec1c5767cc3fa2a850b382627}{cooldown}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_ac3230f84652acde7813f1897331f7620}{index}}
+\item 
+long \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_a5029ed628bb41f79aaa76935ca4e46dd}{last\+Time}}
+\item 
+long \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_a40a65f9619d4f241f4e751d164b067a4}{timer}}
+\item 
+final Buffered\+Image\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_game_1_1_graphics_1_1_animation_ac963cb6d7027c10dbbf2d4221a639772}{frames}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa are rolul de a se ocupa cu animatiile entitatilor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_animation_ad221c63c7588d9394e337e1c7d1728fa}\label{class_game_1_1_graphics_1_1_animation_ad221c63c7588d9394e337e1c7d1728fa}} 
+\index{Game.Graphics.Animation@{Game.Graphics.Animation}!Animation@{Animation}}
+\index{Animation@{Animation}!Game.Graphics.Animation@{Game.Graphics.Animation}}
+\doxysubsubsection{\texorpdfstring{Animation()}{Animation()}}
+{\footnotesize\ttfamily public Game.\+Graphics.\+Animation.\+Animation (\begin{DoxyParamCaption}\item[{int}]{cooldown,  }\item[{Buffered\+Image\mbox{[}$\,$\mbox{]}}]{frames }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor ce are rolul de a initializa variabilele cooldown, si frames. 
+
+indexul este setat pe 0
+
+timer-\/ul este setat pe 0
+
+last\+Time este initializat cu momentul de timp actual
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_animation_ae8838eda4b9ab4b82548e52e37ffb8ea}\label{class_game_1_1_graphics_1_1_animation_ae8838eda4b9ab4b82548e52e37ffb8ea}} 
+\index{Game.Graphics.Animation@{Game.Graphics.Animation}!getCurrentFrame@{getCurrentFrame}}
+\index{getCurrentFrame@{getCurrentFrame}!Game.Graphics.Animation@{Game.Graphics.Animation}}
+\doxysubsubsection{\texorpdfstring{getCurrentFrame()}{getCurrentFrame()}}
+{\footnotesize\ttfamily public Buffered\+Image Game.\+Graphics.\+Animation.\+get\+Current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ce returneaza frame-\/ul actual corespunzator index-\/ului. 
+
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_animation_aaee9e6e46014d2df00a47a96a7be8305}\label{class_game_1_1_graphics_1_1_animation_aaee9e6e46014d2df00a47a96a7be8305}} 
+\index{Game.Graphics.Animation@{Game.Graphics.Animation}!update@{update}}
+\index{update@{update}!Game.Graphics.Animation@{Game.Graphics.Animation}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+Graphics.\+Animation.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda de update care se ocupa cu acualizarea index-\/ului frame-\/ului ce trebuie randat. 
+
+timer este incrementat cu o cantitate de timp egala cu diferenta dintre momentul actual de timp si momementul in care a fost randat prima data frame-\/ul actual
+
+last\+Time este actualizat la momentul actual de timp
+
+Daca cantitatea de timp pentru care a fost randat frame-\/ul actual este mai mare decat timpul de asteptare pentru randarea urmatorului frame , indexul este incrementat, iar timer este resetat pe 0
+
+Daca index-\/ul este mai mare de cat numarul de frame-\/uri pentru animatie, atunci acesta este resetat pe 0 astfel, animatia o va lua de la inceput
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_animation_a86cb24eec1c5767cc3fa2a850b382627}\label{class_game_1_1_graphics_1_1_animation_a86cb24eec1c5767cc3fa2a850b382627}} 
+\index{Game.Graphics.Animation@{Game.Graphics.Animation}!cooldown@{cooldown}}
+\index{cooldown@{cooldown}!Game.Graphics.Animation@{Game.Graphics.Animation}}
+\doxysubsubsection{\texorpdfstring{cooldown}{cooldown}}
+{\footnotesize\ttfamily final int Game.\+Graphics.\+Animation.\+cooldown\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila in care stocheaza timpul pentru care va fi randat un anumit frame al animatiei \mbox{\Hypertarget{class_game_1_1_graphics_1_1_animation_ac963cb6d7027c10dbbf2d4221a639772}\label{class_game_1_1_graphics_1_1_animation_ac963cb6d7027c10dbbf2d4221a639772}} 
+\index{Game.Graphics.Animation@{Game.Graphics.Animation}!frames@{frames}}
+\index{frames@{frames}!Game.Graphics.Animation@{Game.Graphics.Animation}}
+\doxysubsubsection{\texorpdfstring{frames}{frames}}
+{\footnotesize\ttfamily final Buffered\+Image \mbox{[}$\,$\mbox{]} Game.\+Graphics.\+Animation.\+frames\hspace{0.3cm}{\ttfamily [private]}}
+
+Tablou de Buffered\+Image in care se retine frame-\/urile animatie \mbox{\Hypertarget{class_game_1_1_graphics_1_1_animation_ac3230f84652acde7813f1897331f7620}\label{class_game_1_1_graphics_1_1_animation_ac3230f84652acde7813f1897331f7620}} 
+\index{Game.Graphics.Animation@{Game.Graphics.Animation}!index@{index}}
+\index{index@{index}!Game.Graphics.Animation@{Game.Graphics.Animation}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily int Game.\+Graphics.\+Animation.\+index\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila in care se stocheaza index-\/ul frame-\/ului animatiei ce urmeaza a fi randat \mbox{\Hypertarget{class_game_1_1_graphics_1_1_animation_a5029ed628bb41f79aaa76935ca4e46dd}\label{class_game_1_1_graphics_1_1_animation_a5029ed628bb41f79aaa76935ca4e46dd}} 
+\index{Game.Graphics.Animation@{Game.Graphics.Animation}!lastTime@{lastTime}}
+\index{lastTime@{lastTime}!Game.Graphics.Animation@{Game.Graphics.Animation}}
+\doxysubsubsection{\texorpdfstring{lastTime}{lastTime}}
+{\footnotesize\ttfamily long Game.\+Graphics.\+Animation.\+last\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila in care se stocheaza momentul de timp la care a fost randat un frame ultima data \mbox{\Hypertarget{class_game_1_1_graphics_1_1_animation_a40a65f9619d4f241f4e751d164b067a4}\label{class_game_1_1_graphics_1_1_animation_a40a65f9619d4f241f4e751d164b067a4}} 
+\index{Game.Graphics.Animation@{Game.Graphics.Animation}!timer@{timer}}
+\index{timer@{timer}!Game.Graphics.Animation@{Game.Graphics.Animation}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily long Game.\+Graphics.\+Animation.\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila in care se stocheaza timpul de cand a fost randat un frame 

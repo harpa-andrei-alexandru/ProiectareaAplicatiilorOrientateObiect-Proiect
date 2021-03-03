@@ -1,0 +1,108 @@
+\hypertarget{class_game_1_1_graphics_1_1_game_camera}{}\doxysection{Game.\+Graphics.\+Game\+Camera Class Reference}
+\label{class_game_1_1_graphics_1_1_game_camera}\index{Game.Graphics.GameCamera@{Game.Graphics.GameCamera}}
+
+
+Clasa care implementeaza functionalitatea camerei jocului.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_af78e75a9af3395c8d3b5b59bdc457645}{Game\+Camera}} (float \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_a28d5fc50d8886cbbbd28b375c32f8338}{x\+Offset}}, float \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_a9e2129c9a9bb97f5249f27e7d823fc9e}{y\+Offset}})
+\begin{DoxyCompactList}\small\item\em Constructor ce initializeaza offset-\/urile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_a4f1fd1ba22721aecf9a2884f539d89a7}{check\+Blank\+Space}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ce are rolul de a opri deplasarea camere daca la x\+Offset sau y\+Offset nu se mai afla mapa de randat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_a319d57d50c8b08d9838979b8aee9b8d7}{center\+On\+Entity}} (\mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}} e)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a mentine centrul camerei asupra jucatorului. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_ad6238560b35a0e85b5fa80a067ebb850}{gety\+Offset}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ce returneaza y\+Offset. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_a092948dce6c9d5294887c84e640cbcab}{getx\+Offset}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ce returneaza x\+Offset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_a28d5fc50d8886cbbbd28b375c32f8338}{x\+Offset}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera_a9e2129c9a9bb97f5249f27e7d823fc9e}{y\+Offset}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa care implementeaza functionalitatea camerei jocului. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_game_camera_af78e75a9af3395c8d3b5b59bdc457645}\label{class_game_1_1_graphics_1_1_game_camera_af78e75a9af3395c8d3b5b59bdc457645}} 
+\index{Game.Graphics.GameCamera@{Game.Graphics.GameCamera}!GameCamera@{GameCamera}}
+\index{GameCamera@{GameCamera}!Game.Graphics.GameCamera@{Game.Graphics.GameCamera}}
+\doxysubsubsection{\texorpdfstring{GameCamera()}{GameCamera()}}
+{\footnotesize\ttfamily public Game.\+Graphics.\+Game\+Camera.\+Game\+Camera (\begin{DoxyParamCaption}\item[{float}]{x\+Offset,  }\item[{float}]{y\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor ce initializeaza offset-\/urile. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_game_camera_a319d57d50c8b08d9838979b8aee9b8d7}\label{class_game_1_1_graphics_1_1_game_camera_a319d57d50c8b08d9838979b8aee9b8d7}} 
+\index{Game.Graphics.GameCamera@{Game.Graphics.GameCamera}!centerOnEntity@{centerOnEntity}}
+\index{centerOnEntity@{centerOnEntity}!Game.Graphics.GameCamera@{Game.Graphics.GameCamera}}
+\doxysubsubsection{\texorpdfstring{centerOnEntity()}{centerOnEntity()}}
+{\footnotesize\ttfamily public void Game.\+Graphics.\+Game\+Camera.\+center\+On\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_entities_1_1_entity}{Entity}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a mentine centrul camerei asupra jucatorului. 
+
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_game_camera_a4f1fd1ba22721aecf9a2884f539d89a7}\label{class_game_1_1_graphics_1_1_game_camera_a4f1fd1ba22721aecf9a2884f539d89a7}} 
+\index{Game.Graphics.GameCamera@{Game.Graphics.GameCamera}!checkBlankSpace@{checkBlankSpace}}
+\index{checkBlankSpace@{checkBlankSpace}!Game.Graphics.GameCamera@{Game.Graphics.GameCamera}}
+\doxysubsubsection{\texorpdfstring{checkBlankSpace()}{checkBlankSpace()}}
+{\footnotesize\ttfamily public void Game.\+Graphics.\+Game\+Camera.\+check\+Blank\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ce are rolul de a opri deplasarea camere daca la x\+Offset sau y\+Offset nu se mai afla mapa de randat. 
+
+Daca x\+Offset este negativ, acesta este setat pe 0, intrucat harta este randata de la x = 0
+
+Altfel, daca x\+Offset este mai mare decat latimea hartii, atunci x\+Offset este setat cu diferenta dintre latimea hartii si cea a ferestrei
+
+Daca y\+Offset este negativ, acesta este setat pe 0, intrucat harta este randata de la y = 0
+
+Altfel, daca y\+Offset este mai mare decat inaltimea hartii, atunci y\+Offset este setat cu diferenta dintre inaltimea hartii si cea a ferestrei\mbox{\Hypertarget{class_game_1_1_graphics_1_1_game_camera_a092948dce6c9d5294887c84e640cbcab}\label{class_game_1_1_graphics_1_1_game_camera_a092948dce6c9d5294887c84e640cbcab}} 
+\index{Game.Graphics.GameCamera@{Game.Graphics.GameCamera}!getxOffset@{getxOffset}}
+\index{getxOffset@{getxOffset}!Game.Graphics.GameCamera@{Game.Graphics.GameCamera}}
+\doxysubsubsection{\texorpdfstring{getxOffset()}{getxOffset()}}
+{\footnotesize\ttfamily public float Game.\+Graphics.\+Game\+Camera.\+getx\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ce returneaza x\+Offset. 
+
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_game_camera_ad6238560b35a0e85b5fa80a067ebb850}\label{class_game_1_1_graphics_1_1_game_camera_ad6238560b35a0e85b5fa80a067ebb850}} 
+\index{Game.Graphics.GameCamera@{Game.Graphics.GameCamera}!getyOffset@{getyOffset}}
+\index{getyOffset@{getyOffset}!Game.Graphics.GameCamera@{Game.Graphics.GameCamera}}
+\doxysubsubsection{\texorpdfstring{getyOffset()}{getyOffset()}}
+{\footnotesize\ttfamily public float Game.\+Graphics.\+Game\+Camera.\+gety\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ce returneaza y\+Offset. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_graphics_1_1_game_camera_a28d5fc50d8886cbbbd28b375c32f8338}\label{class_game_1_1_graphics_1_1_game_camera_a28d5fc50d8886cbbbd28b375c32f8338}} 
+\index{Game.Graphics.GameCamera@{Game.Graphics.GameCamera}!xOffset@{xOffset}}
+\index{xOffset@{xOffset}!Game.Graphics.GameCamera@{Game.Graphics.GameCamera}}
+\doxysubsubsection{\texorpdfstring{xOffset}{xOffset}}
+{\footnotesize\ttfamily float Game.\+Graphics.\+Game\+Camera.\+x\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila ce retine offset-\/ul pentru coordonata x \mbox{\Hypertarget{class_game_1_1_graphics_1_1_game_camera_a9e2129c9a9bb97f5249f27e7d823fc9e}\label{class_game_1_1_graphics_1_1_game_camera_a9e2129c9a9bb97f5249f27e7d823fc9e}} 
+\index{Game.Graphics.GameCamera@{Game.Graphics.GameCamera}!yOffset@{yOffset}}
+\index{yOffset@{yOffset}!Game.Graphics.GameCamera@{Game.Graphics.GameCamera}}
+\doxysubsubsection{\texorpdfstring{yOffset}{yOffset}}
+{\footnotesize\ttfamily float Game.\+Graphics.\+Game\+Camera.\+y\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+variabila ce retine offset-\/ul pentru coordonata y 

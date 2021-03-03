@@ -1,0 +1,104 @@
+\hypertarget{class_game_1_1_entities_1_1_objects_1_1_tree}{}\doxysection{Game.\+Entities.\+Objects.\+Tree Class Reference}
+\label{class_game_1_1_entities_1_1_objects_1_1_tree}\index{Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}}
+Inheritance diagram for Game.\+Entities.\+Objects.\+Tree\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_1_1_entities_1_1_objects_1_1_tree}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_adba5c79a67429b4197dc0c1b11f9c3dc}{Tree}} (float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}{x}}, float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}{y}}, int \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_a65b3ee704a7c5fbefd0e7c10edc0d3a3}{type}})
+\begin{DoxyCompactList}\small\item\em Constructorul creaza o entitatea si ii seteaza dimensiunile si aria de coliziune. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_a18e8288531ca1850724388cbb82d1493}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda abstracta care se ocupa cu update-\/ul entitatii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_afb7c82ad647b2106303d7e978cb02499}{die}} ()
+\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_afb88a4adb604f9a4b14b726c3dedf025}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a randa copacul cu ajutorul contextului grafic g. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Buffered\+Image \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_a75b0e6771f3c72b303aeb6c7368342f7}{get\+Asset\+By\+Type}} (int \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_a65b3ee704a7c5fbefd0e7c10edc0d3a3}{type}})
+\begin{DoxyCompactList}\small\item\em Metoda returneaza imaginea copacului ce urmeaza a fi randata, conform valorii argumentului type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_a65b3ee704a7c5fbefd0e7c10edc0d3a3}{type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_objects_1_1_tree_adba5c79a67429b4197dc0c1b11f9c3dc}\label{class_game_1_1_entities_1_1_objects_1_1_tree_adba5c79a67429b4197dc0c1b11f9c3dc}} 
+\index{Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}!Tree@{Tree}}
+\index{Tree@{Tree}!Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}}
+\doxysubsubsection{\texorpdfstring{Tree()}{Tree()}}
+{\footnotesize\ttfamily public Game.\+Entities.\+Objects.\+Tree.\+Tree (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul creaza o entitatea si ii seteaza dimensiunile si aria de coliziune. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_objects_1_1_tree_afb7c82ad647b2106303d7e978cb02499}\label{class_game_1_1_entities_1_1_objects_1_1_tree_afb7c82ad647b2106303d7e978cb02499}} 
+\index{Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}!die@{die}}
+\index{die@{die}!Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Objects.\+Tree.\+die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}breif Metoda care se ocupa cu actiunea de moarte a entitatii 
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_aef103d2cd8b5bc62625a729acf9809de}{Game.\+Entities.\+Entity}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_objects_1_1_tree_a75b0e6771f3c72b303aeb6c7368342f7}\label{class_game_1_1_entities_1_1_objects_1_1_tree_a75b0e6771f3c72b303aeb6c7368342f7}} 
+\index{Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}!getAssetByType@{getAssetByType}}
+\index{getAssetByType@{getAssetByType}!Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}}
+\doxysubsubsection{\texorpdfstring{getAssetByType()}{getAssetByType()}}
+{\footnotesize\ttfamily private Buffered\+Image Game.\+Entities.\+Objects.\+Tree.\+get\+Asset\+By\+Type (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Metoda returneaza imaginea copacului ce urmeaza a fi randata, conform valorii argumentului type. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_objects_1_1_tree_afb88a4adb604f9a4b14b726c3dedf025}\label{class_game_1_1_entities_1_1_objects_1_1_tree_afb88a4adb604f9a4b14b726c3dedf025}} 
+\index{Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}!render@{render}}
+\index{render@{render}!Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Objects.\+Tree.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a randa copacul cu ajutorul contextului grafic g. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a6e99f512cf2778fe29bbecde574c1d7c}{Game.\+Entities.\+Entity}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_objects_1_1_tree_a18e8288531ca1850724388cbb82d1493}\label{class_game_1_1_entities_1_1_objects_1_1_tree_a18e8288531ca1850724388cbb82d1493}} 
+\index{Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}!update@{update}}
+\index{update@{update}!Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Objects.\+Tree.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda abstracta care se ocupa cu update-\/ul entitatii. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a72ba04b1066282586ccaa625396d5cf0}{Game.\+Entities.\+Entity}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_objects_1_1_tree_a65b3ee704a7c5fbefd0e7c10edc0d3a3}\label{class_game_1_1_entities_1_1_objects_1_1_tree_a65b3ee704a7c5fbefd0e7c10edc0d3a3}} 
+\index{Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}!type@{type}}
+\index{type@{type}!Game.Entities.Objects.Tree@{Game.Entities.Objects.Tree}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily final int Game.\+Entities.\+Objects.\+Tree.\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila care retine tipul copacului 

@@ -1,0 +1,300 @@
+\hypertarget{class_game_1_1_worlds_1_1_world}{}\doxysection{Game.\+Worlds.\+World Class Reference}
+\label{class_game_1_1_worlds_1_1_world}\index{Game.Worlds.World@{Game.Worlds.World}}
+
+
+Aceasta clasa are rolul de a incarca harta nivelului si de a pozitiona toate entitatile corespunzatoare nivelului.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_worlds_1_1_world_ad26f73436e68f3064b8f13e4b629b4d8}{World}} ()
+\begin{DoxyCompactList}\small\item\em Constructorul lumii/hartii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a63c871686ce2b82e7e05d5e854e2bed5}{set\+World}} (String path)
+\begin{DoxyCompactList}\small\item\em Seteaza harta indicata de path-\/ul fisierului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a039b7dada4f4c2939810cf6642708d94}{update}} ()
+\begin{DoxyCompactList}\small\item\em Sunt actualizate entitatile si proiectilele. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a4d33079318b94949915ddde258a862b2}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Se randeaza harta, proiectilele si entitatile cu ajutorul metodei render si a contextului grafic g. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a675c45d76baf7a21c0f41492ade23c67}{get\+Tile}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Returneaza dale corespunzator id-\/ului dat de coordonata x si coordonata y a hartii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a8558a081ab3d16463a9d5e4217bd0e1a}{set\+World\+From\+Data\+Base}} (String path)
+\begin{DoxyCompactList}\small\item\em Are aceasi utilitate ca si \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a63c871686ce2b82e7e05d5e854e2bed5}{set\+World(\+String path)}}, doar ca apeleaza metoda \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_aa7bfc8dc2fe310f34a5d6587567c08f9}{load\+World\+From\+Data\+Base(\+String path)}} aceste metode sunt folosite cand vrem sa incarcam o lume care se aflta intr-\/o stare intermediara de joc, similara, sau diferita fata de cea initiala, si a fost salvata intr-\/o baza de date. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a8e8ebd3524707e3d1dd24311665c1987}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza latimea in dale a hartii. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a7f49eaeccf8d28f1a225773433b0d053}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza inaltimea in dale a hartii. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager}{Entity\+Manager}} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a8f720052c2d56517ea55513a7991603c}{get\+Entity\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul de entitati. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_manager}{Projectile\+Manager}} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a545c3a00f477081147ccc83fd36abfdc}{get\+Projectile\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul de proiectile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_ab176d26e590a05c731479c18c4eea9d6}{set\+Player}} (\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_af67823b9ba3b21cff1f8edda63f0e463}{player}})
+\begin{DoxyCompactList}\small\item\em Seteaza jucatorul cu cel dat ca si argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_af06c452cc68564098e6f437d6f373ef5}{spawnX}}
+\item 
+static int \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_aca6f4e8f22d0cca6aebce2019ef47ed2}{spawnY}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_ad1ac15141ed6c101c9e2b04088e076a6}{load\+World}} (String path)
+\begin{DoxyCompactList}\small\item\em Se face citirea din fisierul indicat de path-\/ul dat ca si argument, datele citite din fisier se refera la dimensiunea hartii in dale, pozitia de inceput a jucatorului si id-\/urile dalelor, care vor fi salvate in matricea de id-\/uri. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_aa7bfc8dc2fe310f34a5d6587567c08f9}{load\+World\+From\+Data\+Base}} (String path)
+\begin{DoxyCompactList}\small\item\em Are aceasi utilitate ca si \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_ad1ac15141ed6c101c9e2b04088e076a6}{load\+World()}}, dar nu mai creeaza inamici conform id-\/urilor -\/1, -\/2 si -\/3, deoarece acea sarcina este realizata de alta metoda care are acces la data de baze in care se afla noile pozitii ale inamicilor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_acf95106ebe7a9fbff141823c66a27d80}{width}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_aea01286b57b27ec04329632104b73d63}{height}}
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_aff790192747e76d99d12d6de85096e41}{tiles}}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager}{Entity\+Manager}} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a638e3a7d324756da0503fb462d3e20bd}{entity\+Manager}}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_manager}{Projectile\+Manager}} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_ace7d641d57599f86a075e945687fdfea}{projectile\+Manager}}
+\item 
+final \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_factory}{Entity\+Factory}} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_aaa8014e19c560c08d945be61dc4f9082}{entity\+Factory}}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}} \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_af67823b9ba3b21cff1f8edda63f0e463}{player}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Aceasta clasa are rolul de a incarca harta nivelului si de a pozitiona toate entitatile corespunzatoare nivelului. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_ad26f73436e68f3064b8f13e4b629b4d8}\label{class_game_1_1_worlds_1_1_world_ad26f73436e68f3064b8f13e4b629b4d8}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!World@{World}}
+\index{World@{World}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily public Game.\+Worlds.\+World.\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul lumii/hartii. 
+
+Crearea unui nou jucator
+
+Crearea unui nou manager de proiectile
+
+Crearea unui nou manager de entitati
+
+Crearea unei noi fabrici de entitati
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a8f720052c2d56517ea55513a7991603c}\label{class_game_1_1_worlds_1_1_world_a8f720052c2d56517ea55513a7991603c}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!getEntityManager@{getEntityManager}}
+\index{getEntityManager@{getEntityManager}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{getEntityManager()}{getEntityManager()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager}{Entity\+Manager}} Game.\+Worlds.\+World.\+get\+Entity\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza managerul de entitati. 
+
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a7f49eaeccf8d28f1a225773433b0d053}\label{class_game_1_1_worlds_1_1_world_a7f49eaeccf8d28f1a225773433b0d053}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily public int Game.\+Worlds.\+World.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza inaltimea in dale a hartii. 
+
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a545c3a00f477081147ccc83fd36abfdc}\label{class_game_1_1_worlds_1_1_world_a545c3a00f477081147ccc83fd36abfdc}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!getProjectileManager@{getProjectileManager}}
+\index{getProjectileManager@{getProjectileManager}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{getProjectileManager()}{getProjectileManager()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_manager}{Projectile\+Manager}} Game.\+Worlds.\+World.\+get\+Projectile\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza managerul de proiectile. 
+
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a675c45d76baf7a21c0f41492ade23c67}\label{class_game_1_1_worlds_1_1_world_a675c45d76baf7a21c0f41492ade23c67}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!getTile@{getTile}}
+\index{getTile@{getTile}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{getTile()}{getTile()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Worlds.\+World.\+get\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza dale corespunzator id-\/ului dat de coordonata x si coordonata y a hartii. 
+
+Daca avem indexi negativi, sau care depasesc dimensiunea hartii, vom returna o dala indicata de noi
+
+Dala ce va fi returnata se fva initializa cu dala corespunzatoare id-\/ului aflat pa pozitia (x, y) din matricea de id-\/uri
+
+In cazul in care initializarea nu a avut loc, vom returna o dala indicata de noi\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a8e8ebd3524707e3d1dd24311665c1987}\label{class_game_1_1_worlds_1_1_world_a8e8ebd3524707e3d1dd24311665c1987}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily public int Game.\+Worlds.\+World.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza latimea in dale a hartii. 
+
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_ad1ac15141ed6c101c9e2b04088e076a6}\label{class_game_1_1_worlds_1_1_world_ad1ac15141ed6c101c9e2b04088e076a6}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!loadWorld@{loadWorld}}
+\index{loadWorld@{loadWorld}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{loadWorld()}{loadWorld()}}
+{\footnotesize\ttfamily private void Game.\+Worlds.\+World.\+load\+World (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Se face citirea din fisierul indicat de path-\/ul dat ca si argument, datele citite din fisier se refera la dimensiunea hartii in dale, pozitia de inceput a jucatorului si id-\/urile dalelor, care vor fi salvate in matricea de id-\/uri. 
+
+Datele sunt despartite de spatii, astfel folosid un regex, vom putea incarca fiecare data individual intr-\/un vector de stringuri
+
+Deoarece datele sunt citite sub forma de text, trebuie sa facem parsarea lor la integer
+
+Initializam matricea de id-\/uri
+
+Id-\/urile talelor sunt trecute in matrice
+
+In cazul in care vrem sa adaugam entitati la pozitia(x, y), trebuie sa tinem cont de id-\/ul dalei de pe pozitia respectiva, pentru a randa atat dala, cat entitatea dorita in aceasi zona a hartii
+
+daca id-\/ul este -\/1 sau -\/2 se va crea un inamic la pozitia (x\+Pos, y\+Pos)
+
+daca id-\/ul este -\/3, -\/4, sau -\/5, se ca crea o entitate de tip Tree care va avea diferite infatisari
+
+daca id-\/ul este -\/6 se va crea o entitate de tip Bushes
+
+Se seteaza coordonata x si coordonata y a jucatorului la coordonatele citite\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_aa7bfc8dc2fe310f34a5d6587567c08f9}\label{class_game_1_1_worlds_1_1_world_aa7bfc8dc2fe310f34a5d6587567c08f9}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!loadWorldFromDataBase@{loadWorldFromDataBase}}
+\index{loadWorldFromDataBase@{loadWorldFromDataBase}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{loadWorldFromDataBase()}{loadWorldFromDataBase()}}
+{\footnotesize\ttfamily private void Game.\+Worlds.\+World.\+load\+World\+From\+Data\+Base (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Are aceasi utilitate ca si \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_ad1ac15141ed6c101c9e2b04088e076a6}{load\+World()}}, dar nu mai creeaza inamici conform id-\/urilor -\/1, -\/2 si -\/3, deoarece acea sarcina este realizata de alta metoda care are acces la data de baze in care se afla noile pozitii ale inamicilor. 
+
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a4d33079318b94949915ddde258a862b2}\label{class_game_1_1_worlds_1_1_world_a4d33079318b94949915ddde258a862b2}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!render@{render}}
+\index{render@{render}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+Worlds.\+World.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se randeaza harta, proiectilele si entitatile cu ajutorul metodei render si a contextului grafic g. 
+
+Se calculeaza limitele de incarcare a dalelor conform dimensiunii ferestrei si pozitia camerei, astfel incat sa nu se randeze toata mapa de fiecare data cand se misca camere, ci doar cat este necesat
+
+Randarea propriuzisa a dalelor conform id-\/urilor
+
+randarea dalei de data de coordonata x si coordonata y, aceasta este determinata de pozitia camerei
+
+randarea entitatilor
+
+randarea proiectilelor\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_ab176d26e590a05c731479c18c4eea9d6}\label{class_game_1_1_worlds_1_1_world_ab176d26e590a05c731479c18c4eea9d6}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!setPlayer@{setPlayer}}
+\index{setPlayer@{setPlayer}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{setPlayer()}{setPlayer()}}
+{\footnotesize\ttfamily public void Game.\+Worlds.\+World.\+set\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza jucatorul cu cel dat ca si argument. 
+
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a63c871686ce2b82e7e05d5e854e2bed5}\label{class_game_1_1_worlds_1_1_world_a63c871686ce2b82e7e05d5e854e2bed5}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!setWorld@{setWorld}}
+\index{setWorld@{setWorld}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{setWorld()}{setWorld()}}
+{\footnotesize\ttfamily public void Game.\+Worlds.\+World.\+set\+World (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza harta indicata de path-\/ul fisierului. 
+
+Se reinitializeaza managerul de proiectile
+
+Se reinitializeaza managerul de entitati, in caz de restartare a nivelului, sau a trecerii la nivel nou, trebuie sa reinitializam managerul de entitati corespunzator nivelului, sau starii jocului
+
+Incarcarea propriuzisa a id-\/urilor dalelor\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a8558a081ab3d16463a9d5e4217bd0e1a}\label{class_game_1_1_worlds_1_1_world_a8558a081ab3d16463a9d5e4217bd0e1a}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!setWorldFromDataBase@{setWorldFromDataBase}}
+\index{setWorldFromDataBase@{setWorldFromDataBase}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{setWorldFromDataBase()}{setWorldFromDataBase()}}
+{\footnotesize\ttfamily public void Game.\+Worlds.\+World.\+set\+World\+From\+Data\+Base (\begin{DoxyParamCaption}\item[{String}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Are aceasi utilitate ca si \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_a63c871686ce2b82e7e05d5e854e2bed5}{set\+World(\+String path)}}, doar ca apeleaza metoda \mbox{\hyperlink{class_game_1_1_worlds_1_1_world_aa7bfc8dc2fe310f34a5d6587567c08f9}{load\+World\+From\+Data\+Base(\+String path)}} aceste metode sunt folosite cand vrem sa incarcam o lume care se aflta intr-\/o stare intermediara de joc, similara, sau diferita fata de cea initiala, si a fost salvata intr-\/o baza de date. 
+
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a039b7dada4f4c2939810cf6642708d94}\label{class_game_1_1_worlds_1_1_world_a039b7dada4f4c2939810cf6642708d94}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!update@{update}}
+\index{update@{update}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+Worlds.\+World.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sunt actualizate entitatile si proiectilele. 
+
+Se actualizeaza proiectilele
+
+Se actualizeaza entitatile
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_aaa8014e19c560c08d945be61dc4f9082}\label{class_game_1_1_worlds_1_1_world_aaa8014e19c560c08d945be61dc4f9082}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!entityFactory@{entityFactory}}
+\index{entityFactory@{entityFactory}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{entityFactory}{entityFactory}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_factory}{Entity\+Factory}} Game.\+Worlds.\+World.\+entity\+Factory\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre fabrica de entitati \mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_a638e3a7d324756da0503fb462d3e20bd}\label{class_game_1_1_worlds_1_1_world_a638e3a7d324756da0503fb462d3e20bd}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!entityManager@{entityManager}}
+\index{entityManager@{entityManager}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{entityManager}{entityManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_manager}{Entity\+Manager}} Game.\+Worlds.\+World.\+entity\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre managerul de entitati \mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_aea01286b57b27ec04329632104b73d63}\label{class_game_1_1_worlds_1_1_world_aea01286b57b27ec04329632104b73d63}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!height@{height}}
+\index{height@{height}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Game.\+Worlds.\+World.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+Inaltimea hartii in tiles \mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_af67823b9ba3b21cff1f8edda63f0e463}\label{class_game_1_1_worlds_1_1_world_af67823b9ba3b21cff1f8edda63f0e463}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!player@{player}}
+\index{player@{player}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player}{Player}} Game.\+Worlds.\+World.\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre player \mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_ace7d641d57599f86a075e945687fdfea}\label{class_game_1_1_worlds_1_1_world_ace7d641d57599f86a075e945687fdfea}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!projectileManager@{projectileManager}}
+\index{projectileManager@{projectileManager}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{projectileManager}{projectileManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_manager}{Projectile\+Manager}} Game.\+Worlds.\+World.\+projectile\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre managerul de proiectile \mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_af06c452cc68564098e6f437d6f373ef5}\label{class_game_1_1_worlds_1_1_world_af06c452cc68564098e6f437d6f373ef5}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!spawnX@{spawnX}}
+\index{spawnX@{spawnX}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{spawnX}{spawnX}}
+{\footnotesize\ttfamily int Game.\+Worlds.\+World.\+spawnX\hspace{0.3cm}{\ttfamily [static]}}
+
+Coordonata x a jucatorului cand este incarcata lumea \mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_aca6f4e8f22d0cca6aebce2019ef47ed2}\label{class_game_1_1_worlds_1_1_world_aca6f4e8f22d0cca6aebce2019ef47ed2}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!spawnY@{spawnY}}
+\index{spawnY@{spawnY}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{spawnY}{spawnY}}
+{\footnotesize\ttfamily int Game.\+Worlds.\+World.\+spawnY\hspace{0.3cm}{\ttfamily [static]}}
+
+Coordonata y a jucatorului cand este incarcata lumea \mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_aff790192747e76d99d12d6de85096e41}\label{class_game_1_1_worlds_1_1_world_aff790192747e76d99d12d6de85096e41}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!tiles@{tiles}}
+\index{tiles@{tiles}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Game.\+Worlds.\+World.\+tiles\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre o matrice ce contine tode id-\/urile dalelor hartii \mbox{\Hypertarget{class_game_1_1_worlds_1_1_world_acf95106ebe7a9fbff141823c66a27d80}\label{class_game_1_1_worlds_1_1_world_acf95106ebe7a9fbff141823c66a27d80}} 
+\index{Game.Worlds.World@{Game.Worlds.World}!width@{width}}
+\index{width@{width}!Game.Worlds.World@{Game.Worlds.World}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Game.\+Worlds.\+World.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+Latimea hartii in tiles 

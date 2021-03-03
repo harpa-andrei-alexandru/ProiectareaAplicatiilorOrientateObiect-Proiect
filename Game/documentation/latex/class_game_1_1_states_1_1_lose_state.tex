@@ -1,0 +1,89 @@
+\hypertarget{class_game_1_1_states_1_1_lose_state}{}\doxysection{Game.\+States.\+Lose\+State Class Reference}
+\label{class_game_1_1_states_1_1_lose_state}\index{Game.States.LoseState@{Game.States.LoseState}}
+
+
+Opreste starea de joc si afiseaza scorul obtinut.  
+
+
+Inheritance diagram for Game.\+States.\+Lose\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_states_1_1_lose_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_lose_state_a164936462918c1a466fcd31df2d0a96c}{Lose\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructorul apeleaza constructorul superclasei, si seteaza flagul is\+Active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_lose_state_a5dd652fa9a22f1009356ed5059649e0c}{update}} ()
+\begin{DoxyCompactList}\small\item\em Dace butonul de menu este apasat, atunci se face tranzitia catre meniu principal, totodata starea de joc este actualizata cu una noua. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_lose_state_a32f2c62959901c388680f9642313f488}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Se afiseaza mesajul de confirmare ca jocul a fost pierdut si scorul cu ajutorul contextului grafic si al font-\/ului reconfigurat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_states_1_1_lose_state_ae2e30100272d216242faf59954f38cac}{get\+Ui\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul de obiecte grafice, in cazul de fata se returneaza null. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Opreste starea de joc si afiseaza scorul obtinut. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_lose_state_a164936462918c1a466fcd31df2d0a96c}\label{class_game_1_1_states_1_1_lose_state_a164936462918c1a466fcd31df2d0a96c}} 
+\index{Game.States.LoseState@{Game.States.LoseState}!LoseState@{LoseState}}
+\index{LoseState@{LoseState}!Game.States.LoseState@{Game.States.LoseState}}
+\doxysubsubsection{\texorpdfstring{LoseState()}{LoseState()}}
+{\footnotesize\ttfamily public Game.\+States.\+Lose\+State.\+Lose\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul apeleaza constructorul superclasei, si seteaza flagul is\+Active. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_lose_state_ae2e30100272d216242faf59954f38cac}\label{class_game_1_1_states_1_1_lose_state_ae2e30100272d216242faf59954f38cac}} 
+\index{Game.States.LoseState@{Game.States.LoseState}!getUiManager@{getUiManager}}
+\index{getUiManager@{getUiManager}!Game.States.LoseState@{Game.States.LoseState}}
+\doxysubsubsection{\texorpdfstring{getUiManager()}{getUiManager()}}
+{\footnotesize\ttfamily protected \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+States.\+Lose\+State.\+get\+Ui\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returneaza managerul de obiecte grafice, in cazul de fata se returneaza null. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_abfc8068193a8dcdd75e44810ca9fc3d5}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_lose_state_a32f2c62959901c388680f9642313f488}\label{class_game_1_1_states_1_1_lose_state_a32f2c62959901c388680f9642313f488}} 
+\index{Game.States.LoseState@{Game.States.LoseState}!render@{render}}
+\index{render@{render}!Game.States.LoseState@{Game.States.LoseState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Lose\+State.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se afiseaza mesajul de confirmare ca jocul a fost pierdut si scorul cu ajutorul contextului grafic si al font-\/ului reconfigurat. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a93d159a044a807b185df7536110e2083}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_lose_state_a5dd652fa9a22f1009356ed5059649e0c}\label{class_game_1_1_states_1_1_lose_state_a5dd652fa9a22f1009356ed5059649e0c}} 
+\index{Game.States.LoseState@{Game.States.LoseState}!update@{update}}
+\index{update@{update}!Game.States.LoseState@{Game.States.LoseState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Lose\+State.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dace butonul de menu este apasat, atunci se face tranzitia catre meniu principal, totodata starea de joc este actualizata cu una noua. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a806187e704eb1159230a410d0b31645b}{Game.\+States.\+State}}.
+

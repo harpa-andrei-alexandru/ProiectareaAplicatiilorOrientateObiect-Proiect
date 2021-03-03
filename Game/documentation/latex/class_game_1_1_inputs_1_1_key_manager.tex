@@ -1,0 +1,191 @@
+\hypertarget{class_game_1_1_inputs_1_1_key_manager}{}\doxysection{Game.\+Inputs.\+Key\+Manager Class Reference}
+\label{class_game_1_1_inputs_1_1_key_manager}\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+
+
+Clasa implementeaza interfata Key\+Listener, si are rolul de a manipula inputurile primite de la tastatura.  
+
+
+Inheritance diagram for Game.\+Inputs.\+Key\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_inputs_1_1_key_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_aa9c8d6ea18d5176e7b6b2539492d40b6}{Key\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor ce are rolul de a crea vectorul de flaguri keys si de a seta control\+Set cu id 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_a87ccbf8114f229298dc21204973bf65c}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pentru a seta flagurile to\+Menu si menu si control\+Set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_aa2df95966d0c3dc58ed3b569ac688afe}{key\+Typed}} (Key\+Event key\+Event)
+\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_af33467e7a1f86af32fe8df4719dcdd54}{key\+Pressed}} (Key\+Event key\+Event)
+\begin{DoxyCompactList}\small\item\em Metoda suprascrisa ce seteaza tabloul de flag-\/uri de la pozitia data de catre id-\/ul evenimentului generat de catre tastatura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_ab1567fb692d5a817076907b688d8cb2b}{key\+Released}} (Key\+Event key\+Event)
+\begin{DoxyCompactList}\small\item\em Metoda suprascrisa care reseteaza tabloul de flaguri de la pozitia data de catre id-\/ul evenimentului generat de catre tastatura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_aa83259ebcb01a4f96510f2c5579827a0}{set\+Controls}} (int controls\+Set)
+\begin{DoxyCompactList}\small\item\em Metoda ce are rolul de a seta flag-\/urile pentru controlul jucatorului conford id-\/ului stocat in control\+Set. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_a9b70eb51dc0647a46a4f2224f0744370}{get\+Control\+Set}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza variabila control\+Set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_a73742e630ca7e0346ec4c4de6e435ad0}{up}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_adb6d4a5b13f676a380410a4036415863}{down}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_a894b77437d09a22707a5a5bcd71cab81}{left}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_a345a52ea693805ec19fad9fc527f703a}{right}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_a3d6059154bb536f9d32acfc9e98fe754}{attacking}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_aadac860a5befa5a41f3ae37fbe9a0982}{to\+Menu}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_af76e46c75095d1ff95c8a8b5072f2556}{menu}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final boolean\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_ae4b8ff78abdf9ac7bc0650e9239863e0}{keys}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager_aaa189f8cc6c926923b071983a8407d37}{control\+Set}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa implementeaza interfata Key\+Listener, si are rolul de a manipula inputurile primite de la tastatura. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_aa9c8d6ea18d5176e7b6b2539492d40b6}\label{class_game_1_1_inputs_1_1_key_manager_aa9c8d6ea18d5176e7b6b2539492d40b6}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!KeyManager@{KeyManager}}
+\index{KeyManager@{KeyManager}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{KeyManager()}{KeyManager()}}
+{\footnotesize\ttfamily public Game.\+Inputs.\+Key\+Manager.\+Key\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor ce are rolul de a crea vectorul de flaguri keys si de a seta control\+Set cu id 0. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_a9b70eb51dc0647a46a4f2224f0744370}\label{class_game_1_1_inputs_1_1_key_manager_a9b70eb51dc0647a46a4f2224f0744370}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!getControlSet@{getControlSet}}
+\index{getControlSet@{getControlSet}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{getControlSet()}{getControlSet()}}
+{\footnotesize\ttfamily public int Game.\+Inputs.\+Key\+Manager.\+get\+Control\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza variabila control\+Set. 
+
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_af33467e7a1f86af32fe8df4719dcdd54}\label{class_game_1_1_inputs_1_1_key_manager_af33467e7a1f86af32fe8df4719dcdd54}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!keyPressed@{keyPressed}}
+\index{keyPressed@{keyPressed}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{keyPressed()}{keyPressed()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Key\+Manager.\+key\+Pressed (\begin{DoxyParamCaption}\item[{Key\+Event}]{key\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda suprascrisa ce seteaza tabloul de flag-\/uri de la pozitia data de catre id-\/ul evenimentului generat de catre tastatura. 
+
+Daca id-\/ul este negativ sau mai mare decat lungimea tabloului de flaguri, metoda nu seteaza nici un flag\mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_ab1567fb692d5a817076907b688d8cb2b}\label{class_game_1_1_inputs_1_1_key_manager_ab1567fb692d5a817076907b688d8cb2b}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!keyReleased@{keyReleased}}
+\index{keyReleased@{keyReleased}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{keyReleased()}{keyReleased()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Key\+Manager.\+key\+Released (\begin{DoxyParamCaption}\item[{Key\+Event}]{key\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda suprascrisa care reseteaza tabloul de flaguri de la pozitia data de catre id-\/ul evenimentului generat de catre tastatura. 
+
+Daca id-\/ul este negativ sau mai mare decat lungimea tabloului de flaguri, metoda nu reseteaza nici un flag\mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_aa2df95966d0c3dc58ed3b569ac688afe}\label{class_game_1_1_inputs_1_1_key_manager_aa2df95966d0c3dc58ed3b569ac688afe}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!keyTyped@{keyTyped}}
+\index{keyTyped@{keyTyped}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{keyTyped()}{keyTyped()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Key\+Manager.\+key\+Typed (\begin{DoxyParamCaption}\item[{Key\+Event}]{key\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_aa83259ebcb01a4f96510f2c5579827a0}\label{class_game_1_1_inputs_1_1_key_manager_aa83259ebcb01a4f96510f2c5579827a0}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!setControls@{setControls}}
+\index{setControls@{setControls}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{setControls()}{setControls()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Key\+Manager.\+set\+Controls (\begin{DoxyParamCaption}\item[{int}]{controls\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ce are rolul de a seta flag-\/urile pentru controlul jucatorului conford id-\/ului stocat in control\+Set. 
+
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_a87ccbf8114f229298dc21204973bf65c}\label{class_game_1_1_inputs_1_1_key_manager_a87ccbf8114f229298dc21204973bf65c}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!update@{update}}
+\index{update@{update}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Key\+Manager.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda pentru a seta flagurile to\+Menu si menu si control\+Set. 
+
+seteaza controalele pentru jucator conform id-\/ului pe care il are control\+Set
+
+in to\+Menu stocam valoare din tabloul de flaguri de la pozitia indicata de catre id-\/ul tastei M
+
+in menu stocam valoarea din tabloul de flaguri de la pozitia indicata de catre id-\/ul tastei E\+S\+C\+A\+PE
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_a3d6059154bb536f9d32acfc9e98fe754}\label{class_game_1_1_inputs_1_1_key_manager_a3d6059154bb536f9d32acfc9e98fe754}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!attacking@{attacking}}
+\index{attacking@{attacking}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{attacking}{attacking}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Key\+Manager.\+attacking}
+
+Flag utilizat pentru a ataca cu jucatorul \mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_aaa189f8cc6c926923b071983a8407d37}\label{class_game_1_1_inputs_1_1_key_manager_aaa189f8cc6c926923b071983a8407d37}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!controlSet@{controlSet}}
+\index{controlSet@{controlSet}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{controlSet}{controlSet}}
+{\footnotesize\ttfamily int Game.\+Inputs.\+Key\+Manager.\+control\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+Variabila utilizata pentru a retine id-\/ul setului de controale pentru joc \mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_adb6d4a5b13f676a380410a4036415863}\label{class_game_1_1_inputs_1_1_key_manager_adb6d4a5b13f676a380410a4036415863}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!down@{down}}
+\index{down@{down}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{down}{down}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Key\+Manager.\+down}
+
+Flag utilizat pentru a misca jucatorul in jos \mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_ae4b8ff78abdf9ac7bc0650e9239863e0}\label{class_game_1_1_inputs_1_1_key_manager_ae4b8ff78abdf9ac7bc0650e9239863e0}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!keys@{keys}}
+\index{keys@{keys}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily final boolean \mbox{[}$\,$\mbox{]} Game.\+Inputs.\+Key\+Manager.\+keys\hspace{0.3cm}{\ttfamily [private]}}
+
+Vector de flag-\/uri care tine evidenta tastelor \mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_a894b77437d09a22707a5a5bcd71cab81}\label{class_game_1_1_inputs_1_1_key_manager_a894b77437d09a22707a5a5bcd71cab81}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!left@{left}}
+\index{left@{left}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{left}{left}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Key\+Manager.\+left}
+
+Flag utilizat pentru a misca jucatorul in stanga \mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_af76e46c75095d1ff95c8a8b5072f2556}\label{class_game_1_1_inputs_1_1_key_manager_af76e46c75095d1ff95c8a8b5072f2556}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!menu@{menu}}
+\index{menu@{menu}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Key\+Manager.\+menu}
+
+Un alt flag pentru a accesa meniul \mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_a345a52ea693805ec19fad9fc527f703a}\label{class_game_1_1_inputs_1_1_key_manager_a345a52ea693805ec19fad9fc527f703a}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!right@{right}}
+\index{right@{right}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{right}{right}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Key\+Manager.\+right}
+
+Flag utilizat pentru a misca jucatorul in dreapta \mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_aadac860a5befa5a41f3ae37fbe9a0982}\label{class_game_1_1_inputs_1_1_key_manager_aadac860a5befa5a41f3ae37fbe9a0982}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!toMenu@{toMenu}}
+\index{toMenu@{toMenu}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{toMenu}{toMenu}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Key\+Manager.\+to\+Menu}
+
+Flag utilizat pentru a accesa meniul \mbox{\Hypertarget{class_game_1_1_inputs_1_1_key_manager_a73742e630ca7e0346ec4c4de6e435ad0}\label{class_game_1_1_inputs_1_1_key_manager_a73742e630ca7e0346ec4c4de6e435ad0}} 
+\index{Game.Inputs.KeyManager@{Game.Inputs.KeyManager}!up@{up}}
+\index{up@{up}!Game.Inputs.KeyManager@{Game.Inputs.KeyManager}}
+\doxysubsubsection{\texorpdfstring{up}{up}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Key\+Manager.\+up}
+
+Flag utilizat pentru a misca jucatorul in sus 

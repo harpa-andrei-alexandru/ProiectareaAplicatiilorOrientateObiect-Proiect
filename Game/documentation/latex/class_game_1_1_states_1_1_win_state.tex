@@ -1,0 +1,89 @@
+\hypertarget{class_game_1_1_states_1_1_win_state}{}\doxysection{Game.\+States.\+Win\+State Class Reference}
+\label{class_game_1_1_states_1_1_win_state}\index{Game.States.WinState@{Game.States.WinState}}
+
+
+Clasa afiseaza detaliile legate de victorie, creaza un nou \mbox{\hyperlink{class_game_1_1_states_1_1_game_state}{Game\+State}}, si face tranzitia catre meniul principal.  
+
+
+Inheritance diagram for Game.\+States.\+Win\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_states_1_1_win_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_win_state_abbf4d53534d119c45ebf2377bc45709c}{Win\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructorul apeleaza constructorul superclasei, si seteaza flagul is\+Active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_win_state_a79f7b0cd810f7ab4e567b60c7d05864a}{update}} ()
+\begin{DoxyCompactList}\small\item\em Dace butonul de menu este apasat, atunci se face tranzitia catre meniu principal, totodata starea de joc este actualizata cu una noua, flag-\/ul de game\+Active este resetat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_win_state_ad9af9e443d2f3b95c98c2ce335bcaf6d}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Se afiseaza mesajul de confirmare ca jocul a fost castigat si scorul, cu ajutorul contextului grafic si al font-\/ului reconfigurat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_states_1_1_win_state_a6f55f50d3e10a35d8f04cee34fe12f3f}{get\+Ui\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul de obiecte grafice, in cazul de fata se returneaza null. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clasa afiseaza detaliile legate de victorie, creaza un nou \mbox{\hyperlink{class_game_1_1_states_1_1_game_state}{Game\+State}}, si face tranzitia catre meniul principal. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_win_state_abbf4d53534d119c45ebf2377bc45709c}\label{class_game_1_1_states_1_1_win_state_abbf4d53534d119c45ebf2377bc45709c}} 
+\index{Game.States.WinState@{Game.States.WinState}!WinState@{WinState}}
+\index{WinState@{WinState}!Game.States.WinState@{Game.States.WinState}}
+\doxysubsubsection{\texorpdfstring{WinState()}{WinState()}}
+{\footnotesize\ttfamily public Game.\+States.\+Win\+State.\+Win\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul apeleaza constructorul superclasei, si seteaza flagul is\+Active. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_win_state_a6f55f50d3e10a35d8f04cee34fe12f3f}\label{class_game_1_1_states_1_1_win_state_a6f55f50d3e10a35d8f04cee34fe12f3f}} 
+\index{Game.States.WinState@{Game.States.WinState}!getUiManager@{getUiManager}}
+\index{getUiManager@{getUiManager}!Game.States.WinState@{Game.States.WinState}}
+\doxysubsubsection{\texorpdfstring{getUiManager()}{getUiManager()}}
+{\footnotesize\ttfamily protected \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+States.\+Win\+State.\+get\+Ui\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returneaza managerul de obiecte grafice, in cazul de fata se returneaza null. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_abfc8068193a8dcdd75e44810ca9fc3d5}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_win_state_ad9af9e443d2f3b95c98c2ce335bcaf6d}\label{class_game_1_1_states_1_1_win_state_ad9af9e443d2f3b95c98c2ce335bcaf6d}} 
+\index{Game.States.WinState@{Game.States.WinState}!render@{render}}
+\index{render@{render}!Game.States.WinState@{Game.States.WinState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Win\+State.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se afiseaza mesajul de confirmare ca jocul a fost castigat si scorul, cu ajutorul contextului grafic si al font-\/ului reconfigurat. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a93d159a044a807b185df7536110e2083}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_win_state_a79f7b0cd810f7ab4e567b60c7d05864a}\label{class_game_1_1_states_1_1_win_state_a79f7b0cd810f7ab4e567b60c7d05864a}} 
+\index{Game.States.WinState@{Game.States.WinState}!update@{update}}
+\index{update@{update}!Game.States.WinState@{Game.States.WinState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Win\+State.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dace butonul de menu este apasat, atunci se face tranzitia catre meniu principal, totodata starea de joc este actualizata cu una noua, flag-\/ul de game\+Active este resetat. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a806187e704eb1159230a410d0b31645b}{Game.\+States.\+State}}.
+

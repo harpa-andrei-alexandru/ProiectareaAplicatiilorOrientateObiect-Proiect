@@ -1,0 +1,175 @@
+\hypertarget{class_game_1_1_states_1_1_help_and_settings_state}{}\doxysection{Game.\+States.\+Help\+And\+Settings\+State Class Reference}
+\label{class_game_1_1_states_1_1_help_and_settings_state}\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+
+
+Clasa se ocupa cu informarea jucatorului cu privire la detaliile jocului, inamicilor si a caracterului principal, si ii o fera o\mbox{]}posibilitatea de a-\/si configura controalele dupa doua seturi prestabilite.  
+
+
+Inheritance diagram for Game.\+States.\+Help\+And\+Settings\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_states_1_1_help_and_settings_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_a177bfecf8eab615d2eada28ca02c49eb}{Help\+And\+Settings\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructorul creaza un nou manager de obiecte grafice, si adaugat butoane cu configuratii diferite ce ii permite user-\/ului sa navigheze intre stari(menu $<$-\/$>$ help\&settings) si sa isi aleaga setul de controale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_a09b58f6d8e31dab63e4c025c9934f34d}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualizare stare daca jocul conform flag-\/ului is\+Active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_af22421c795d20f7b5001946bda7704f1}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Randeaza detaliile jocului si starea obiectelor grafice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_a6eeb7eb4a0c969b17f3eb81183c9de5e}{get\+Ui\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul de obiecte grafice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_ace073bdfb0bec8d1a1e4032f3b47d9e7}{print\+Controls}} (Graphics g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Afiseaza detaliile controalelor cu ajutorul contextului grafic, pe fereastra in pozitia indicata de coordonatele x si y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_a7aef565ee89afc302452586926e35c94}{print\+Hero\+Details}} (Graphics g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Afiseaza detaliile eroului principal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_ad5930b734172d0314b2fe8dd4551c276}{print\+Enemy\+Details}} (Graphics g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Afiseaza detaliile inamicilor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_a05a32a31132ca009f4c80a80c7082614}{print\+Rewards}} (Graphics g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Afiseaza detaliile legate de recompense pentru uciderea inamicilor, sau cresterea in nivel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_a7e568f26a0b5f03795203217507164b4}{print\+Level\+System}} (Graphics g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Afiseaza delatii legate de sistemul de level-\/up al eroului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_ada5d653b8775b9a6393e9f05826360ae}{ui\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clasa se ocupa cu informarea jucatorului cu privire la detaliile jocului, inamicilor si a caracterului principal, si ii o fera o\mbox{]}posibilitatea de a-\/si configura controalele dupa doua seturi prestabilite. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_a177bfecf8eab615d2eada28ca02c49eb}\label{class_game_1_1_states_1_1_help_and_settings_state_a177bfecf8eab615d2eada28ca02c49eb}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!HelpAndSettingsState@{HelpAndSettingsState}}
+\index{HelpAndSettingsState@{HelpAndSettingsState}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{HelpAndSettingsState()}{HelpAndSettingsState()}}
+{\footnotesize\ttfamily public Game.\+States.\+Help\+And\+Settings\+State.\+Help\+And\+Settings\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructorul creaza un nou manager de obiecte grafice, si adaugat butoane cu configuratii diferite ce ii permite user-\/ului sa navigheze intre stari(menu $<$-\/$>$ help\&settings) si sa isi aleaga setul de controale. 
+
+Creare manager de obiecte grafice
+
+Adaugare de buton intoarece menu principal
+
+Daca starea de joc nu este activa, apasarea butonului va activa starea de menu principal, altfel, va activa starea de menu intermediar
+
+Adaugare buton pentru selectarea setului principal de controale
+
+Adaugare buton pentru selectarea setului secundar de controale
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_a6eeb7eb4a0c969b17f3eb81183c9de5e}\label{class_game_1_1_states_1_1_help_and_settings_state_a6eeb7eb4a0c969b17f3eb81183c9de5e}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!getUiManager@{getUiManager}}
+\index{getUiManager@{getUiManager}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{getUiManager()}{getUiManager()}}
+{\footnotesize\ttfamily protected \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+States.\+Help\+And\+Settings\+State.\+get\+Ui\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returneaza managerul de obiecte grafice. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_abfc8068193a8dcdd75e44810ca9fc3d5}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_ace073bdfb0bec8d1a1e4032f3b47d9e7}\label{class_game_1_1_states_1_1_help_and_settings_state_ace073bdfb0bec8d1a1e4032f3b47d9e7}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!printControls@{printControls}}
+\index{printControls@{printControls}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{printControls()}{printControls()}}
+{\footnotesize\ttfamily private void Game.\+States.\+Help\+And\+Settings\+State.\+print\+Controls (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Afiseaza detaliile controalelor cu ajutorul contextului grafic, pe fereastra in pozitia indicata de coordonatele x si y. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_ad5930b734172d0314b2fe8dd4551c276}\label{class_game_1_1_states_1_1_help_and_settings_state_ad5930b734172d0314b2fe8dd4551c276}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!printEnemyDetails@{printEnemyDetails}}
+\index{printEnemyDetails@{printEnemyDetails}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{printEnemyDetails()}{printEnemyDetails()}}
+{\footnotesize\ttfamily private void Game.\+States.\+Help\+And\+Settings\+State.\+print\+Enemy\+Details (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Afiseaza detaliile inamicilor. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_a7aef565ee89afc302452586926e35c94}\label{class_game_1_1_states_1_1_help_and_settings_state_a7aef565ee89afc302452586926e35c94}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!printHeroDetails@{printHeroDetails}}
+\index{printHeroDetails@{printHeroDetails}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{printHeroDetails()}{printHeroDetails()}}
+{\footnotesize\ttfamily private void Game.\+States.\+Help\+And\+Settings\+State.\+print\+Hero\+Details (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Afiseaza detaliile eroului principal. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_a7e568f26a0b5f03795203217507164b4}\label{class_game_1_1_states_1_1_help_and_settings_state_a7e568f26a0b5f03795203217507164b4}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!printLevelSystem@{printLevelSystem}}
+\index{printLevelSystem@{printLevelSystem}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{printLevelSystem()}{printLevelSystem()}}
+{\footnotesize\ttfamily private void Game.\+States.\+Help\+And\+Settings\+State.\+print\+Level\+System (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Afiseaza delatii legate de sistemul de level-\/up al eroului. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_a05a32a31132ca009f4c80a80c7082614}\label{class_game_1_1_states_1_1_help_and_settings_state_a05a32a31132ca009f4c80a80c7082614}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!printRewards@{printRewards}}
+\index{printRewards@{printRewards}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{printRewards()}{printRewards()}}
+{\footnotesize\ttfamily private void Game.\+States.\+Help\+And\+Settings\+State.\+print\+Rewards (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Afiseaza detaliile legate de recompense pentru uciderea inamicilor, sau cresterea in nivel. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_af22421c795d20f7b5001946bda7704f1}\label{class_game_1_1_states_1_1_help_and_settings_state_af22421c795d20f7b5001946bda7704f1}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!render@{render}}
+\index{render@{render}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Help\+And\+Settings\+State.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Randeaza detaliile jocului si starea obiectelor grafice. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a93d159a044a807b185df7536110e2083}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_a09b58f6d8e31dab63e4c025c9934f34d}\label{class_game_1_1_states_1_1_help_and_settings_state_a09b58f6d8e31dab63e4c025c9934f34d}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!update@{update}}
+\index{update@{update}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Help\+And\+Settings\+State.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualizare stare daca jocul conform flag-\/ului is\+Active. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a806187e704eb1159230a410d0b31645b}{Game.\+States.\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_help_and_settings_state_ada5d653b8775b9a6393e9f05826360ae}\label{class_game_1_1_states_1_1_help_and_settings_state_ada5d653b8775b9a6393e9f05826360ae}} 
+\index{Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}!uiManager@{uiManager}}
+\index{uiManager@{uiManager}!Game.States.HelpAndSettingsState@{Game.States.HelpAndSettingsState}}
+\doxysubsubsection{\texorpdfstring{uiManager}{uiManager}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+States.\+Help\+And\+Settings\+State.\+ui\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre un manager de obiecte grafice 

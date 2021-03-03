@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['deletesavedgamestate_527',['deleteSavedGameState',['../class_game_1_1_data_base_1_1_save_and_reload_1_1_save_and_reload_game_state.html#a1bb59981c68dea09dabd64ae88da4520',1,'Game::DataBase::SaveAndReload::SaveAndReloadGameState']]],
+  ['die_528',['die',['../class_game_1_1_entities_1_1_creatures_1_1_enemy.html#afed7d55da0993840f62ea86af192e81f',1,'Game.Entities.Creatures.Enemy.die()'],['../class_game_1_1_entities_1_1_creatures_1_1_player.html#ae9c63abe7ba25169b96f869aed02f124',1,'Game.Entities.Creatures.Player.die()'],['../class_game_1_1_entities_1_1_entity.html#aef103d2cd8b5bc62625a729acf9809de',1,'Game.Entities.Entity.die()'],['../class_game_1_1_entities_1_1_objects_1_1_bushes.html#a786b899b50cf64b34ea0d09eb7ba70e5',1,'Game.Entities.Objects.Bushes.die()'],['../class_game_1_1_entities_1_1_objects_1_1_tree.html#afb7c82ad647b2106303d7e978cb02499',1,'Game.Entities.Objects.Tree.die()'],['../class_game_1_1_entities_1_1_projectiles_1_1_projectile.html#ae1cb688dec5b17bf3098096df1d3cc82',1,'Game.Entities.Projectiles.Projectile.die()']]],
+  ['display_529',['Display',['../class_game_1_1_window_1_1_display.html#a869c9e6f865298da2ac5f32c2f36969a',1,'Game::Window::Display']]]
+];

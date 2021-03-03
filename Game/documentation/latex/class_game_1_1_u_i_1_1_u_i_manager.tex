@@ -1,0 +1,102 @@
+\hypertarget{class_game_1_1_u_i_1_1_u_i_manager}{}\doxysection{Game.\+U\+I.\+U\+I\+Manager Class Reference}
+\label{class_game_1_1_u_i_1_1_u_i_manager}\index{Game.UI.UIManager@{Game.UI.UIManager}}
+
+
+Clasa va avea ca si membru un Array\+List, in care vom tine diferite obiecte grafice, comune undei stari de joc, cum ar fi menu\+State, help\+And\+Setting\+State etc.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager_a8d4f30f32ef005bad6d2854d3e2907e0}{U\+I\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor ce initializeaza Colectia de obiecte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager_a7ac9c1ec9a149702099cdb92641da3b5}{update}} ()
+\begin{DoxyCompactList}\small\item\em Iteram prin Colectia de obiecte si le actualizam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager_a58a5ae7469de019245034c98c4bde41c}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Iteram prin Colectia de obiecte si randam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager_a46045d45ac17d2bde7bd3f6b74bd0068}{on\+Mouse\+Move}} (Mouse\+Event mouse\+Event)
+\begin{DoxyCompactList}\small\item\em Iteram prin Colectia de obiecte si se va seta flag-\/ul hovering pe true, daca cursrul se afla in suprafata de interactiune a obiectului/obiectelor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager_af13ab1ebef3c89653e1585944a3c251d}{on\+Mouse\+Release}} (Mouse\+Event mouse\+Event)
+\item 
+void \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager_a8525d7507968a60055103d728128f739}{add\+Object}} (\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object}{U\+I\+Object}} object)
+\begin{DoxyCompactList}\small\item\em Adaugam obiecte noi la Colectia actuala. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object}{U\+I\+Object}} $>$ \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager_a1aa0f93a24879498d63f79831627970a}{objects}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa va avea ca si membru un Array\+List, in care vom tine diferite obiecte grafice, comune undei stari de joc, cum ar fi menu\+State, help\+And\+Setting\+State etc. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_manager_a8d4f30f32ef005bad6d2854d3e2907e0}\label{class_game_1_1_u_i_1_1_u_i_manager_a8d4f30f32ef005bad6d2854d3e2907e0}} 
+\index{Game.UI.UIManager@{Game.UI.UIManager}!UIManager@{UIManager}}
+\index{UIManager@{UIManager}!Game.UI.UIManager@{Game.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{UIManager()}{UIManager()}}
+{\footnotesize\ttfamily public Game.\+U\+I.\+U\+I\+Manager.\+U\+I\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor ce initializeaza Colectia de obiecte. 
+
+Creare lista de obiecte
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_manager_a8525d7507968a60055103d728128f739}\label{class_game_1_1_u_i_1_1_u_i_manager_a8525d7507968a60055103d728128f739}} 
+\index{Game.UI.UIManager@{Game.UI.UIManager}!addObject@{addObject}}
+\index{addObject@{addObject}!Game.UI.UIManager@{Game.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{addObject()}{addObject()}}
+{\footnotesize\ttfamily public void Game.\+U\+I.\+U\+I\+Manager.\+add\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object}{U\+I\+Object}}}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adaugam obiecte noi la Colectia actuala. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_manager_a46045d45ac17d2bde7bd3f6b74bd0068}\label{class_game_1_1_u_i_1_1_u_i_manager_a46045d45ac17d2bde7bd3f6b74bd0068}} 
+\index{Game.UI.UIManager@{Game.UI.UIManager}!onMouseMove@{onMouseMove}}
+\index{onMouseMove@{onMouseMove}!Game.UI.UIManager@{Game.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{onMouseMove()}{onMouseMove()}}
+{\footnotesize\ttfamily public void Game.\+U\+I.\+U\+I\+Manager.\+on\+Mouse\+Move (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iteram prin Colectia de obiecte si se va seta flag-\/ul hovering pe true, daca cursrul se afla in suprafata de interactiune a obiectului/obiectelor. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_manager_af13ab1ebef3c89653e1585944a3c251d}\label{class_game_1_1_u_i_1_1_u_i_manager_af13ab1ebef3c89653e1585944a3c251d}} 
+\index{Game.UI.UIManager@{Game.UI.UIManager}!onMouseRelease@{onMouseRelease}}
+\index{onMouseRelease@{onMouseRelease}!Game.UI.UIManager@{Game.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{onMouseRelease()}{onMouseRelease()}}
+{\footnotesize\ttfamily public void Game.\+U\+I.\+U\+I\+Manager.\+on\+Mouse\+Release (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_manager_a58a5ae7469de019245034c98c4bde41c}\label{class_game_1_1_u_i_1_1_u_i_manager_a58a5ae7469de019245034c98c4bde41c}} 
+\index{Game.UI.UIManager@{Game.UI.UIManager}!render@{render}}
+\index{render@{render}!Game.UI.UIManager@{Game.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+U\+I.\+U\+I\+Manager.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iteram prin Colectia de obiecte si randam. 
+
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_manager_a7ac9c1ec9a149702099cdb92641da3b5}\label{class_game_1_1_u_i_1_1_u_i_manager_a7ac9c1ec9a149702099cdb92641da3b5}} 
+\index{Game.UI.UIManager@{Game.UI.UIManager}!update@{update}}
+\index{update@{update}!Game.UI.UIManager@{Game.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+U\+I.\+U\+I\+Manager.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Iteram prin Colectia de obiecte si le actualizam. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_u_i_1_1_u_i_manager_a1aa0f93a24879498d63f79831627970a}\label{class_game_1_1_u_i_1_1_u_i_manager_a1aa0f93a24879498d63f79831627970a}} 
+\index{Game.UI.UIManager@{Game.UI.UIManager}!objects@{objects}}
+\index{objects@{objects}!Game.UI.UIManager@{Game.UI.UIManager}}
+\doxysubsubsection{\texorpdfstring{objects}{objects}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_object}{U\+I\+Object}}$>$ Game.\+U\+I.\+U\+I\+Manager.\+objects\hspace{0.3cm}{\ttfamily [private]}}
+
+Colectia de obiecte grafice 

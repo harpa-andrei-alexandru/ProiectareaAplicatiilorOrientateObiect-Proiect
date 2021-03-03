@@ -1,0 +1,206 @@
+\hypertarget{class_game_1_1_states_1_1_state}{}\doxysection{Game.\+States.\+State Class Reference}
+\label{class_game_1_1_states_1_1_state}\index{Game.States.State@{Game.States.State}}
+
+
+Clasa abstracta serveste drept baza pentru starile jocului, definind functionalitati de baza.  
+
+
+Inheritance diagram for Game.\+States.\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.868217cm]{class_game_1_1_states_1_1_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_state_af0e230922936503ac97c0e1d756afa33}{State}} ()
+\begin{DoxyCompactList}\small\item\em Constructor ce creaza obiectul ce tine de lucrul cu baza de date si obiectul responsabil de configuratia font-\/ului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_state_a9de4f5b4849f2bc8dcc43762460dbb62}{set\+Active}} (boolean active)
+\begin{DoxyCompactList}\small\item\em Seteaza flag-\/ul is\+Active conform starii argumentului. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_audio_1_1_music_player}{Music\+Player}} \mbox{\hyperlink{class_game_1_1_states_1_1_state_a3988e0de83743658e2bb97e145ec73d6}{get\+Music\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza music\+Player-\/ul. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_1_1_states_1_1_state_a806187e704eb1159230a410d0b31645b}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualizeaza starea curenta, totodata si toate elementele ce tin de ea. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_1_1_states_1_1_state_a93d159a044a807b185df7536110e2083}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Randeaza starea curenta, mai exact randeaza elementele continute de stare. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_game_1_1_states_1_1_state_ac0eed3ef7018104ad37914e318abdebc}{set\+State}} (\mbox{\hyperlink{class_game_1_1_states_1_1_state}{State}} state)
+\begin{DoxyCompactList}\small\item\em Seteaza starea data ca si argument pe activ si adauga managerul pentru mouse input starii respective. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_game_1_1_states_1_1_state}{State}} \mbox{\hyperlink{class_game_1_1_states_1_1_state_a226d1926322b613aa7b0c065a65be3bb}{get\+Current\+State}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza starea curenta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_states_1_1_state_abfc8068193a8dcdd75e44810ca9fc3d5}{get\+Ui\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul de obiecte grafice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_states_1_1_state_a186169ff744daef87b71ec5ca59be93c}{is\+Active}} = false
+\item 
+final Font \mbox{\hyperlink{class_game_1_1_states_1_1_state_a245c60cfb1c7b0398b5e03716d92f164}{my\+Font}}
+\item 
+\mbox{\hyperlink{class_game_1_1_audio_1_1_music_player}{Music\+Player}} \mbox{\hyperlink{class_game_1_1_states_1_1_state_a8f462cf08c2e90a48fb56688bb5dbebc}{music\+Player}}
+\item 
+\mbox{\hyperlink{class_game_1_1_data_base_1_1_save_and_reload_1_1_save_and_reload_game_state}{Save\+And\+Reload\+Game\+State}} \mbox{\hyperlink{class_game_1_1_states_1_1_state_a42fae02220ecba8c8a706c9a88fce00a}{save\+And\+Reload\+Game\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{class_game_1_1_states_1_1_state_a3e89890458bf2ac481fcb9ffe3b8b1b9}{game\+Active}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_game_1_1_states_1_1_state}{State}} \mbox{\hyperlink{class_game_1_1_states_1_1_state_acc52d0c9d60d813a483422dee23810fb}{current\+State}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa abstracta serveste drept baza pentru starile jocului, definind functionalitati de baza. 
+
+\textbackslash{}abstract class \mbox{\hyperlink{class_game_1_1_states_1_1_state}{State}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_state_af0e230922936503ac97c0e1d756afa33}\label{class_game_1_1_states_1_1_state_af0e230922936503ac97c0e1d756afa33}} 
+\index{Game.States.State@{Game.States.State}!State@{State}}
+\index{State@{State}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily public Game.\+States.\+State.\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor ce creaza obiectul ce tine de lucrul cu baza de date si obiectul responsabil de configuratia font-\/ului. 
+
+Creare obiect lucru cu baza de date
+
+Creare obiect font
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_state_a226d1926322b613aa7b0c065a65be3bb}\label{class_game_1_1_states_1_1_state_a226d1926322b613aa7b0c065a65be3bb}} 
+\index{Game.States.State@{Game.States.State}!getCurrentState@{getCurrentState}}
+\index{getCurrentState@{getCurrentState}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{getCurrentState()}{getCurrentState()}}
+{\footnotesize\ttfamily public static \mbox{\hyperlink{class_game_1_1_states_1_1_state}{State}} Game.\+States.\+State.\+get\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returneaza starea curenta. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_state_a3988e0de83743658e2bb97e145ec73d6}\label{class_game_1_1_states_1_1_state_a3988e0de83743658e2bb97e145ec73d6}} 
+\index{Game.States.State@{Game.States.State}!getMusicPlayer@{getMusicPlayer}}
+\index{getMusicPlayer@{getMusicPlayer}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{getMusicPlayer()}{getMusicPlayer()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_audio_1_1_music_player}{Music\+Player}} Game.\+States.\+State.\+get\+Music\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza music\+Player-\/ul. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_state_abfc8068193a8dcdd75e44810ca9fc3d5}\label{class_game_1_1_states_1_1_state_abfc8068193a8dcdd75e44810ca9fc3d5}} 
+\index{Game.States.State@{Game.States.State}!getUiManager@{getUiManager}}
+\index{getUiManager@{getUiManager}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{getUiManager()}{getUiManager()}}
+{\footnotesize\ttfamily protected abstract \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+States.\+State.\+get\+Ui\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Returneaza managerul de obiecte grafice. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state_a8439ac72a1951400a8c0bbb6e08b6d60}{Game.\+States.\+In\+Game\+Menu\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_af0cf40470e9953cdc6e049911e378403}{Game.\+States.\+Game\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_menu_state_a1637a11e3a7de867b9e330a0ffbe101f}{Game.\+States.\+Menu\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_a6eeb7eb4a0c969b17f3eb81183c9de5e}{Game.\+States.\+Help\+And\+Settings\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_lose_state_ae2e30100272d216242faf59954f38cac}{Game.\+States.\+Lose\+State}}, and \mbox{\hyperlink{class_game_1_1_states_1_1_win_state_a6f55f50d3e10a35d8f04cee34fe12f3f}{Game.\+States.\+Win\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_state_a93d159a044a807b185df7536110e2083}\label{class_game_1_1_states_1_1_state_a93d159a044a807b185df7536110e2083}} 
+\index{Game.States.State@{Game.States.State}!render@{render}}
+\index{render@{render}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public abstract void Game.\+States.\+State.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Randeaza starea curenta, mai exact randeaza elementele continute de stare. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state_a70afcd76297e68c0f13add73ae9f45b7}{Game.\+States.\+In\+Game\+Menu\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a22feaf6a23cc6bd4884dcd3e1a8a284d}{Game.\+States.\+Game\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_menu_state_a07bcabb83c4d0295520f263250656997}{Game.\+States.\+Menu\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_af22421c795d20f7b5001946bda7704f1}{Game.\+States.\+Help\+And\+Settings\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_lose_state_a32f2c62959901c388680f9642313f488}{Game.\+States.\+Lose\+State}}, and \mbox{\hyperlink{class_game_1_1_states_1_1_win_state_ad9af9e443d2f3b95c98c2ce335bcaf6d}{Game.\+States.\+Win\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_state_a9de4f5b4849f2bc8dcc43762460dbb62}\label{class_game_1_1_states_1_1_state_a9de4f5b4849f2bc8dcc43762460dbb62}} 
+\index{Game.States.State@{Game.States.State}!setActive@{setActive}}
+\index{setActive@{setActive}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily public void Game.\+States.\+State.\+set\+Active (\begin{DoxyParamCaption}\item[{boolean}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza flag-\/ul is\+Active conform starii argumentului. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_state_ac0eed3ef7018104ad37914e318abdebc}\label{class_game_1_1_states_1_1_state_ac0eed3ef7018104ad37914e318abdebc}} 
+\index{Game.States.State@{Game.States.State}!setState@{setState}}
+\index{setState@{setState}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily public static void Game.\+States.\+State.\+set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_states_1_1_state}{State}}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Seteaza starea data ca si argument pe activ si adauga managerul pentru mouse input starii respective. 
+
+Seteaza flag-\/ul is\+Active daca jocul se afla in starea data ca si argument
+
+Setare stare curenta\mbox{\Hypertarget{class_game_1_1_states_1_1_state_a806187e704eb1159230a410d0b31645b}\label{class_game_1_1_states_1_1_state_a806187e704eb1159230a410d0b31645b}} 
+\index{Game.States.State@{Game.States.State}!update@{update}}
+\index{update@{update}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public abstract void Game.\+States.\+State.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Actualizeaza starea curenta, totodata si toate elementele ce tin de ea. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state_a6b3951e82038471e9da4e7a265cbbf0c}{Game.\+States.\+In\+Game\+Menu\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_menu_state_add3218998c3c749d92a697c96065aabf}{Game.\+States.\+Menu\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a6d547a124b3a3ec6fd5da6603e954fb6}{Game.\+States.\+Game\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state_a09b58f6d8e31dab63e4c025c9934f34d}{Game.\+States.\+Help\+And\+Settings\+State}}, \mbox{\hyperlink{class_game_1_1_states_1_1_lose_state_a5dd652fa9a22f1009356ed5059649e0c}{Game.\+States.\+Lose\+State}}, and \mbox{\hyperlink{class_game_1_1_states_1_1_win_state_a79f7b0cd810f7ab4e567b60c7d05864a}{Game.\+States.\+Win\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_state_acc52d0c9d60d813a483422dee23810fb}\label{class_game_1_1_states_1_1_state_acc52d0c9d60d813a483422dee23810fb}} 
+\index{Game.States.State@{Game.States.State}!currentState@{currentState}}
+\index{currentState@{currentState}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{currentState}{currentState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_states_1_1_state}{State}} Game.\+States.\+State.\+current\+State = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Referinta catre \mbox{\hyperlink{class_game_1_1_states_1_1_state}{State}}, are rolul de a retine starea actuala in care se afla jocul \mbox{\Hypertarget{class_game_1_1_states_1_1_state_a3e89890458bf2ac481fcb9ffe3b8b1b9}\label{class_game_1_1_states_1_1_state_a3e89890458bf2ac481fcb9ffe3b8b1b9}} 
+\index{Game.States.State@{Game.States.State}!gameActive@{gameActive}}
+\index{gameActive@{gameActive}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{gameActive}{gameActive}}
+{\footnotesize\ttfamily boolean Game.\+States.\+State.\+game\+Active\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Flag care tine evidenta daca jocul este in curs de rulare sau nu \mbox{\Hypertarget{class_game_1_1_states_1_1_state_a186169ff744daef87b71ec5ca59be93c}\label{class_game_1_1_states_1_1_state_a186169ff744daef87b71ec5ca59be93c}} 
+\index{Game.States.State@{Game.States.State}!isActive@{isActive}}
+\index{isActive@{isActive}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{isActive}{isActive}}
+{\footnotesize\ttfamily boolean Game.\+States.\+State.\+is\+Active = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Flag care se seteaza daca starea este activa \mbox{\Hypertarget{class_game_1_1_states_1_1_state_a8f462cf08c2e90a48fb56688bb5dbebc}\label{class_game_1_1_states_1_1_state_a8f462cf08c2e90a48fb56688bb5dbebc}} 
+\index{Game.States.State@{Game.States.State}!musicPlayer@{musicPlayer}}
+\index{musicPlayer@{musicPlayer}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{musicPlayer}{musicPlayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_audio_1_1_music_player}{Music\+Player}} Game.\+States.\+State.\+music\+Player\hspace{0.3cm}{\ttfamily [protected]}}
+
+Referinta catre Music\+Player \mbox{\Hypertarget{class_game_1_1_states_1_1_state_a245c60cfb1c7b0398b5e03716d92f164}\label{class_game_1_1_states_1_1_state_a245c60cfb1c7b0398b5e03716d92f164}} 
+\index{Game.States.State@{Game.States.State}!myFont@{myFont}}
+\index{myFont@{myFont}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{myFont}{myFont}}
+{\footnotesize\ttfamily final Font Game.\+States.\+State.\+my\+Font\hspace{0.3cm}{\ttfamily [protected]}}
+
+Referinta catre Font \mbox{\Hypertarget{class_game_1_1_states_1_1_state_a42fae02220ecba8c8a706c9a88fce00a}\label{class_game_1_1_states_1_1_state_a42fae02220ecba8c8a706c9a88fce00a}} 
+\index{Game.States.State@{Game.States.State}!saveAndReloadGameState@{saveAndReloadGameState}}
+\index{saveAndReloadGameState@{saveAndReloadGameState}!Game.States.State@{Game.States.State}}
+\doxysubsubsection{\texorpdfstring{saveAndReloadGameState}{saveAndReloadGameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_data_base_1_1_save_and_reload_1_1_save_and_reload_game_state}{Save\+And\+Reload\+Game\+State}} Game.\+States.\+State.\+save\+And\+Reload\+Game\+State\hspace{0.3cm}{\ttfamily [protected]}}
+
+Referinta catre clasa care se ocupa cu incarcarea si salvarea unei lumii, la o anumita stare, din baza de date 

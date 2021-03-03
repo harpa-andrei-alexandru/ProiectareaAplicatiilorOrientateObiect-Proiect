@@ -1,0 +1,158 @@
+\hypertarget{class_game_1_1_inputs_1_1_mouse_manager}{}\doxysection{Game.\+Inputs.\+Mouse\+Manager Class Reference}
+\label{class_game_1_1_inputs_1_1_mouse_manager}\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+
+
+Clasa are rolul de a manipula input-\/urile de la mouse.  
+
+
+Inheritance diagram for Game.\+Inputs.\+Mouse\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_inputs_1_1_mouse_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a467d6bf5be4714ee2b21c2c631cba72f}{Mouse\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_ae06073f620cd0fb3d2924b15578403c9}{set\+Ui\+Manager}} (\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a03dc869b2c0b6c0f9357f70b4bb87827}{ui\+Manager}})
+\begin{DoxyCompactList}\small\item\em Seteaza variabila ui\+Manager cu argumentul primit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a4630d64cd99d45f43429aa954d681af3}{mouse\+Clicked}} (Mouse\+Event mouse\+Event)
+\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_afb0e7994926618c09ae9d9e5d929086c}{mouse\+Pressed}} (Mouse\+Event mouse\+Event)
+\begin{DoxyCompactList}\small\item\em Metoda suprascrisa ce are rolul de a seta flag-\/urie daca exista evenimente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a260d9f8fe110c6dca13d170222e4a2fa}{mouse\+Released}} (Mouse\+Event mouse\+Event)
+\begin{DoxyCompactList}\small\item\em Metoda suprascrisa ce are rolul de a reseta flagurile left\+Pressed si right\+Pressed, dar si de a apela metoda on\+Mouse\+Release din managerul User Interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_ac03842c3ca7ea09dd0d4f7df27666a13}{mouse\+Entered}} (Mouse\+Event mouse\+Event)
+\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_ab3ae11653cf5c041c192fc4114a00925}{mouse\+Exited}} (Mouse\+Event mouse\+Event)
+\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a7ef022cee9764c65aa6d90aa5affb852}{mouse\+Dragged}} (Mouse\+Event mouse\+Event)
+\item 
+void \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a4d5d398a3e34c6c50748e52d05fc8a5f}{mouse\+Moved}} (Mouse\+Event mouse\+Event)
+\begin{DoxyCompactList}\small\item\em Metoda suprascrisa ce are rolul de a salva coordonatele mouse-\/lui si de a apela metoda on\+Mouse\+Move din managerul User Interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a7a3fa75e78072022ed14c0028149e64e}{left\+Pressed}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a100c46bd37692d97182a6c5a2af3d5a3}{right\+Pressed}}
+\item 
+\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager_a03dc869b2c0b6c0f9357f70b4bb87827}{ui\+Manager}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa are rolul de a manipula input-\/urile de la mouse. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_a467d6bf5be4714ee2b21c2c631cba72f}\label{class_game_1_1_inputs_1_1_mouse_manager_a467d6bf5be4714ee2b21c2c631cba72f}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!MouseManager@{MouseManager}}
+\index{MouseManager@{MouseManager}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{MouseManager()}{MouseManager()}}
+{\footnotesize\ttfamily public Game.\+Inputs.\+Mouse\+Manager.\+Mouse\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_a4630d64cd99d45f43429aa954d681af3}\label{class_game_1_1_inputs_1_1_mouse_manager_a4630d64cd99d45f43429aa954d681af3}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!mouseClicked@{mouseClicked}}
+\index{mouseClicked@{mouseClicked}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{mouseClicked()}{mouseClicked()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Mouse\+Manager.\+mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_a7ef022cee9764c65aa6d90aa5affb852}\label{class_game_1_1_inputs_1_1_mouse_manager_a7ef022cee9764c65aa6d90aa5affb852}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!mouseDragged@{mouseDragged}}
+\index{mouseDragged@{mouseDragged}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{mouseDragged()}{mouseDragged()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Mouse\+Manager.\+mouse\+Dragged (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_ac03842c3ca7ea09dd0d4f7df27666a13}\label{class_game_1_1_inputs_1_1_mouse_manager_ac03842c3ca7ea09dd0d4f7df27666a13}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!mouseEntered@{mouseEntered}}
+\index{mouseEntered@{mouseEntered}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{mouseEntered()}{mouseEntered()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Mouse\+Manager.\+mouse\+Entered (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_ab3ae11653cf5c041c192fc4114a00925}\label{class_game_1_1_inputs_1_1_mouse_manager_ab3ae11653cf5c041c192fc4114a00925}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!mouseExited@{mouseExited}}
+\index{mouseExited@{mouseExited}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{mouseExited()}{mouseExited()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Mouse\+Manager.\+mouse\+Exited (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_a4d5d398a3e34c6c50748e52d05fc8a5f}\label{class_game_1_1_inputs_1_1_mouse_manager_a4d5d398a3e34c6c50748e52d05fc8a5f}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!mouseMoved@{mouseMoved}}
+\index{mouseMoved@{mouseMoved}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{mouseMoved()}{mouseMoved()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Mouse\+Manager.\+mouse\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda suprascrisa ce are rolul de a salva coordonatele mouse-\/lui si de a apela metoda on\+Mouse\+Move din managerul User Interface. 
+
+$<$Variabila ce retine coordonata x a cursorului
+
+$<$Variabila ce retine coordonata y a cursorului
+
+Daca avem un ui\+Manager de la care primim input, atunci se apeleaza on\+Mouse\+Move, astfel se va parcurge prin toate obiectele grafice si se va apela metoda on\+Mouse\+Move\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_afb0e7994926618c09ae9d9e5d929086c}\label{class_game_1_1_inputs_1_1_mouse_manager_afb0e7994926618c09ae9d9e5d929086c}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!mousePressed@{mousePressed}}
+\index{mousePressed@{mousePressed}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{mousePressed()}{mousePressed()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Mouse\+Manager.\+mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda suprascrisa ce are rolul de a seta flag-\/urie daca exista evenimente. 
+
+Daca evenimentul provine de la cick stanga, este setat flagul left\+Pressed
+
+Altfe, daca evenimentul provine de la click dreapta, este setat flagul right\+Pressed\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_a260d9f8fe110c6dca13d170222e4a2fa}\label{class_game_1_1_inputs_1_1_mouse_manager_a260d9f8fe110c6dca13d170222e4a2fa}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!mouseReleased@{mouseReleased}}
+\index{mouseReleased@{mouseReleased}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{mouseReleased()}{mouseReleased()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Mouse\+Manager.\+mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{mouse\+Event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda suprascrisa ce are rolul de a reseta flagurile left\+Pressed si right\+Pressed, dar si de a apela metoda on\+Mouse\+Release din managerul User Interface. 
+
+Daca nu mai este apasat click stanga, atunci se reseteaza flagul left\+Pressed
+
+Altfel, daca nu mai este apasat click dreapta, atunci se reseteaza flagul right\+Pressed
+
+Daca avem un ui\+Manager de la care primim input, atunci se apeleaza on\+Mouse\+Release, astfel se va parcurge prin toate obiectele grafice si se va apela metoda on\+Mouse\+Release, care la randul sau va apela metoda on\+Click care va realiza task-\/ul implementat pentru obiectul respectiv\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_ae06073f620cd0fb3d2924b15578403c9}\label{class_game_1_1_inputs_1_1_mouse_manager_ae06073f620cd0fb3d2924b15578403c9}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!setUiManager@{setUiManager}}
+\index{setUiManager@{setUiManager}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{setUiManager()}{setUiManager()}}
+{\footnotesize\ttfamily public void Game.\+Inputs.\+Mouse\+Manager.\+set\+Ui\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}}}]{ui\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza variabila ui\+Manager cu argumentul primit. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_a7a3fa75e78072022ed14c0028149e64e}\label{class_game_1_1_inputs_1_1_mouse_manager_a7a3fa75e78072022ed14c0028149e64e}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!leftPressed@{leftPressed}}
+\index{leftPressed@{leftPressed}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{leftPressed}{leftPressed}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Mouse\+Manager.\+left\+Pressed\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag ce tine evidenta click-\/ului stanga \mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_a100c46bd37692d97182a6c5a2af3d5a3}\label{class_game_1_1_inputs_1_1_mouse_manager_a100c46bd37692d97182a6c5a2af3d5a3}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!rightPressed@{rightPressed}}
+\index{rightPressed@{rightPressed}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{rightPressed}{rightPressed}}
+{\footnotesize\ttfamily boolean Game.\+Inputs.\+Mouse\+Manager.\+right\+Pressed\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag ce tine evidenta click-\/ului dreapta \mbox{\Hypertarget{class_game_1_1_inputs_1_1_mouse_manager_a03dc869b2c0b6c0f9357f70b4bb87827}\label{class_game_1_1_inputs_1_1_mouse_manager_a03dc869b2c0b6c0f9357f70b4bb87827}} 
+\index{Game.Inputs.MouseManager@{Game.Inputs.MouseManager}!uiManager@{uiManager}}
+\index{uiManager@{uiManager}!Game.Inputs.MouseManager@{Game.Inputs.MouseManager}}
+\doxysubsubsection{\texorpdfstring{uiManager}{uiManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+Inputs.\+Mouse\+Manager.\+ui\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre managerul ce se ocupa cu User Interface 

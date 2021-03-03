@@ -1,0 +1,550 @@
+\hypertarget{class_game_1_1_tiles_1_1_tile}{}\doxysection{Game.\+Tiles.\+Tile Class Reference}
+\label{class_game_1_1_tiles_1_1_tile}\index{Game.Tiles.Tile@{Game.Tiles.Tile}}
+
+
+Clasa ce implementeaza dalele hartii.  
+
+
+Inheritance diagram for Game.\+Tiles.\+Tile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_tiles_1_1_tile}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_ac9c64634b53ade328cf1c524229c506f}{Tile}} (Buffered\+Image \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a424e5e22a96c7d9e09a7e6597297d25c}{texture}}, int \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a9e454a99f6f64e045a8004ab8812c94b}{id}})
+\item 
+void \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a968f8ae656f9d015449098e905b4439b}{render}} (Graphics g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Dala este randata la o anumita pozitie indicata de coordonatele x si y, cu ajutorul contextului grafic g. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a01b7682aa5af234fc6e4bd057d2a0164}{is\+Solid}} ()
+\begin{DoxyCompactList}\small\item\em returneaza starea dalei, daca este solida sau nu, mai exact, daca entitatile pot sa treaba prin, sau pe deasupra ei, metoda necesara pentru implementarea coliziunilor \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a650fcd814a0be46f182088b2ec7cc7d8}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em returneaza id-\/ul dalei \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_adc5ff8c13da2423fed115d8e744f128d}{tiles}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}}\mbox{[}256\mbox{]}
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a0f2347bcd5a3f00453b9c1bf2a137537}{land\+Tile}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(0, 0)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a6b210a4e6ee9a748d59a148859b219fc}{land\+Tile2}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(1,1)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a3a53d7e44949dbc3d12f1e7435c8923c}{land\+Tile3}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(2,2)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_ad00f9756b30c58252e8b343a921adcf3}{land\+Tile4}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(3, 3)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a14b84caf0099838b2400a8d417899770}{land\+Tile5}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(4,4)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_ab224daaf9b70fb1cf46be04193c85085}{land\+Tile6}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(5,5)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_aea7cabec27d6dcf68ee00e3dae36d1d8}{land\+Tile7}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(6,6)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a198b1c64d5d2028976f0eb96a4e06306}{land\+Tile8}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(7,7)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a4e4d705f580cbd78683ef61620759330}{land\+Tile9}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(8,8)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a3c6c87e7b20e655053439f385e46dc92}{land\+Tile10}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(9,9)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_abe7149da8092e4f56630e2f1c4df088b}{land\+Tile11}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(10,10)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_aa87fd8df2f13c22004d6a5780d2534f7}{land\+Tile12}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(11,11)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a451b8dd97124468e6140b8b3eec32c3b}{land\+Tile13}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(12,12)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_ab2d5a6dd7822989de1c3120788f7a96f}{land\+Tile14}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(13,13)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a8e63842b6e343d1c7a3e050a532c2537}{land\+Tile15}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(14,14)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a578badfc8b5fd8b4fbbe31c632726b48}{land\+Tile16}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(15,15)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a1b09e10ed1c9a638d6a7a59cad407869}{land\+Tile17}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(16,16)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a13579c3f305cbc435049d6ed9d6788bd}{land\+Tile18}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(17,17)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_ae81f9e014749558a76a29d56de470efc}{land\+Tile19}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(18,18)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a8390b6f6489d9356bd55862a31f947bc}{land\+Tile20}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(19,19)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a1e86ce02cfe146089e8215142f671e5d}{land\+Tile21}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(20,20)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a01c1f6b8ecff110108876798fd60e43a}{land\+Tile22}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(21,21)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a198f2e172e4df338bba609e7f806c7d4}{land\+Tile23}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(22,22)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a2f3dd3634516ab8db6d3d4159dcba4f5}{land\+Tile24}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(23,23)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a1b81bc5093a01e650048045dba3385ce}{land\+Tile25}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(24,24)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a85c2dc76cbcde9d8f0a956522480cd68}{land\+Tile26}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(25,25)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a97569c4b7b55e8787f48c3d475ab4e42}{land\+Tile27}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(26,26)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a1217294e2f7d89109c1f6c8fd71e4ead}{land\+Tile28}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(27,27)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a598055bf67a4009b1e8158c7d123ca39}{land\+Tile29}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(28,28)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a5ad4489c7bd66f43f69437185790b92d}{land\+Tile30}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(29,29)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_af46f5d6667880f6fd8df00eb6b4897e7}{land\+Tile31}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(30,30)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a93235611b6b472670fad4f1cc07bcf4e}{land\+Tile32}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(31,31)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a6c1b1381c9818ffee6e02cfb3dba56e0}{land\+Tile33}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(32,32)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_acc1434f88a51f12dc66f00378b9d57ac}{land\+Tile34}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(33,33)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a0b1745c193f3d75e0ca380be83a85184}{land\+Tile35}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(34,34)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a0ff5935f945d1ec8c40bb3fb3266d79f}{land\+Tile36}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(35,35)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a834ea96838f902cc2eefe1b7e699debe}{land\+Tile37}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(36,36)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a1ba1b31985767213134b3556226d9dc4}{land\+Tile38}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(37,37)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a398a34fe2ae7ddb61548f8380cd85cf6}{land\+Tile39}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(38,38)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a6ae1cff972c379d8a2b797ff8625ee4c}{land\+Tile40}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(39,39)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a5323fa8d53dad83497b64916c5b3c184}{land\+Tile41}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(40,40)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a8934c4275f96d7055e858342f388af67}{land\+Tile42}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(41,41)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_acad48328b136911075180f135502e130}{land\+Tile43}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(42,42)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_aae8760186b860355c5cedb558564088c}{land\+Tile44}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(43,43)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a56e179121115289f3ed8deff7f9314c3}{land\+Tile45}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(44,44)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_ad9582da4d3810d6ff8b46a0922133f31}{land\+Tile46}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(45,45)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a6336319676b646d9c66aba5e4d567414}{land\+Tile47}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(46,46)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a4f527cc5be2e140b55540e4689d70f9c}{land\+Tile48}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(47,47)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a641bb782921ca9f36840d93c307d327d}{land\+Tile49}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(48,48)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_ab1099ff174afb5cd5d570ae390c7f3d7}{land\+Tile50}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(49,49)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a5149d726fb7ae9b5b55bc7cdee090605}{land\+Tile51}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(50,50)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a44194d27616cd4092dcbcbec9ee9422e}{land\+Tile52}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(51,51)
+\item 
+static \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_ad0e8d319d74796f90342fb2af7d28a47}{land\+Tile53}} = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(52,52)
+\item 
+static final int \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a6a889bb8e94da3ecfd9fb31806606539}{T\+I\+L\+E\+\_\+\+W\+I\+D\+TH}} = 64
+\item 
+static final int \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a02c0e33aa78024a6854a7ebbc896ccc2}{T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+HT}} = 64
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Buffered\+Image \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a424e5e22a96c7d9e09a7e6597297d25c}{texture}}
+\item 
+final int \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile_a9e454a99f6f64e045a8004ab8812c94b}{id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa ce implementeaza dalele hartii. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_ac9c64634b53ade328cf1c524229c506f}\label{class_game_1_1_tiles_1_1_tile_ac9c64634b53ade328cf1c524229c506f}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily public Game.\+Tiles.\+Tile.\+Tile (\begin{DoxyParamCaption}\item[{Buffered\+Image}]{texture,  }\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{} Constructor care incarca imaginea dalei si ii seteaza un id unic Incarcare imagine
+
+Setare id unic
+
+Adaugare dala in tabloul de dale
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a650fcd814a0be46f182088b2ec7cc7d8}\label{class_game_1_1_tiles_1_1_tile_a650fcd814a0be46f182088b2ec7cc7d8}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!getId@{getId}}
+\index{getId@{getId}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily public int Game.\+Tiles.\+Tile.\+get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returneaza id-\/ul dalei 
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a01b7682aa5af234fc6e4bd057d2a0164}\label{class_game_1_1_tiles_1_1_tile_a01b7682aa5af234fc6e4bd057d2a0164}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!isSolid@{isSolid}}
+\index{isSolid@{isSolid}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{isSolid()}{isSolid()}}
+{\footnotesize\ttfamily public boolean Game.\+Tiles.\+Tile.\+is\+Solid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returneaza starea dalei, daca este solida sau nu, mai exact, daca entitatile pot sa treaba prin, sau pe deasupra ei, metoda necesara pentru implementarea coliziunilor 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile_ad68198732c9c1cabb09708de9f615618}{Game.\+Tiles.\+Land\+Tile}}.
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a968f8ae656f9d015449098e905b4439b}\label{class_game_1_1_tiles_1_1_tile_a968f8ae656f9d015449098e905b4439b}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!render@{render}}
+\index{render@{render}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+Tiles.\+Tile.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dala este randata la o anumita pozitie indicata de coordonatele x si y, cu ajutorul contextului grafic g. 
+
+Desenare dala cu ajutorul contextului grafic
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a9e454a99f6f64e045a8004ab8812c94b}\label{class_game_1_1_tiles_1_1_tile_a9e454a99f6f64e045a8004ab8812c94b}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!id@{id}}
+\index{id@{id}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily final int Game.\+Tiles.\+Tile.\+id\hspace{0.3cm}{\ttfamily [protected]}}
+
+Id-\/ul dalei \mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a0f2347bcd5a3f00453b9c1bf2a137537}\label{class_game_1_1_tiles_1_1_tile_a0f2347bcd5a3f00453b9c1bf2a137537}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile@{landTile}}
+\index{landTile@{landTile}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile}{landTile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(0, 0)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a3c6c87e7b20e655053439f385e46dc92}\label{class_game_1_1_tiles_1_1_tile_a3c6c87e7b20e655053439f385e46dc92}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile10@{landTile10}}
+\index{landTile10@{landTile10}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile10}{landTile10}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile10 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(9,9)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_abe7149da8092e4f56630e2f1c4df088b}\label{class_game_1_1_tiles_1_1_tile_abe7149da8092e4f56630e2f1c4df088b}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile11@{landTile11}}
+\index{landTile11@{landTile11}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile11}{landTile11}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile11 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(10,10)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_aa87fd8df2f13c22004d6a5780d2534f7}\label{class_game_1_1_tiles_1_1_tile_aa87fd8df2f13c22004d6a5780d2534f7}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile12@{landTile12}}
+\index{landTile12@{landTile12}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile12}{landTile12}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile12 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(11,11)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a451b8dd97124468e6140b8b3eec32c3b}\label{class_game_1_1_tiles_1_1_tile_a451b8dd97124468e6140b8b3eec32c3b}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile13@{landTile13}}
+\index{landTile13@{landTile13}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile13}{landTile13}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile13 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(12,12)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_ab2d5a6dd7822989de1c3120788f7a96f}\label{class_game_1_1_tiles_1_1_tile_ab2d5a6dd7822989de1c3120788f7a96f}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile14@{landTile14}}
+\index{landTile14@{landTile14}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile14}{landTile14}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile14 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(13,13)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a8e63842b6e343d1c7a3e050a532c2537}\label{class_game_1_1_tiles_1_1_tile_a8e63842b6e343d1c7a3e050a532c2537}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile15@{landTile15}}
+\index{landTile15@{landTile15}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile15}{landTile15}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile15 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(14,14)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a578badfc8b5fd8b4fbbe31c632726b48}\label{class_game_1_1_tiles_1_1_tile_a578badfc8b5fd8b4fbbe31c632726b48}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile16@{landTile16}}
+\index{landTile16@{landTile16}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile16}{landTile16}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile16 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(15,15)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a1b09e10ed1c9a638d6a7a59cad407869}\label{class_game_1_1_tiles_1_1_tile_a1b09e10ed1c9a638d6a7a59cad407869}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile17@{landTile17}}
+\index{landTile17@{landTile17}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile17}{landTile17}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile17 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(16,16)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a13579c3f305cbc435049d6ed9d6788bd}\label{class_game_1_1_tiles_1_1_tile_a13579c3f305cbc435049d6ed9d6788bd}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile18@{landTile18}}
+\index{landTile18@{landTile18}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile18}{landTile18}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile18 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(17,17)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_ae81f9e014749558a76a29d56de470efc}\label{class_game_1_1_tiles_1_1_tile_ae81f9e014749558a76a29d56de470efc}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile19@{landTile19}}
+\index{landTile19@{landTile19}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile19}{landTile19}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile19 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(18,18)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a6b210a4e6ee9a748d59a148859b219fc}\label{class_game_1_1_tiles_1_1_tile_a6b210a4e6ee9a748d59a148859b219fc}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile2@{landTile2}}
+\index{landTile2@{landTile2}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile2}{landTile2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile2 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(1,1)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a8390b6f6489d9356bd55862a31f947bc}\label{class_game_1_1_tiles_1_1_tile_a8390b6f6489d9356bd55862a31f947bc}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile20@{landTile20}}
+\index{landTile20@{landTile20}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile20}{landTile20}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile20 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(19,19)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a1e86ce02cfe146089e8215142f671e5d}\label{class_game_1_1_tiles_1_1_tile_a1e86ce02cfe146089e8215142f671e5d}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile21@{landTile21}}
+\index{landTile21@{landTile21}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile21}{landTile21}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile21 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(20,20)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a01c1f6b8ecff110108876798fd60e43a}\label{class_game_1_1_tiles_1_1_tile_a01c1f6b8ecff110108876798fd60e43a}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile22@{landTile22}}
+\index{landTile22@{landTile22}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile22}{landTile22}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile22 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(21,21)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a198f2e172e4df338bba609e7f806c7d4}\label{class_game_1_1_tiles_1_1_tile_a198f2e172e4df338bba609e7f806c7d4}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile23@{landTile23}}
+\index{landTile23@{landTile23}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile23}{landTile23}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile23 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(22,22)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a2f3dd3634516ab8db6d3d4159dcba4f5}\label{class_game_1_1_tiles_1_1_tile_a2f3dd3634516ab8db6d3d4159dcba4f5}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile24@{landTile24}}
+\index{landTile24@{landTile24}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile24}{landTile24}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile24 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(23,23)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a1b81bc5093a01e650048045dba3385ce}\label{class_game_1_1_tiles_1_1_tile_a1b81bc5093a01e650048045dba3385ce}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile25@{landTile25}}
+\index{landTile25@{landTile25}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile25}{landTile25}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile25 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(24,24)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a85c2dc76cbcde9d8f0a956522480cd68}\label{class_game_1_1_tiles_1_1_tile_a85c2dc76cbcde9d8f0a956522480cd68}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile26@{landTile26}}
+\index{landTile26@{landTile26}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile26}{landTile26}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile26 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(25,25)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a97569c4b7b55e8787f48c3d475ab4e42}\label{class_game_1_1_tiles_1_1_tile_a97569c4b7b55e8787f48c3d475ab4e42}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile27@{landTile27}}
+\index{landTile27@{landTile27}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile27}{landTile27}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile27 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(26,26)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a1217294e2f7d89109c1f6c8fd71e4ead}\label{class_game_1_1_tiles_1_1_tile_a1217294e2f7d89109c1f6c8fd71e4ead}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile28@{landTile28}}
+\index{landTile28@{landTile28}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile28}{landTile28}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile28 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(27,27)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a598055bf67a4009b1e8158c7d123ca39}\label{class_game_1_1_tiles_1_1_tile_a598055bf67a4009b1e8158c7d123ca39}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile29@{landTile29}}
+\index{landTile29@{landTile29}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile29}{landTile29}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile29 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(28,28)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a3a53d7e44949dbc3d12f1e7435c8923c}\label{class_game_1_1_tiles_1_1_tile_a3a53d7e44949dbc3d12f1e7435c8923c}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile3@{landTile3}}
+\index{landTile3@{landTile3}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile3}{landTile3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile3 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(2,2)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a5ad4489c7bd66f43f69437185790b92d}\label{class_game_1_1_tiles_1_1_tile_a5ad4489c7bd66f43f69437185790b92d}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile30@{landTile30}}
+\index{landTile30@{landTile30}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile30}{landTile30}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile30 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(29,29)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_af46f5d6667880f6fd8df00eb6b4897e7}\label{class_game_1_1_tiles_1_1_tile_af46f5d6667880f6fd8df00eb6b4897e7}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile31@{landTile31}}
+\index{landTile31@{landTile31}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile31}{landTile31}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile31 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(30,30)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a93235611b6b472670fad4f1cc07bcf4e}\label{class_game_1_1_tiles_1_1_tile_a93235611b6b472670fad4f1cc07bcf4e}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile32@{landTile32}}
+\index{landTile32@{landTile32}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile32}{landTile32}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile32 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(31,31)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a6c1b1381c9818ffee6e02cfb3dba56e0}\label{class_game_1_1_tiles_1_1_tile_a6c1b1381c9818ffee6e02cfb3dba56e0}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile33@{landTile33}}
+\index{landTile33@{landTile33}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile33}{landTile33}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile33 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(32,32)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_acc1434f88a51f12dc66f00378b9d57ac}\label{class_game_1_1_tiles_1_1_tile_acc1434f88a51f12dc66f00378b9d57ac}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile34@{landTile34}}
+\index{landTile34@{landTile34}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile34}{landTile34}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile34 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(33,33)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a0b1745c193f3d75e0ca380be83a85184}\label{class_game_1_1_tiles_1_1_tile_a0b1745c193f3d75e0ca380be83a85184}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile35@{landTile35}}
+\index{landTile35@{landTile35}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile35}{landTile35}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile35 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(34,34)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a0ff5935f945d1ec8c40bb3fb3266d79f}\label{class_game_1_1_tiles_1_1_tile_a0ff5935f945d1ec8c40bb3fb3266d79f}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile36@{landTile36}}
+\index{landTile36@{landTile36}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile36}{landTile36}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile36 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(35,35)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a834ea96838f902cc2eefe1b7e699debe}\label{class_game_1_1_tiles_1_1_tile_a834ea96838f902cc2eefe1b7e699debe}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile37@{landTile37}}
+\index{landTile37@{landTile37}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile37}{landTile37}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile37 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(36,36)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a1ba1b31985767213134b3556226d9dc4}\label{class_game_1_1_tiles_1_1_tile_a1ba1b31985767213134b3556226d9dc4}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile38@{landTile38}}
+\index{landTile38@{landTile38}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile38}{landTile38}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile38 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(37,37)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a398a34fe2ae7ddb61548f8380cd85cf6}\label{class_game_1_1_tiles_1_1_tile_a398a34fe2ae7ddb61548f8380cd85cf6}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile39@{landTile39}}
+\index{landTile39@{landTile39}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile39}{landTile39}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile39 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(38,38)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_ad00f9756b30c58252e8b343a921adcf3}\label{class_game_1_1_tiles_1_1_tile_ad00f9756b30c58252e8b343a921adcf3}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile4@{landTile4}}
+\index{landTile4@{landTile4}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile4}{landTile4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile4 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(3, 3)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a6ae1cff972c379d8a2b797ff8625ee4c}\label{class_game_1_1_tiles_1_1_tile_a6ae1cff972c379d8a2b797ff8625ee4c}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile40@{landTile40}}
+\index{landTile40@{landTile40}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile40}{landTile40}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile40 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(39,39)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a5323fa8d53dad83497b64916c5b3c184}\label{class_game_1_1_tiles_1_1_tile_a5323fa8d53dad83497b64916c5b3c184}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile41@{landTile41}}
+\index{landTile41@{landTile41}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile41}{landTile41}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile41 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(40,40)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a8934c4275f96d7055e858342f388af67}\label{class_game_1_1_tiles_1_1_tile_a8934c4275f96d7055e858342f388af67}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile42@{landTile42}}
+\index{landTile42@{landTile42}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile42}{landTile42}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile42 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(41,41)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_acad48328b136911075180f135502e130}\label{class_game_1_1_tiles_1_1_tile_acad48328b136911075180f135502e130}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile43@{landTile43}}
+\index{landTile43@{landTile43}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile43}{landTile43}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile43 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(42,42)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_aae8760186b860355c5cedb558564088c}\label{class_game_1_1_tiles_1_1_tile_aae8760186b860355c5cedb558564088c}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile44@{landTile44}}
+\index{landTile44@{landTile44}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile44}{landTile44}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile44 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(43,43)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a56e179121115289f3ed8deff7f9314c3}\label{class_game_1_1_tiles_1_1_tile_a56e179121115289f3ed8deff7f9314c3}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile45@{landTile45}}
+\index{landTile45@{landTile45}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile45}{landTile45}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile45 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(44,44)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_ad9582da4d3810d6ff8b46a0922133f31}\label{class_game_1_1_tiles_1_1_tile_ad9582da4d3810d6ff8b46a0922133f31}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile46@{landTile46}}
+\index{landTile46@{landTile46}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile46}{landTile46}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile46 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(45,45)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a6336319676b646d9c66aba5e4d567414}\label{class_game_1_1_tiles_1_1_tile_a6336319676b646d9c66aba5e4d567414}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile47@{landTile47}}
+\index{landTile47@{landTile47}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile47}{landTile47}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile47 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(46,46)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a4f527cc5be2e140b55540e4689d70f9c}\label{class_game_1_1_tiles_1_1_tile_a4f527cc5be2e140b55540e4689d70f9c}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile48@{landTile48}}
+\index{landTile48@{landTile48}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile48}{landTile48}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile48 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(47,47)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a641bb782921ca9f36840d93c307d327d}\label{class_game_1_1_tiles_1_1_tile_a641bb782921ca9f36840d93c307d327d}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile49@{landTile49}}
+\index{landTile49@{landTile49}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile49}{landTile49}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile49 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(48,48)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a14b84caf0099838b2400a8d417899770}\label{class_game_1_1_tiles_1_1_tile_a14b84caf0099838b2400a8d417899770}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile5@{landTile5}}
+\index{landTile5@{landTile5}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile5}{landTile5}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile5 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(4,4)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_ab1099ff174afb5cd5d570ae390c7f3d7}\label{class_game_1_1_tiles_1_1_tile_ab1099ff174afb5cd5d570ae390c7f3d7}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile50@{landTile50}}
+\index{landTile50@{landTile50}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile50}{landTile50}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile50 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(49,49)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a5149d726fb7ae9b5b55bc7cdee090605}\label{class_game_1_1_tiles_1_1_tile_a5149d726fb7ae9b5b55bc7cdee090605}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile51@{landTile51}}
+\index{landTile51@{landTile51}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile51}{landTile51}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile51 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(50,50)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a44194d27616cd4092dcbcbec9ee9422e}\label{class_game_1_1_tiles_1_1_tile_a44194d27616cd4092dcbcbec9ee9422e}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile52@{landTile52}}
+\index{landTile52@{landTile52}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile52}{landTile52}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile52 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(51,51)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_ad0e8d319d74796f90342fb2af7d28a47}\label{class_game_1_1_tiles_1_1_tile_ad0e8d319d74796f90342fb2af7d28a47}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile53@{landTile53}}
+\index{landTile53@{landTile53}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile53}{landTile53}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile53 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(52,52)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_ab224daaf9b70fb1cf46be04193c85085}\label{class_game_1_1_tiles_1_1_tile_ab224daaf9b70fb1cf46be04193c85085}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile6@{landTile6}}
+\index{landTile6@{landTile6}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile6}{landTile6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile6 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(5,5)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_aea7cabec27d6dcf68ee00e3dae36d1d8}\label{class_game_1_1_tiles_1_1_tile_aea7cabec27d6dcf68ee00e3dae36d1d8}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile7@{landTile7}}
+\index{landTile7@{landTile7}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile7}{landTile7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile7 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(6,6)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a198b1c64d5d2028976f0eb96a4e06306}\label{class_game_1_1_tiles_1_1_tile_a198b1c64d5d2028976f0eb96a4e06306}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile8@{landTile8}}
+\index{landTile8@{landTile8}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile8}{landTile8}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile8 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(7,7)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a4e4d705f580cbd78683ef61620759330}\label{class_game_1_1_tiles_1_1_tile_a4e4d705f580cbd78683ef61620759330}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!landTile9@{landTile9}}
+\index{landTile9@{landTile9}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{landTile9}{landTile9}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} Game.\+Tiles.\+Tile.\+land\+Tile9 = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_land_tile}{Land\+Tile}}(8,8)\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a424e5e22a96c7d9e09a7e6597297d25c}\label{class_game_1_1_tiles_1_1_tile_a424e5e22a96c7d9e09a7e6597297d25c}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!texture@{texture}}
+\index{texture@{texture}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily Buffered\+Image Game.\+Tiles.\+Tile.\+texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+Imaginea dalei \mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a02c0e33aa78024a6854a7ebbc896ccc2}\label{class_game_1_1_tiles_1_1_tile_a02c0e33aa78024a6854a7ebbc896ccc2}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!TILE\_HEIGHT@{TILE\_HEIGHT}}
+\index{TILE\_HEIGHT@{TILE\_HEIGHT}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{TILE\_HEIGHT}{TILE\_HEIGHT}}
+{\footnotesize\ttfamily final int Game.\+Tiles.\+Tile.\+T\+I\+L\+E\+\_\+\+H\+E\+I\+G\+HT = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+Constanta ce reprezinta inaltimea unei dae in pixeli \mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_a6a889bb8e94da3ecfd9fb31806606539}\label{class_game_1_1_tiles_1_1_tile_a6a889bb8e94da3ecfd9fb31806606539}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!TILE\_WIDTH@{TILE\_WIDTH}}
+\index{TILE\_WIDTH@{TILE\_WIDTH}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{TILE\_WIDTH}{TILE\_WIDTH}}
+{\footnotesize\ttfamily final int Game.\+Tiles.\+Tile.\+T\+I\+L\+E\+\_\+\+W\+I\+D\+TH = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+Constanta ce reprezinta latimea unei dae in pixeli \mbox{\Hypertarget{class_game_1_1_tiles_1_1_tile_adc5ff8c13da2423fed115d8e744f128d}\label{class_game_1_1_tiles_1_1_tile_adc5ff8c13da2423fed115d8e744f128d}} 
+\index{Game.Tiles.Tile@{Game.Tiles.Tile}!tiles@{tiles}}
+\index{tiles@{tiles}!Game.Tiles.Tile@{Game.Tiles.Tile}}
+\doxysubsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}} \mbox{[}$\,$\mbox{]} Game.\+Tiles.\+Tile.\+tiles = new \mbox{\hyperlink{class_game_1_1_tiles_1_1_tile}{Tile}}\mbox{[}256\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+

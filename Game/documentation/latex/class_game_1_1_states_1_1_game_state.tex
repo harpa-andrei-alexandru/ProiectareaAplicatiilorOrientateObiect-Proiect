@@ -1,0 +1,273 @@
+\hypertarget{class_game_1_1_states_1_1_game_state}{}\doxysection{Game.\+States.\+Game\+State Class Reference}
+\label{class_game_1_1_states_1_1_game_state}\index{Game.States.GameState@{Game.States.GameState}}
+
+
+Clasa are rolul de a initializa lumea, de a porni jocul si de a jongla intre nivelele jocului.  
+
+
+Inheritance diagram for Game.\+States.\+Game\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_states_1_1_game_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a0832e86d729d0d6a889fab6097e0f3cf}{Game\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructor care initializeaza lumea si music\+Player-\/ul. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_ac38b99e9facdd5f36feb7a8656d615d6}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Metoda care da start jocului, seteaza nivelul curent al jocului, seteaza lumea conform nivelului, si porneste muzica de fundal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_af10237457eb30b20c6e3ff84f7407408}{next\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Are rolul de a transfera jocul la urmatorul sau nivel, implica aceleasi configuratii ca si la \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_ac38b99e9facdd5f36feb7a8656d615d6}{start\+Game()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_ab3d013cc98bb970b74f0ff823a81ab9f}{restart\+Level}} (Levels.\+Level \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a0f9ee07aeb7b0f3842ab284186bd1ca8}{level}})
+\begin{DoxyCompactList}\small\item\em Restarteaza nivelul lumii in concordanta cu argumentul. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a6d547a124b3a3ec6fd5da6603e954fb6}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualizeaza starea de joc, accesare meniu intermediar, trecere la nivel urmator, setare starii jocului la starea de victorie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a22feaf6a23cc6bd4884dcd3e1a8a284d}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em randeaza lumea si afiseaza detalii live legate de scorul si situatia caracterului, cat si numarul de inamici ramasi in viata \end{DoxyCompactList}\item 
+Levels.\+Level \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_aa55741b1a1f13c669af02e80f20eae41}{get\+Current\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza nivelul actual al jocului. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a5c1a40518080fca158accd26a05f833c}{get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza scorul jucatorului. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a327a6e109f7afa25103ce8ac82ca49d1}{get\+Exp}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza experienta caracterului. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_ac3001ee4c1228ad3bbecb36ceb69de0c}{get\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza nivelul caracterului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_aa196997529971655efcba1b9d804cf39}{set\+Current\+Level}} (Levels.\+Level \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_ab6aa7564967197a35c94855f7bcf87af}{current\+Level}})
+\begin{DoxyCompactList}\small\item\em Seteaza nivelul curent al lumii conform argumentului. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_worlds_1_1_world}{World}} \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a8877d9125ac77650fe05ca023e09517b}{get\+World}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza lumea. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_af0cf40470e9953cdc6e049911e378403}{get\+Ui\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul de obiecte grafice, in cazul de fata, starea de joc nu detine un manager de obiecte grafice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_acfcd23bf7e391e412d2e7f2f1a00d567}{print\+Score}} (Graphics g, int x, int y)
+\begin{DoxyCompactList}\small\item\em Afiseaza detalii legate de scorul si situatia caracterului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \mbox{\hyperlink{class_game_1_1_worlds_1_1_world}{World}} \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a1899c0ffb00378a220599cd409ef13a3}{world}}
+\item 
+Levels.\+Level \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_ab6aa7564967197a35c94855f7bcf87af}{current\+Level}} = \mbox{\hyperlink{enum_game_1_1_data_base_1_1_levels_1_1_levels_1_1_level_a92db6e364a5f7bdd28218b89c39e6aef}{Levels.\+Level.\+level1}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a1632f4b2670494e6d8f6064b4afb0396}{score}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a4edc667bbcf48e469076dddd804029d7}{exp}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_a0f9ee07aeb7b0f3842ab284186bd1ca8}{level}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clasa are rolul de a initializa lumea, de a porni jocul si de a jongla intre nivelele jocului. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a0832e86d729d0d6a889fab6097e0f3cf}\label{class_game_1_1_states_1_1_game_state_a0832e86d729d0d6a889fab6097e0f3cf}} 
+\index{Game.States.GameState@{Game.States.GameState}!GameState@{GameState}}
+\index{GameState@{GameState}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{GameState()}{GameState()}}
+{\footnotesize\ttfamily public Game.\+States.\+Game\+State.\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor care initializeaza lumea si music\+Player-\/ul. 
+
+Apelare constructor superclasa
+
+Creare lume noua
+
+Creare Music\+Player nou
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_aa55741b1a1f13c669af02e80f20eae41}\label{class_game_1_1_states_1_1_game_state_aa55741b1a1f13c669af02e80f20eae41}} 
+\index{Game.States.GameState@{Game.States.GameState}!getCurrentLevel@{getCurrentLevel}}
+\index{getCurrentLevel@{getCurrentLevel}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{getCurrentLevel()}{getCurrentLevel()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_data_base_1_1_levels_1_1_levels}{Levels}} Level Game.\+States.\+Game\+State.\+get\+Current\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza nivelul actual al jocului. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a327a6e109f7afa25103ce8ac82ca49d1}\label{class_game_1_1_states_1_1_game_state_a327a6e109f7afa25103ce8ac82ca49d1}} 
+\index{Game.States.GameState@{Game.States.GameState}!getExp@{getExp}}
+\index{getExp@{getExp}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{getExp()}{getExp()}}
+{\footnotesize\ttfamily public int Game.\+States.\+Game\+State.\+get\+Exp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza experienta caracterului. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_ac3001ee4c1228ad3bbecb36ceb69de0c}\label{class_game_1_1_states_1_1_game_state_ac3001ee4c1228ad3bbecb36ceb69de0c}} 
+\index{Game.States.GameState@{Game.States.GameState}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily public int Game.\+States.\+Game\+State.\+get\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza nivelul caracterului. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a5c1a40518080fca158accd26a05f833c}\label{class_game_1_1_states_1_1_game_state_a5c1a40518080fca158accd26a05f833c}} 
+\index{Game.States.GameState@{Game.States.GameState}!getScore@{getScore}}
+\index{getScore@{getScore}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily public int Game.\+States.\+Game\+State.\+get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza scorul jucatorului. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_af0cf40470e9953cdc6e049911e378403}\label{class_game_1_1_states_1_1_game_state_af0cf40470e9953cdc6e049911e378403}} 
+\index{Game.States.GameState@{Game.States.GameState}!getUiManager@{getUiManager}}
+\index{getUiManager@{getUiManager}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{getUiManager()}{getUiManager()}}
+{\footnotesize\ttfamily protected \mbox{\hyperlink{class_game_1_1_u_i_1_1_u_i_manager}{U\+I\+Manager}} Game.\+States.\+Game\+State.\+get\+Ui\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Returneaza managerul de obiecte grafice, in cazul de fata, starea de joc nu detine un manager de obiecte grafice. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_abfc8068193a8dcdd75e44810ca9fc3d5}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a8877d9125ac77650fe05ca023e09517b}\label{class_game_1_1_states_1_1_game_state_a8877d9125ac77650fe05ca023e09517b}} 
+\index{Game.States.GameState@{Game.States.GameState}!getWorld@{getWorld}}
+\index{getWorld@{getWorld}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{getWorld()}{getWorld()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_worlds_1_1_world}{World}} Game.\+States.\+Game\+State.\+get\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza lumea. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_af10237457eb30b20c6e3ff84f7407408}\label{class_game_1_1_states_1_1_game_state_af10237457eb30b20c6e3ff84f7407408}} 
+\index{Game.States.GameState@{Game.States.GameState}!nextLevel@{nextLevel}}
+\index{nextLevel@{nextLevel}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{nextLevel()}{nextLevel()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Game\+State.\+next\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Are rolul de a transfera jocul la urmatorul sau nivel, implica aceleasi configuratii ca si la \mbox{\hyperlink{class_game_1_1_states_1_1_game_state_ac38b99e9facdd5f36feb7a8656d615d6}{start\+Game()}} 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_acfcd23bf7e391e412d2e7f2f1a00d567}\label{class_game_1_1_states_1_1_game_state_acfcd23bf7e391e412d2e7f2f1a00d567}} 
+\index{Game.States.GameState@{Game.States.GameState}!printScore@{printScore}}
+\index{printScore@{printScore}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{printScore()}{printScore()}}
+{\footnotesize\ttfamily private void Game.\+States.\+Game\+State.\+print\+Score (\begin{DoxyParamCaption}\item[{Graphics}]{g,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Afiseaza detalii legate de scorul si situatia caracterului. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a22feaf6a23cc6bd4884dcd3e1a8a284d}\label{class_game_1_1_states_1_1_game_state_a22feaf6a23cc6bd4884dcd3e1a8a284d}} 
+\index{Game.States.GameState@{Game.States.GameState}!render@{render}}
+\index{render@{render}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Game\+State.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+randeaza lumea si afiseaza detalii live legate de scorul si situatia caracterului, cat si numarul de inamici ramasi in viata 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a93d159a044a807b185df7536110e2083}{Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_ab3d013cc98bb970b74f0ff823a81ab9f}\label{class_game_1_1_states_1_1_game_state_ab3d013cc98bb970b74f0ff823a81ab9f}} 
+\index{Game.States.GameState@{Game.States.GameState}!restartLevel@{restartLevel}}
+\index{restartLevel@{restartLevel}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{restartLevel()}{restartLevel()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Game\+State.\+restart\+Level (\begin{DoxyParamCaption}\item[{Levels.\+Level}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Restarteaza nivelul lumii in concordanta cu argumentul. 
+
+Setare nivel curent
+
+Setare lume conform nivelului dat ca si argument\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_aa196997529971655efcba1b9d804cf39}\label{class_game_1_1_states_1_1_game_state_aa196997529971655efcba1b9d804cf39}} 
+\index{Game.States.GameState@{Game.States.GameState}!setCurrentLevel@{setCurrentLevel}}
+\index{setCurrentLevel@{setCurrentLevel}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{setCurrentLevel()}{setCurrentLevel()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Game\+State.\+set\+Current\+Level (\begin{DoxyParamCaption}\item[{Levels.\+Level}]{current\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza nivelul curent al lumii conform argumentului. 
+
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_ac38b99e9facdd5f36feb7a8656d615d6}\label{class_game_1_1_states_1_1_game_state_ac38b99e9facdd5f36feb7a8656d615d6}} 
+\index{Game.States.GameState@{Game.States.GameState}!startGame@{startGame}}
+\index{startGame@{startGame}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Game\+State.\+start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda care da start jocului, seteaza nivelul curent al jocului, seteaza lumea conform nivelului, si porneste muzica de fundal. 
+
+Setare nivel lume curent
+
+Setare lume
+
+Setare muzica conform nivelului lumii si pornirea acesteia\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a6d547a124b3a3ec6fd5da6603e954fb6}\label{class_game_1_1_states_1_1_game_state_a6d547a124b3a3ec6fd5da6603e954fb6}} 
+\index{Game.States.GameState@{Game.States.GameState}!update@{update}}
+\index{update@{update}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public void Game.\+States.\+Game\+State.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualizeaza starea de joc, accesare meniu intermediar, trecere la nivel urmator, setare starii jocului la starea de victorie. 
+
+Actualizare lume
+
+Daca este apasata tasta pentru meniu, se face tranzitia intre stari, meniul intermediar devenind starea activa
+
+Daca numarul de inamici aflati pe mapa este 0 tine evidenta scorului, experientei si a nivelului, si facem tranzitia spre meniul intermediar sau catre starea de victorie daca nivelul curent al lumii este level2
+
+Reimplemented from \mbox{\hyperlink{class_game_1_1_states_1_1_state_a806187e704eb1159230a410d0b31645b}{Game.\+States.\+State}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_ab6aa7564967197a35c94855f7bcf87af}\label{class_game_1_1_states_1_1_game_state_ab6aa7564967197a35c94855f7bcf87af}} 
+\index{Game.States.GameState@{Game.States.GameState}!currentLevel@{currentLevel}}
+\index{currentLevel@{currentLevel}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{currentLevel}{currentLevel}}
+{\footnotesize\ttfamily Levels.\+Level Game.\+States.\+Game\+State.\+current\+Level = \mbox{\hyperlink{enum_game_1_1_data_base_1_1_levels_1_1_levels_1_1_level_a92db6e364a5f7bdd28218b89c39e6aef}{Levels.\+Level.\+level1}}\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre Level, tine evidenta nivelului curent si este initializat cu level1 \mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a4edc667bbcf48e469076dddd804029d7}\label{class_game_1_1_states_1_1_game_state_a4edc667bbcf48e469076dddd804029d7}} 
+\index{Game.States.GameState@{Game.States.GameState}!exp@{exp}}
+\index{exp@{exp}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{exp}{exp}}
+{\footnotesize\ttfamily int Game.\+States.\+Game\+State.\+exp\hspace{0.3cm}{\ttfamily [private]}}
+
+membru care care ajuta la gestiunea experientei caracterului in momentul de restart nivel \mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a0f9ee07aeb7b0f3842ab284186bd1ca8}\label{class_game_1_1_states_1_1_game_state_a0f9ee07aeb7b0f3842ab284186bd1ca8}} 
+\index{Game.States.GameState@{Game.States.GameState}!level@{level}}
+\index{level@{level}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Game.\+States.\+Game\+State.\+level\hspace{0.3cm}{\ttfamily [private]}}
+
+membru care care ajuta la gestiunea nivelului caracterului in momentul de restart nivel \mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a1632f4b2670494e6d8f6064b4afb0396}\label{class_game_1_1_states_1_1_game_state_a1632f4b2670494e6d8f6064b4afb0396}} 
+\index{Game.States.GameState@{Game.States.GameState}!score@{score}}
+\index{score@{score}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Game.\+States.\+Game\+State.\+score\hspace{0.3cm}{\ttfamily [private]}}
+
+membru care care ajuta la gestiunea scorului jucatorului in momentul de restart nivel \mbox{\Hypertarget{class_game_1_1_states_1_1_game_state_a1899c0ffb00378a220599cd409ef13a3}\label{class_game_1_1_states_1_1_game_state_a1899c0ffb00378a220599cd409ef13a3}} 
+\index{Game.States.GameState@{Game.States.GameState}!world@{world}}
+\index{world@{world}!Game.States.GameState@{Game.States.GameState}}
+\doxysubsubsection{\texorpdfstring{world}{world}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_worlds_1_1_world}{World}} Game.\+States.\+Game\+State.\+world\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre lumea jocului 

@@ -1,0 +1,423 @@
+\hypertarget{class_game_1_1_game}{}\doxysection{Game.\+Game Class Reference}
+\label{class_game_1_1_game}\index{Game.Game@{Game.Game}}
+Inheritance diagram for Game.\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_1_1_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_game_1_1_game_ad57c7922b6b1654bb296d413bd480f81}{get\+Title}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza numele jocului. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager}{Key\+Manager}} \mbox{\hyperlink{class_game_1_1_game_a4d5de3daf592dfbefb715b79d87681de}{get\+Key\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza obiectul care gestioneaza inputul de la tastatura. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager}{Mouse\+Manager}} \mbox{\hyperlink{class_game_1_1_game_aa52c5004a2801bb752bb4e976b3d03f7}{get\+Mouse\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza obiectul care gestioneaza inputul de la mouse. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera}{Game\+Camera}} \mbox{\hyperlink{class_game_1_1_game_af2fba8a01f940ecf999eefb85d25e7d5}{get\+Game\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza obiectul care gestioneaza camera jocului. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_game_a25f8d93dbcf6d267abb5edb15ec7d5aa}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza latimea ferestrei. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_game_a482e28f608b7ee395f9b5b9727141760}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza inaltimea ferestrei. \end{DoxyCompactList}\item 
+synchronized void \mbox{\hyperlink{class_game_1_1_game_a6ad6630c6b589d4bb5474678d28f238a}{start}} ()
+\begin{DoxyCompactList}\small\item\em Creaza si da start firului de executie al jocului. \end{DoxyCompactList}\item 
+synchronized void \mbox{\hyperlink{class_game_1_1_game_a4ec7411a35dd96308074490bc1ab0186}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Opreste executia thread-\/ului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_game_aee1742dd94ea5e898a017a037c2109fd}{run}} ()
+\begin{DoxyCompactList}\small\item\em Va rula in thread-\/ul creat Metoda va actualiza starea jocului si va redesena tabla de joc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_game_1_1_game}{Game}} \mbox{\hyperlink{class_game_1_1_game_a4affb514f5db0bcf1c24a55111fc94a0}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_game_state}{Game\+State}} \mbox{\hyperlink{class_game_1_1_game_ac98aef55fab78e51fda28c0ec4b96b45}{game\+State}}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_menu_state}{Menu\+State}} \mbox{\hyperlink{class_game_1_1_game_a2470266522193ec8b757ff5a057f49b4}{menu\+State}}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state}{Help\+And\+Settings\+State}} \mbox{\hyperlink{class_game_1_1_game_a02abda8cb797f905c3b325f42807197a}{help\+And\+Settings\+State}}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state}{In\+Game\+Menu\+State}} \mbox{\hyperlink{class_game_1_1_game_a7f8526c4a9f015093ca9e051bbe4b26c}{in\+Game\+Menu\+State}}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_lose_state}{Lose\+State}} \mbox{\hyperlink{class_game_1_1_game_aa89580b628476296094e392b18795ea1}{lose\+State}}
+\item 
+\mbox{\hyperlink{class_game_1_1_states_1_1_win_state}{Win\+State}} \mbox{\hyperlink{class_game_1_1_game_a70c6215fda00452b6e57632c59f66dec}{win\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_game_a446bb5752f057293dad72bbd5e8d2411}{Game}} (String \mbox{\hyperlink{class_game_1_1_game_acd7e358354c37351473ca87d88ac19b8}{title}}, int \mbox{\hyperlink{class_game_1_1_game_a962ebe89f9daaa9950458bb2b9b205e1}{width}}, int \mbox{\hyperlink{class_game_1_1_game_a1e48fd37d742d339aed2ec72f42ce3ff}{height}})
+\begin{DoxyCompactList}\small\item\em Constructor de initializare a clasei \mbox{\hyperlink{class_game_1_1_game}{Game}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_game_ad9ed77ed2f3208e942efcbce0e170c90}{init}} ()
+\begin{DoxyCompactList}\small\item\em Metoda construieste fereastra jocului, inializeaza asset-\/urile, listener-\/ul de tastatura si cel de mouse etc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_game_acf7a699905c3d86869743356980d525a}{update}} ()
+\begin{DoxyCompactList}\small\item\em Actualizeaza elementele jocului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_game_af27f2046e0066630956bcce308f8fa99}{render}} ()
+\begin{DoxyCompactList}\small\item\em Randeaza/\+Deseneaza elementele grafice in fereastra corespunzator starilor actualizate ale elementelor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_window_1_1_display}{Display}} \mbox{\hyperlink{class_game_1_1_game_a5edbd9a2004ef6aa85426bd3b58798c7}{display}}
+\item 
+final String \mbox{\hyperlink{class_game_1_1_game_acd7e358354c37351473ca87d88ac19b8}{title}}
+\item 
+final int \mbox{\hyperlink{class_game_1_1_game_a962ebe89f9daaa9950458bb2b9b205e1}{width}}
+\item 
+final int \mbox{\hyperlink{class_game_1_1_game_a1e48fd37d742d339aed2ec72f42ce3ff}{height}}
+\item 
+Thread \mbox{\hyperlink{class_game_1_1_game_a89c56b6da3177f21c2660c7dd6de1c8d}{thread}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_game_a2da75c8d9b338952b9ae1533073d89ba}{running}} = false
+\item 
+Buffer\+Strategy \mbox{\hyperlink{class_game_1_1_game_ac431e229c6c6d4fe6ab93900ff7847fa}{bs}}
+\item 
+Graphics \mbox{\hyperlink{class_game_1_1_game_a390ef9badbf6ed88c2f3763a1c13d411}{g}}
+\begin{DoxyCompactList}\small\item\em Scopul este acela de a elimina fenomenul de flickering. \end{DoxyCompactList}\item 
+Buffered\+Image \mbox{\hyperlink{class_game_1_1_game_a18df62c791ea7b85fc7a10fb07fe3beb}{background}}
+\item 
+final \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager}{Key\+Manager}} \mbox{\hyperlink{class_game_1_1_game_a8c6fefb445bb4e7e2373a66b3f239362}{key\+Manager}}
+\item 
+final \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager}{Mouse\+Manager}} \mbox{\hyperlink{class_game_1_1_game_aa09013e4993da5579e01d2db4710692b}{mouse\+Manager}}
+\item 
+\mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera}{Game\+Camera}} \mbox{\hyperlink{class_game_1_1_game_a10fe472e8ed16474a5770c01998df9da}{game\+Camera}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{class_game_1_1_game}{Game}} \mbox{\hyperlink{class_game_1_1_game_ac001e7ab5e124376ca74826c07a750f4}{I\+N\+S\+T\+A\+N\+CE}} = new \mbox{\hyperlink{class_game_1_1_game}{Game}}(\char`\"{}The next Robin Hood\char`\"{},1175, 675)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_game_a446bb5752f057293dad72bbd5e8d2411}\label{class_game_1_1_game_a446bb5752f057293dad72bbd5e8d2411}} 
+\index{Game.Game@{Game.Game}!Game@{Game}}
+\index{Game@{Game}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily private Game.\+Game.\+Game (\begin{DoxyParamCaption}\item[{String}]{title,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Constructor de initializare a clasei \mbox{\hyperlink{class_game_1_1_game}{Game}}. 
+
+Metoda privata pentru design-\/ul Singleton ce are rolul de a crea o sungura instanta a jocului
+
+Acest constructor primeste ca parametru titlul ferestrei, latimea si inaltimea acesteia, avand in vedere ca fereastra va fi construita/ creata in cadrul clasei \mbox{\hyperlink{class_game_1_1_game}{Game}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Titlul ferestrei \\
+\hline
+{\em width} & Latimea ferestrei \\
+\hline
+{\em height} & Inaltimea ferestrei \\
+\hline
+\end{DoxyParams}
+Resetarea flag-\/ului running ce indica starea firului de executie
+
+Construirea obectului de gestiune a evenimentelor de la tastatura
+
+Construirea obiectului de gestiune a evenimentelor de la mouse
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_game_af2fba8a01f940ecf999eefb85d25e7d5}\label{class_game_1_1_game_af2fba8a01f940ecf999eefb85d25e7d5}} 
+\index{Game.Game@{Game.Game}!getGameCamera@{getGameCamera}}
+\index{getGameCamera@{getGameCamera}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{getGameCamera()}{getGameCamera()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera}{Game\+Camera}} Game.\+Game.\+get\+Game\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza obiectul care gestioneaza camera jocului. 
+
+\mbox{\Hypertarget{class_game_1_1_game_a482e28f608b7ee395f9b5b9727141760}\label{class_game_1_1_game_a482e28f608b7ee395f9b5b9727141760}} 
+\index{Game.Game@{Game.Game}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily public int Game.\+Game.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza inaltimea ferestrei. 
+
+\mbox{\Hypertarget{class_game_1_1_game_a4affb514f5db0bcf1c24a55111fc94a0}\label{class_game_1_1_game_a4affb514f5db0bcf1c24a55111fc94a0}} 
+\index{Game.Game@{Game.Game}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_game_1_1_game}{Game}} Game.\+Game.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_game_1_1_game_a4d5de3daf592dfbefb715b79d87681de}\label{class_game_1_1_game_a4d5de3daf592dfbefb715b79d87681de}} 
+\index{Game.Game@{Game.Game}!getKeyManager@{getKeyManager}}
+\index{getKeyManager@{getKeyManager}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{getKeyManager()}{getKeyManager()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager}{Key\+Manager}} Game.\+Game.\+get\+Key\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza obiectul care gestioneaza inputul de la tastatura. 
+
+\mbox{\Hypertarget{class_game_1_1_game_aa52c5004a2801bb752bb4e976b3d03f7}\label{class_game_1_1_game_aa52c5004a2801bb752bb4e976b3d03f7}} 
+\index{Game.Game@{Game.Game}!getMouseManager@{getMouseManager}}
+\index{getMouseManager@{getMouseManager}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{getMouseManager()}{getMouseManager()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager}{Mouse\+Manager}} Game.\+Game.\+get\+Mouse\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza obiectul care gestioneaza inputul de la mouse. 
+
+\mbox{\Hypertarget{class_game_1_1_game_ad57c7922b6b1654bb296d413bd480f81}\label{class_game_1_1_game_ad57c7922b6b1654bb296d413bd480f81}} 
+\index{Game.Game@{Game.Game}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily public String Game.\+Game.\+get\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza numele jocului. 
+
+\mbox{\Hypertarget{class_game_1_1_game_a25f8d93dbcf6d267abb5edb15ec7d5aa}\label{class_game_1_1_game_a25f8d93dbcf6d267abb5edb15ec7d5aa}} 
+\index{Game.Game@{Game.Game}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily public int Game.\+Game.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza latimea ferestrei. 
+
+\mbox{\Hypertarget{class_game_1_1_game_ad9ed77ed2f3208e942efcbce0e170c90}\label{class_game_1_1_game_ad9ed77ed2f3208e942efcbce0e170c90}} 
+\index{Game.Game@{Game.Game}!init@{init}}
+\index{init@{init}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily private void Game.\+Game.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Metoda construieste fereastra jocului, inializeaza asset-\/urile, listener-\/ul de tastatura si cel de mouse etc. 
+
+Este construita fereastra grafica
+
+Se ataseaza ferestrei managerul de tastatura pentru a primi evenimente furnizate de fereastra
+
+Se ataseaza ferestrei managerul de mouse pentru a primi evenimente furnizate de fereastra
+
+Este incarcata imaginea de background a meniului
+
+Se incarca elementele grafile (tiles)
+
+Se construieste obiectul handler al jocului Se construieste obiectul camera al jocului
+
+Definirea starilor jocuui
+
+Setarea starii implicite cu care va fi lansat programul in executie\mbox{\Hypertarget{class_game_1_1_game_af27f2046e0066630956bcce308f8fa99}\label{class_game_1_1_game_af27f2046e0066630956bcce308f8fa99}} 
+\index{Game.Game@{Game.Game}!render@{render}}
+\index{render@{render}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily private void Game.\+Game.\+render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Randeaza/\+Deseneaza elementele grafice in fereastra corespunzator starilor actualizate ale elementelor. 
+
+Returneaza buffer\+Strategy pentru canvasul existent
+
+Verifica daca buffer\+Strategy a fost creat
+
+Se construieste triplul buffer
+
+Se obtine contextul grafic curent in care se poate desena
+
+Se deseneaza imaginea de background
+
+Se verifica daca starea acuala a jocului este activa si se randeaza
+
+Randarea propriuzisa a starii curente a jocului
+
+Se afiseaza pe ecran
+
+Elibereaza resursele de memorie aferente contextului grafic curent\mbox{\Hypertarget{class_game_1_1_game_aee1742dd94ea5e898a017a037c2109fd}\label{class_game_1_1_game_aee1742dd94ea5e898a017a037c2109fd}} 
+\index{Game.Game@{Game.Game}!run@{run}}
+\index{run@{run}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily public void Game.\+Game.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Va rula in thread-\/ul creat Metoda va actualiza starea jocului si va redesena tabla de joc. 
+
+Se apeleaza metoda pentru a initializa jocul
+
+Cat timp thread-\/ul este pornit, se face update si se randeaza
+
+Actualizeaza elementele jocului
+
+Deseneaza elementele pe tabla dejoc
+
+Este apelata metoda de stop, pentru a opri executia thread-\/ului\mbox{\Hypertarget{class_game_1_1_game_a6ad6630c6b589d4bb5474678d28f238a}\label{class_game_1_1_game_a6ad6630c6b589d4bb5474678d28f238a}} 
+\index{Game.Game@{Game.Game}!start@{start}}
+\index{start@{start}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily public synchronized void Game.\+Game.\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creaza si da start firului de executie al jocului. 
+
+Se actualizaeaza flag-\/ul de stare a firului de executie
+
+Se construieste thread-\/ul
+
+Thread-\/ul creat este lansat in executie\mbox{\Hypertarget{class_game_1_1_game_a4ec7411a35dd96308074490bc1ab0186}\label{class_game_1_1_game_a4ec7411a35dd96308074490bc1ab0186}} 
+\index{Game.Game@{Game.Game}!stop@{stop}}
+\index{stop@{stop}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily public synchronized void Game.\+Game.\+stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Opreste executia thread-\/ului. 
+
+Se actualizeaza starea flag-\/ului
+
+Se incearca orpirea thread-\/ului
+
+Daca apar erori in momentul opririi, se afiseaza erorile\mbox{\Hypertarget{class_game_1_1_game_acf7a699905c3d86869743356980d525a}\label{class_game_1_1_game_acf7a699905c3d86869743356980d525a}} 
+\index{Game.Game@{Game.Game}!update@{update}}
+\index{update@{update}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily private void Game.\+Game.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Actualizeaza elementele jocului. 
+
+Actualizare a starii tastelor
+
+Se verifica daca jocul se afla intr-\/o oarecare starea pentru a se putea face actualizarea ei
+
+Actualizarea propriu zisa a starii actuale
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_game_a18df62c791ea7b85fc7a10fb07fe3beb}\label{class_game_1_1_game_a18df62c791ea7b85fc7a10fb07fe3beb}} 
+\index{Game.Game@{Game.Game}!background@{background}}
+\index{background@{background}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily Buffered\+Image Game.\+Game.\+background\hspace{0.3cm}{\ttfamily [private]}}
+
+Imagine ce va servi pentru imaginea de background a meniului \mbox{\Hypertarget{class_game_1_1_game_ac431e229c6c6d4fe6ab93900ff7847fa}\label{class_game_1_1_game_ac431e229c6c6d4fe6ab93900ff7847fa}} 
+\index{Game.Game@{Game.Game}!bs@{bs}}
+\index{bs@{bs}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{bs}{bs}}
+{\footnotesize\ttfamily Buffer\+Strategy Game.\+Game.\+bs\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre un mecanism cu care se organizeaza memoria complexa pentru un canvas \mbox{\Hypertarget{class_game_1_1_game_a5edbd9a2004ef6aa85426bd3b58798c7}\label{class_game_1_1_game_a5edbd9a2004ef6aa85426bd3b58798c7}} 
+\index{Game.Game@{Game.Game}!display@{display}}
+\index{display@{display}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_window_1_1_display}{Display}} Game.\+Game.\+display\hspace{0.3cm}{\ttfamily [private]}}
+
+Fereastra in care se va desena tabla jocului \mbox{\Hypertarget{class_game_1_1_game_a390ef9badbf6ed88c2f3763a1c13d411}\label{class_game_1_1_game_a390ef9badbf6ed88c2f3763a1c13d411}} 
+\index{Game.Game@{Game.Game}!g@{g}}
+\index{g@{g}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily Graphics Game.\+Game.\+g\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scopul este acela de a elimina fenomenul de flickering. 
+
+Referinta catre un context grafic \mbox{\Hypertarget{class_game_1_1_game_a10fe472e8ed16474a5770c01998df9da}\label{class_game_1_1_game_a10fe472e8ed16474a5770c01998df9da}} 
+\index{Game.Game@{Game.Game}!gameCamera@{gameCamera}}
+\index{gameCamera@{gameCamera}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{gameCamera}{gameCamera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_graphics_1_1_game_camera}{Game\+Camera}} Game.\+Game.\+game\+Camera\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre camera jocului \mbox{\Hypertarget{class_game_1_1_game_ac98aef55fab78e51fda28c0ec4b96b45}\label{class_game_1_1_game_ac98aef55fab78e51fda28c0ec4b96b45}} 
+\index{Game.Game@{Game.Game}!gameState@{gameState}}
+\index{gameState@{gameState}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_states_1_1_game_state}{Game\+State}} Game.\+Game.\+game\+State}
+
+Referinta catre joc \mbox{\Hypertarget{class_game_1_1_game_a1e48fd37d742d339aed2ec72f42ce3ff}\label{class_game_1_1_game_a1e48fd37d742d339aed2ec72f42ce3ff}} 
+\index{Game.Game@{Game.Game}!height@{height}}
+\index{height@{height}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily final int Game.\+Game.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+Latimea ferestrei \mbox{\Hypertarget{class_game_1_1_game_a02abda8cb797f905c3b325f42807197a}\label{class_game_1_1_game_a02abda8cb797f905c3b325f42807197a}} 
+\index{Game.Game@{Game.Game}!helpAndSettingsState@{helpAndSettingsState}}
+\index{helpAndSettingsState@{helpAndSettingsState}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{helpAndSettingsState}{helpAndSettingsState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_states_1_1_help_and_settings_state}{Help\+And\+Settings\+State}} Game.\+Game.\+help\+And\+Settings\+State}
+
+Referinta catre setari si help \mbox{\Hypertarget{class_game_1_1_game_a7f8526c4a9f015093ca9e051bbe4b26c}\label{class_game_1_1_game_a7f8526c4a9f015093ca9e051bbe4b26c}} 
+\index{Game.Game@{Game.Game}!inGameMenuState@{inGameMenuState}}
+\index{inGameMenuState@{inGameMenuState}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{inGameMenuState}{inGameMenuState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_states_1_1_in_game_menu_state}{In\+Game\+Menu\+State}} Game.\+Game.\+in\+Game\+Menu\+State}
+
+Referinta catre meniul secundar \mbox{\Hypertarget{class_game_1_1_game_ac001e7ab5e124376ca74826c07a750f4}\label{class_game_1_1_game_ac001e7ab5e124376ca74826c07a750f4}} 
+\index{Game.Game@{Game.Game}!INSTANCE@{INSTANCE}}
+\index{INSTANCE@{INSTANCE}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{INSTANCE}{INSTANCE}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_game}{Game}} Game.\+Game.\+I\+N\+S\+T\+A\+N\+CE = new \mbox{\hyperlink{class_game_1_1_game}{Game}}(\char`\"{}The next Robin Hood\char`\"{},1175, 675)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Metoda publica care face posibila accesul la instanta jocului \mbox{\Hypertarget{class_game_1_1_game_a8c6fefb445bb4e7e2373a66b3f239362}\label{class_game_1_1_game_a8c6fefb445bb4e7e2373a66b3f239362}} 
+\index{Game.Game@{Game.Game}!keyManager@{keyManager}}
+\index{keyManager@{keyManager}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{keyManager}{keyManager}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_inputs_1_1_key_manager}{Key\+Manager}} Game.\+Game.\+key\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre obiectul ce gestioneaza intrarile de la tastatura \mbox{\Hypertarget{class_game_1_1_game_aa89580b628476296094e392b18795ea1}\label{class_game_1_1_game_aa89580b628476296094e392b18795ea1}} 
+\index{Game.Game@{Game.Game}!loseState@{loseState}}
+\index{loseState@{loseState}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{loseState}{loseState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_states_1_1_lose_state}{Lose\+State}} Game.\+Game.\+lose\+State}
+
+Referinta catre starea de joc pierdut \mbox{\Hypertarget{class_game_1_1_game_a2470266522193ec8b757ff5a057f49b4}\label{class_game_1_1_game_a2470266522193ec8b757ff5a057f49b4}} 
+\index{Game.Game@{Game.Game}!menuState@{menuState}}
+\index{menuState@{menuState}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{menuState}{menuState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_states_1_1_menu_state}{Menu\+State}} Game.\+Game.\+menu\+State}
+
+Referinta catre meniul principal \mbox{\Hypertarget{class_game_1_1_game_aa09013e4993da5579e01d2db4710692b}\label{class_game_1_1_game_aa09013e4993da5579e01d2db4710692b}} 
+\index{Game.Game@{Game.Game}!mouseManager@{mouseManager}}
+\index{mouseManager@{mouseManager}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{mouseManager}{mouseManager}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{class_game_1_1_inputs_1_1_mouse_manager}{Mouse\+Manager}} Game.\+Game.\+mouse\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre obiectul ce gestioneaza intrarile de la mouse \mbox{\Hypertarget{class_game_1_1_game_a2da75c8d9b338952b9ae1533073d89ba}\label{class_game_1_1_game_a2da75c8d9b338952b9ae1533073d89ba}} 
+\index{Game.Game@{Game.Game}!running@{running}}
+\index{running@{running}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily boolean Game.\+Game.\+running = false\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag de stare al firului de executie \mbox{\Hypertarget{class_game_1_1_game_a89c56b6da3177f21c2660c7dd6de1c8d}\label{class_game_1_1_game_a89c56b6da3177f21c2660c7dd6de1c8d}} 
+\index{Game.Game@{Game.Game}!thread@{thread}}
+\index{thread@{thread}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily Thread Game.\+Game.\+thread\hspace{0.3cm}{\ttfamily [private]}}
+
+Referinta catre thread-\/ul de update si render al ferestrei \mbox{\Hypertarget{class_game_1_1_game_acd7e358354c37351473ca87d88ac19b8}\label{class_game_1_1_game_acd7e358354c37351473ca87d88ac19b8}} 
+\index{Game.Game@{Game.Game}!title@{title}}
+\index{title@{title}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily final String Game.\+Game.\+title\hspace{0.3cm}{\ttfamily [private]}}
+
+Numele jocului \mbox{\Hypertarget{class_game_1_1_game_a962ebe89f9daaa9950458bb2b9b205e1}\label{class_game_1_1_game_a962ebe89f9daaa9950458bb2b9b205e1}} 
+\index{Game.Game@{Game.Game}!width@{width}}
+\index{width@{width}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily final int Game.\+Game.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+Lungimea ferestrei \mbox{\Hypertarget{class_game_1_1_game_a70c6215fda00452b6e57632c59f66dec}\label{class_game_1_1_game_a70c6215fda00452b6e57632c59f66dec}} 
+\index{Game.Game@{Game.Game}!winState@{winState}}
+\index{winState@{winState}!Game.Game@{Game.Game}}
+\doxysubsubsection{\texorpdfstring{winState}{winState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_1_1_states_1_1_win_state}{Win\+State}} Game.\+Game.\+win\+State}
+
+Referinta catre starea de joc castigat 

@@ -1,0 +1,368 @@
+\hypertarget{class_game_1_1_entities_1_1_entity}{}\doxysection{Game.\+Entities.\+Entity Class Reference}
+\label{class_game_1_1_entities_1_1_entity}\index{Game.Entities.Entity@{Game.Entities.Entity}}
+
+
+Clasa ce reprezinta structura de baza a entitatilor.  
+
+
+Inheritance diagram for Game.\+Entities.\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.555556cm]{class_game_1_1_entities_1_1_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enum_game_1_1_entities_1_1_entity_1_1_projectile_type}{Projectile\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ac47104f249b55d7ec2daab714816cd27}{Entity}} (float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}{x}}, float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}{y}}, int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a4e786aff1fccccedca808727b21f91b1}{width}}, int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_af6d8e91a7ee4340bc5e8e5a48dcf3f74}{height}})
+\begin{DoxyCompactList}\small\item\em Constructor ce are roulul de a seta pozitia si dimensiunea entitatii, cat si aria de coliziune. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a72ba04b1066282586ccaa625396d5cf0}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda abstracta care se ocupa cu update-\/ul entitatii. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a6e99f512cf2778fe29bbecde574c1d7c}{render}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Metoda abstracta care se ocupa cu randarea entitatii. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_aef103d2cd8b5bc62625a729acf9809de}{die}} ()
+\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_abbc155ac566b9438ceeab7311e845db8}{hurt}} (int amount)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a actualiza nivelul de viata al entitatii si flagul active. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a65173b00e7e46f842ffefbe87de04d1f}{check\+Entity\+Collisions}} (float x\+Offset, float y\+Offset)
+\begin{DoxyCompactList}\small\item\em Metoda are rolul de a verifica daca o entitate se afla in coliziune cu alta entitate. \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a9034a602df742b5a4f2c6efec08d6609}{get\+Collision\+Bounds}} (float x\+Offset, float y\+Offset)
+\begin{DoxyCompactList}\small\item\em Metoda care returneaza un Obiect de tip Rectangle ce reprezinta aria de coliziune a entitatii. \end{DoxyCompactList}\item 
+Rectangle \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a31607f1b61622c215e28ecffa76fc1b4}{get\+Bounds}} ()
+\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ac04e41842865de695ce7a9a738128b5a}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza coordonata x a entitatii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ac84332d0f78abffe4cf7be45efe581ee}{setX}} (float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}{x}})
+\begin{DoxyCompactList}\small\item\em Seteaza coordonata x a entitatii cu cea primita ca si argument. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a9c0da1ff95e146d9fd97778c2bbc7044}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza coordonata y a entitatii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ac416ac2fcd09ce1e63bb18424b8feb0b}{setY}} (float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}{y}})
+\begin{DoxyCompactList}\small\item\em Seteaza coordonata y a entitatii cu cea primita ca si argument. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a883ef787925656c0e23b91965054fd22}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza latimea entitatii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a6a7e4e4a1808f9c24deefeb7fc9a6f19}{set\+Width}} (int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a4e786aff1fccccedca808727b21f91b1}{width}})
+\begin{DoxyCompactList}\small\item\em Seteaza latimea entitatii cu cea primita ca si argument. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a7e2369263d38a4d7356d4fcabe5a63b3}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza inaltimea entitatii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a525e1f47976f271436bc633a7e7fe3a7}{set\+Height}} (int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_af6d8e91a7ee4340bc5e8e5a48dcf3f74}{height}})
+\begin{DoxyCompactList}\small\item\em Seteaza inaltimea entitatii cu cea primita ca si argument. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_afbf338e7b3f2f8a472b0066fcdfe7a03}{get\+Health}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza viata entitatii. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a0034e05034c5eb8945abbfc6cc97a887}{set\+Health}} (int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_af0300a4b548ef77aef300df8206b71a3}{health}})
+\begin{DoxyCompactList}\small\item\em Seteaza viata entitaii cu cea primita ca si argument. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a5b6c014eeaef7a8531aad831b56bc4d8}{is\+Active}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza starea entitatii, daca este activa sau inactiva. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a660ed3b35da530fe57411be445f81b2f}{set\+Active}} (boolean \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ab34a266c3fe24abcf99b9b817788c2e7}{active}})
+\begin{DoxyCompactList}\small\item\em Seteaza flagul de stare al entitatii. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_af289df5a3b01da8c1bae7dbdbfb328af}{H\+E\+A\+L\+TH}} = 100
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}{x}}
+\item 
+float \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}{y}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a4e786aff1fccccedca808727b21f91b1}{width}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_af6d8e91a7ee4340bc5e8e5a48dcf3f74}{height}}
+\item 
+int \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_af0300a4b548ef77aef300df8206b71a3}{health}}
+\item 
+boolean \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_ab34a266c3fe24abcf99b9b817788c2e7}{active}} = true
+\item 
+Rectangle \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_a45432106d798ee2f591f393346830229}{bounds}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa ce reprezinta structura de baza a entitatilor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_ac47104f249b55d7ec2daab714816cd27}\label{class_game_1_1_entities_1_1_entity_ac47104f249b55d7ec2daab714816cd27}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily public Game.\+Entities.\+Entity.\+Entity (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor ce are roulul de a seta pozitia si dimensiunea entitatii, cat si aria de coliziune. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a65173b00e7e46f842ffefbe87de04d1f}\label{class_game_1_1_entities_1_1_entity_a65173b00e7e46f842ffefbe87de04d1f}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!checkEntityCollisions@{checkEntityCollisions}}
+\index{checkEntityCollisions@{checkEntityCollisions}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{checkEntityCollisions()}{checkEntityCollisions()}}
+{\footnotesize\ttfamily public boolean Game.\+Entities.\+Entity.\+check\+Entity\+Collisions (\begin{DoxyParamCaption}\item[{float}]{x\+Offset,  }\item[{float}]{y\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a verifica daca o entitate se afla in coliziune cu alta entitate. 
+
+Parcurgem toate entitatile de pe harta
+
+Daca entitatea este cea care apeleaza metda, sarim peste verificarea coliziunii
+
+Daca aria de coliziune a entitatii se intersecteaza cu alta arie de coliziune a altei entitati, se returneaza true, inseamna ca exista coliziune
+
+Daca nu exista coliziune intre entitati, returnam false
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a57b90917f6ed5b228e098386a36473c0}{Game.\+Entities.\+Projectiles.\+Projectile}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_aef103d2cd8b5bc62625a729acf9809de}\label{class_game_1_1_entities_1_1_entity_aef103d2cd8b5bc62625a729acf9809de}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!die@{die}}
+\index{die@{die}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily public abstract void Game.\+Entities.\+Entity.\+die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\textbackslash{}breif Metoda care se ocupa cu actiunea de moarte a entitatii 
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_afed7d55da0993840f62ea86af192e81f}{Game.\+Entities.\+Creatures.\+Enemy}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_ae1cb688dec5b17bf3098096df1d3cc82}{Game.\+Entities.\+Projectiles.\+Projectile}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player_ae9c63abe7ba25169b96f869aed02f124}{Game.\+Entities.\+Creatures.\+Player}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_afb7c82ad647b2106303d7e978cb02499}{Game.\+Entities.\+Objects.\+Tree}}, and \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_bushes_a786b899b50cf64b34ea0d09eb7ba70e5}{Game.\+Entities.\+Objects.\+Bushes}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a31607f1b61622c215e28ecffa76fc1b4}\label{class_game_1_1_entities_1_1_entity_a31607f1b61622c215e28ecffa76fc1b4}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily public Rectangle Game.\+Entities.\+Entity.\+get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\textbackslash{}breif Returneaza aria de coliziune a entitatii \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a9034a602df742b5a4f2c6efec08d6609}\label{class_game_1_1_entities_1_1_entity_a9034a602df742b5a4f2c6efec08d6609}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!getCollisionBounds@{getCollisionBounds}}
+\index{getCollisionBounds@{getCollisionBounds}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{getCollisionBounds()}{getCollisionBounds()}}
+{\footnotesize\ttfamily public Rectangle Game.\+Entities.\+Entity.\+get\+Collision\+Bounds (\begin{DoxyParamCaption}\item[{float}]{x\+Offset,  }\item[{float}]{y\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda care returneaza un Obiect de tip Rectangle ce reprezinta aria de coliziune a entitatii. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_afbf338e7b3f2f8a472b0066fcdfe7a03}\label{class_game_1_1_entities_1_1_entity_afbf338e7b3f2f8a472b0066fcdfe7a03}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily public int Game.\+Entities.\+Entity.\+get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza viata entitatii. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_ab7f2db34559436a48cb615d0d3c94083}{Game.\+Entities.\+Creatures.\+Creature}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a7e2369263d38a4d7356d4fcabe5a63b3}\label{class_game_1_1_entities_1_1_entity_a7e2369263d38a4d7356d4fcabe5a63b3}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily public int Game.\+Entities.\+Entity.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza inaltimea entitatii. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a883ef787925656c0e23b91965054fd22}\label{class_game_1_1_entities_1_1_entity_a883ef787925656c0e23b91965054fd22}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily public int Game.\+Entities.\+Entity.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza latimea entitatii. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_ac04e41842865de695ce7a9a738128b5a}\label{class_game_1_1_entities_1_1_entity_ac04e41842865de695ce7a9a738128b5a}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!getX@{getX}}
+\index{getX@{getX}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily public float Game.\+Entities.\+Entity.\+getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza coordonata x a entitatii. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a9c0da1ff95e146d9fd97778c2bbc7044}\label{class_game_1_1_entities_1_1_entity_a9c0da1ff95e146d9fd97778c2bbc7044}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!getY@{getY}}
+\index{getY@{getY}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily public float Game.\+Entities.\+Entity.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza coordonata y a entitatii. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_abbc155ac566b9438ceeab7311e845db8}\label{class_game_1_1_entities_1_1_entity_abbc155ac566b9438ceeab7311e845db8}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!hurt@{hurt}}
+\index{hurt@{hurt}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{hurt()}{hurt()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity.\+hurt (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda are rolul de a actualiza nivelul de viata al entitatii si flagul active. 
+
+viata va scade cu cantitatea amount
+
+daca viata entitatii este mai mica sau egala cu 0, atunci entitatea va muri, deci active se seteaza pe false si se apeleaza metoda \mbox{\hyperlink{class_game_1_1_entities_1_1_entity_aef103d2cd8b5bc62625a729acf9809de}{die()}} a entitatii\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a5b6c014eeaef7a8531aad831b56bc4d8}\label{class_game_1_1_entities_1_1_entity_a5b6c014eeaef7a8531aad831b56bc4d8}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!isActive@{isActive}}
+\index{isActive@{isActive}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily public boolean Game.\+Entities.\+Entity.\+is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returneaza starea entitatii, daca este activa sau inactiva. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a6e99f512cf2778fe29bbecde574c1d7c}\label{class_game_1_1_entities_1_1_entity_a6e99f512cf2778fe29bbecde574c1d7c}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!render@{render}}
+\index{render@{render}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily public abstract void Game.\+Entities.\+Entity.\+render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Metoda abstracta care se ocupa cu randarea entitatii. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player_ad4d09b230abd810796308bcd569a6b17}{Game.\+Entities.\+Creatures.\+Player}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_afc53a242dcc92ddc0726391430385d75}{Game.\+Entities.\+Projectiles.\+Projectile}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_a0181efc03f21e2e8833faf90f36d15b5}{Game.\+Entities.\+Creatures.\+Enemy}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_afb88a4adb604f9a4b14b726c3dedf025}{Game.\+Entities.\+Objects.\+Tree}}, and \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_bushes_a8ccd0b72e2082105e96da86c911882eb}{Game.\+Entities.\+Objects.\+Bushes}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a660ed3b35da530fe57411be445f81b2f}\label{class_game_1_1_entities_1_1_entity_a660ed3b35da530fe57411be445f81b2f}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!setActive@{setActive}}
+\index{setActive@{setActive}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity.\+set\+Active (\begin{DoxyParamCaption}\item[{boolean}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza flagul de stare al entitatii. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a0034e05034c5eb8945abbfc6cc97a887}\label{class_game_1_1_entities_1_1_entity_a0034e05034c5eb8945abbfc6cc97a887}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity.\+set\+Health (\begin{DoxyParamCaption}\item[{int}]{health }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza viata entitaii cu cea primita ca si argument. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_creature_a6a7dd03d32df38cf0c914f56690d20b9}{Game.\+Entities.\+Creatures.\+Creature}}.
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a525e1f47976f271436bc633a7e7fe3a7}\label{class_game_1_1_entities_1_1_entity_a525e1f47976f271436bc633a7e7fe3a7}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity.\+set\+Height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza inaltimea entitatii cu cea primita ca si argument. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a6a7e4e4a1808f9c24deefeb7fc9a6f19}\label{class_game_1_1_entities_1_1_entity_a6a7e4e4a1808f9c24deefeb7fc9a6f19}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity.\+set\+Width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza latimea entitatii cu cea primita ca si argument. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_ac84332d0f78abffe4cf7be45efe581ee}\label{class_game_1_1_entities_1_1_entity_ac84332d0f78abffe4cf7be45efe581ee}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!setX@{setX}}
+\index{setX@{setX}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity.\+setX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza coordonata x a entitatii cu cea primita ca si argument. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_ac416ac2fcd09ce1e63bb18424b8feb0b}\label{class_game_1_1_entities_1_1_entity_ac416ac2fcd09ce1e63bb18424b8feb0b}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!setY@{setY}}
+\index{setY@{setY}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily public void Game.\+Entities.\+Entity.\+setY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seteaza coordonata y a entitatii cu cea primita ca si argument. 
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a72ba04b1066282586ccaa625396d5cf0}\label{class_game_1_1_entities_1_1_entity_a72ba04b1066282586ccaa625396d5cf0}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!update@{update}}
+\index{update@{update}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily public abstract void Game.\+Entities.\+Entity.\+update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Metoda abstracta care se ocupa cu update-\/ul entitatii. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_game_1_1_entities_1_1_projectiles_1_1_projectile_a12bba2fb4236463dba71d33bd001f8e3}{Game.\+Entities.\+Projectiles.\+Projectile}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_enemy_a2e24057805e496aa31e0c98366f90ec6}{Game.\+Entities.\+Creatures.\+Enemy}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_creatures_1_1_player_abc3c5251b36f655a98b77a5295a83dfe}{Game.\+Entities.\+Creatures.\+Player}}, \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_tree_a18e8288531ca1850724388cbb82d1493}{Game.\+Entities.\+Objects.\+Tree}}, and \mbox{\hyperlink{class_game_1_1_entities_1_1_objects_1_1_bushes_af27b54aec5e0d8c553004b54d681ecfe}{Game.\+Entities.\+Objects.\+Bushes}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_ab34a266c3fe24abcf99b9b817788c2e7}\label{class_game_1_1_entities_1_1_entity_ab34a266c3fe24abcf99b9b817788c2e7}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!active@{active}}
+\index{active@{active}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily boolean Game.\+Entities.\+Entity.\+active = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+Flag care tine evidenta starii entitatii, daca este in viata sau nu \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a45432106d798ee2f591f393346830229}\label{class_game_1_1_entities_1_1_entity_a45432106d798ee2f591f393346830229}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!bounds@{bounds}}
+\index{bounds@{bounds}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily Rectangle Game.\+Entities.\+Entity.\+bounds\hspace{0.3cm}{\ttfamily [protected]}}
+
+Referinta catre Rectangle ce reprezinta aria de coliziune a entitatii \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_af289df5a3b01da8c1bae7dbdbfb328af}\label{class_game_1_1_entities_1_1_entity_af289df5a3b01da8c1bae7dbdbfb328af}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!HEALTH@{HEALTH}}
+\index{HEALTH@{HEALTH}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{HEALTH}{HEALTH}}
+{\footnotesize\ttfamily final int Game.\+Entities.\+Entity.\+H\+E\+A\+L\+TH = 100\hspace{0.3cm}{\ttfamily [static]}}
+
+Constanta ce retine valoare default pentru viata entitatii \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_af0300a4b548ef77aef300df8206b71a3}\label{class_game_1_1_entities_1_1_entity_af0300a4b548ef77aef300df8206b71a3}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!health@{health}}
+\index{health@{health}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily int Game.\+Entities.\+Entity.\+health\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_af6d8e91a7ee4340bc5e8e5a48dcf3f74}\label{class_game_1_1_entities_1_1_entity_af6d8e91a7ee4340bc5e8e5a48dcf3f74}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!height@{height}}
+\index{height@{height}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Game.\+Entities.\+Entity.\+height\hspace{0.3cm}{\ttfamily [protected]}}
+
+Inaltimea entitatii \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a4e786aff1fccccedca808727b21f91b1}\label{class_game_1_1_entities_1_1_entity_a4e786aff1fccccedca808727b21f91b1}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!width@{width}}
+\index{width@{width}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Game.\+Entities.\+Entity.\+width\hspace{0.3cm}{\ttfamily [protected]}}
+
+Latimea entitatii \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}\label{class_game_1_1_entities_1_1_entity_a75ca403ee963d7977ccf05e6361d6de0}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!x@{x}}
+\index{x@{x}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float Game.\+Entities.\+Entity.\+x\hspace{0.3cm}{\ttfamily [protected]}}
+
+Coordonata x a pozitiei entitatii \mbox{\Hypertarget{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}\label{class_game_1_1_entities_1_1_entity_ad19e0d0bbd485d3513b8436cd059646e}} 
+\index{Game.Entities.Entity@{Game.Entities.Entity}!y@{y}}
+\index{y@{y}!Game.Entities.Entity@{Game.Entities.Entity}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Game.\+Entities.\+Entity.\+y\hspace{0.3cm}{\ttfamily [protected]}}
+
+Coordonata y a pozitiei entitatii 
